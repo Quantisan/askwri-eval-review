@@ -1,0 +1,9 @@
+## mise.toml
+[env]
+XDG_CACHE_HOME = ".cache"
+QMD_EMBED_MODEL="hf:Qwen/Qwen3-Embedding-0.6B-GGUF/Qwen3-Embedding-0.6B-Q8_0.gguf"
+QMD_LLAMA_GPU="vulkan" 
+# QMD_LLAMA_GPU="cuda" 
+
+[tools]
+node = "24"

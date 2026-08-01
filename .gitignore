@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments and packages
+.venv
+.qmd
+node_modules
+
+# Caches
+.cache/
+kp-docs/.cache
+kp-docs/askwri-kps
+
+# Review output (ephemeral, per-session reviewer annotations)
+review-output/
+
+# Agent working notes (not part of the public project)
+.agents/
+
