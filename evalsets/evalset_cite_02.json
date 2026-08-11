@@ -21,6 +21,60 @@
       "difficulty": "medium",
       "query_type": "quantitative_projection",
       "note": "Source doc (zh, external_id 2025_zero-emission-heavy-duty-trucks_00015) has a possible English twin (2025_charging-toward-2035-policies-to-accelerate-zero_7455)."
+    },
+    {
+      "id": "q2_bev-diesel-truck-tco-china",
+      "question": "How does total cost of ownership compare between battery electric and diesel heavy-duty trucks in China?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2025_zero-emission-heavy-duty-trucks_00015",
+        "2025_charging-toward-2035-policies-to-accelerate-zero_7455"
+      ],
+      "expected_document_ids": [
+        "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+        "7c2e200e-9c01-4acd-b5ef-a18041a7f258"
+      ],
+      "source_document_id": "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+      "source_language": "zh",
+      "difficulty": "hard",
+      "query_type": "cost_comparison",
+      "note": "Source doc (zh, external_id 2025_zero-emission-heavy-duty-trucks_00015) has a possible English twin (2025_charging-toward-2035-policies-to-accelerate-zero_7455)."
+    },
+    {
+      "id": "q3_regional-vs-longhaul-adoption",
+      "question": "What is the difference in zero-emission truck adoption potential between regional transport and long-haul transport scenarios?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2025_zero-emission-heavy-duty-trucks_00015",
+        "2025_charging-toward-2035-policies-to-accelerate-zero_7455"
+      ],
+      "expected_document_ids": [
+        "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+        "7c2e200e-9c01-4acd-b5ef-a18041a7f258"
+      ],
+      "source_document_id": "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+      "source_language": "zh",
+      "difficulty": "medium",
+      "query_type": "comparative_analysis",
+      "note": "Source doc (zh, external_id 2025_zero-emission-heavy-duty-trucks_00015) has a possible English twin (2025_charging-toward-2035-policies-to-accelerate-zero_7455)."
+    },
+    {
+      "id": "q4_bev-payback-periods",
+      "question": "What are the payback periods for battery electric semi-trucks compared to diesel trucks in China?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2025_zero-emission-heavy-duty-trucks_00015",
+        "2025_charging-toward-2035-policies-to-accelerate-zero_7455"
+      ],
+      "expected_document_ids": [
+        "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+        "7c2e200e-9c01-4acd-b5ef-a18041a7f258"
+      ],
+      "source_document_id": "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+      "source_language": "zh",
+      "difficulty": "medium",
+      "query_type": "payback_analysis",
+      "note": "Source doc (zh, external_id 2025_zero-emission-heavy-duty-trucks_00015) has a possible English twin (2025_charging-toward-2035-policies-to-accelerate-zero_7455)."
     }
   ]
 }

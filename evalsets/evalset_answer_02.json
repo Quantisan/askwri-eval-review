@@ -33,6 +33,94 @@
       "source_document_id": "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
       "source_language": "zh",
       "note": "Source doc (zh, external_id 2025_zero-emission-heavy-duty-trucks_00015) has a possible English twin (2025_charging-toward-2035-policies-to-accelerate-zero_7455). canonical_answer/key_facts drafted from reviewer's docreview notes."
+    },
+    {
+      "id": "q2_bev-diesel-truck-tco-china",
+      "question": "How does total cost of ownership compare between battery electric and diesel heavy-duty trucks in China?",
+      "task_description": "",
+      "query_type": "cost_comparison",
+      "difficulty": "hard",
+      "retrieval_ground_truth": {
+        "expected_external_ids": [
+          "2025_zero-emission-heavy-duty-trucks_00015",
+          "2025_charging-toward-2035-policies-to-accelerate-zero_7455"
+        ],
+        "expected_document_ids": [
+          "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+          "7c2e200e-9c01-4acd-b5ef-a18041a7f258"
+        ],
+        "expected_passages": []
+      },
+      "synthesis_ground_truth": {
+        "canonical_answer": "Battery electric heavy-duty trucks are more cost-competitive than diesel in regional transport in China and are projected to dominate that segment. The total-cost-of-ownership and capex gap between electric and diesel is larger for heavy cargo trucks than for semi-tractors, because cargo trucks suffer bigger payload losses from electrification and diesel cargo trucks already have lower baseline purchase and energy costs. For a short-range battery electric heavy truck versus its diesel equivalent, the capex gap is CNY 150k-260k in MY2027, narrowing to CNY 35k-120k with the trade-in subsidy, then widening back above CNY 130k once that subsidy ends in 2028, not dropping below CNY 100k again until MY2030.",
+        "key_facts": [
+          "BEVs are more cost-competitive than diesel in regional transport and are projected to dominate there.",
+          "The TCO/capex gap is larger for heavy cargo trucks than for semi-tractors, because cargo trucks suffer bigger payload losses and diesel cargo trucks already have lower baseline purchase/energy costs.",
+          "Concrete capex gap (short-range BEV vs. diesel heavy truck): CNY 150k-260k (MY2027) narrows to CNY 35k-120k with the trade-in subsidy, then widens back above CNY 130k once that subsidy ends in 2028, not dropping below CNY 100k again until MY2030."
+        ]
+      },
+      "source_document_id": "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+      "source_language": "zh",
+      "note": "Source doc (zh, external_id 2025_zero-emission-heavy-duty-trucks_00015) has a possible English twin (2025_charging-toward-2035-policies-to-accelerate-zero_7455). canonical_answer/key_facts drafted from reviewer's docreview notes."
+    },
+    {
+      "id": "q3_regional-vs-longhaul-adoption",
+      "question": "What is the difference in zero-emission truck adoption potential between regional transport and long-haul transport scenarios?",
+      "task_description": "",
+      "query_type": "comparative_analysis",
+      "difficulty": "medium",
+      "retrieval_ground_truth": {
+        "expected_external_ids": [
+          "2025_zero-emission-heavy-duty-trucks_00015",
+          "2025_charging-toward-2035-policies-to-accelerate-zero_7455"
+        ],
+        "expected_document_ids": [
+          "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+          "7c2e200e-9c01-4acd-b5ef-a18041a7f258"
+        ],
+        "expected_passages": []
+      },
+      "synthesis_ground_truth": {
+        "canonical_answer": "Zero-emission truck adoption potential differs substantially between regional and long-haul transport in China. Regional transport moves much faster toward competitiveness: battery electric semis hit a 5-year payback by MY2027 with subsidies, and penetration crosses 50% during MY2027-2030 under an enhanced-policy scenario. Long-haul transport lags substantially, remaining nascent under a no-policy scenario through MY2035, with real growth only emerging in MY2032-2035 even under enhanced policy. The technology split also differs: battery electric vehicles dominate regional transport, while in long-haul, BEVs work best for shorter-daily-mileage, low-time-sensitivity, light-cargo routes, and fuel-cell trucks (FCEVs) are more competitive for long-daily-mileage, time-sensitive, heavy-cargo routes.",
+        "key_facts": [
+          "Regional transport moves much faster toward competitiveness: BEV semis hit a 5-year payback by MY2027 with subsidies, and penetration crosses 50% by MY2027-2030 under enhanced policy.",
+          "Long-haul lags substantially: nascent under no-policy through MY2035; even with enhanced policy, real growth only emerges MY2032-2035.",
+          "Technology split also differs: BEVs dominate regional transport; in long-haul, BEVs work best for shorter-daily-mileage, low-time-sensitivity, light-cargo routes, while fuel-cell trucks (FCEVs) are more competitive for long-daily-mileage, time-sensitive, heavy-cargo routes."
+        ]
+      },
+      "source_document_id": "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+      "source_language": "zh",
+      "note": "Source doc (zh, external_id 2025_zero-emission-heavy-duty-trucks_00015) has a possible English twin (2025_charging-toward-2035-policies-to-accelerate-zero_7455). canonical_answer/key_facts drafted from reviewer's docreview notes."
+    },
+    {
+      "id": "q4_bev-payback-periods",
+      "question": "What are the payback periods for battery electric semi-trucks compared to diesel trucks in China?",
+      "task_description": "",
+      "query_type": "payback_analysis",
+      "difficulty": "medium",
+      "retrieval_ground_truth": {
+        "expected_external_ids": [
+          "2025_zero-emission-heavy-duty-trucks_00015",
+          "2025_charging-toward-2035-policies-to-accelerate-zero_7455"
+        ],
+        "expected_document_ids": [
+          "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+          "7c2e200e-9c01-4acd-b5ef-a18041a7f258"
+        ],
+        "expected_passages": []
+      },
+      "synthesis_ground_truth": {
+        "canonical_answer": "The study defines truck competitiveness thresholds as a payback period of 5 years or less for regional transport and 4 years or less for long-haul transport. With the trade-in subsidy, long-range battery electric semi-tractors in China reach the 5-year payback threshold by MY2027, three years earlier than in the no-policy case. The vehicle purchase-tax exemption alone is not enough to make battery electric semis competitive during MY2025-2027. In long-haul transport, by MY2035 both battery electric and fuel-cell heavy cargo trucks on shorter-daily-mileage routes approach roughly a 5-year payback.",
+        "key_facts": [
+          "The study defines competitiveness thresholds as ≤5-year payback for regional transport and ≤4-year payback for long-haul.",
+          "With the trade-in subsidy, long-range BEV semi-tractors reach the 5-year payback threshold by MY2027 - three years earlier than the no-policy case.",
+          "The vehicle purchase-tax exemption alone is not enough to make BEV semis competitive during MY2025-2027.",
+          "In long-haul, by MY2035 both BEV and FCEV heavy cargo trucks on shorter-daily-mileage routes approach roughly a 5-year payback."
+        ]
+      },
+      "source_document_id": "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+      "source_language": "zh",
+      "note": "Source doc (zh, external_id 2025_zero-emission-heavy-duty-trucks_00015) has a possible English twin (2025_charging-toward-2035-policies-to-accelerate-zero_7455). canonical_answer/key_facts drafted from reviewer's docreview notes."
     }
   ]
 }
