@@ -423,6 +423,35 @@
       "source_document_id": "2e5d79b9-7077-43a2-bc48-3661e7d3fd36",
       "source_language": "es",
       "note": "canonical_answer/key_facts drafted from reviewer's docreview notes."
+    },
+    {
+      "id": "q16_mexico-transport-covid-demand-change",
+      "question": "How did public transport demand in Mexican cities change during the COVID-19 pandemic?",
+      "query_type": "impact_assessment",
+      "difficulty": "medium",
+      "retrieval_ground_truth": {
+        "expected_external_ids": [
+          "2022_impactos-economicos-pandemia-covid19-transporte-publico_0070",
+          "2023_analisis-de-los-mecanismos-financieros-para-la_3765"
+        ],
+        "expected_document_ids": [
+          "987353ab-9454-473f-8f00-eb767750dd24",
+          "2e5d79b9-7077-43a2-bc48-3661e7d3fd36"
+        ],
+        "expected_passages": []
+      },
+      "synthesis_ground_truth": {
+        "canonical_answer": "Public transport demand in Mexican cities fell sharply during the COVID-19 pandemic, dropping by up to 70 percent in April-June 2020, the period of greatest national restrictions and the most significant shift in mobility patterns. Reduction varied by mode: as a share of pre-pandemic demand in April-June 2020, BRT fell to 29%, trains to 33%, trolleybuses/companies to 45%, and ECI to 45%; by June-September 2021 these had recovered to 69%, 56%, 65%, and 65% respectively. Supply did not fall as much as demand for trains in particular - trains maintained 97% of 2019 kilometers offered in April-June 2020 to reduce vehicle occupancy, while BRT supply fell to 61% over the same period. Even by September 2021, systems had still not fully recovered: BRT demand stood at 71 percent and buses/trolleybuses at 68 percent of 2019 ridership levels.",
+        "key_facts": [
+          "Demand fell by up to 70 percent in April-June 2020, the period of greatest national restrictions; the most significant shifts in mobility patterns occurred in those months.",
+          "Reduction factors by mode (share of pre-pandemic demand) in April-June 2020: BRT 29%, trains 33%, trolleybuses/companies 45%, ECI 45% - recovering by June-September 2021 to 69%, 56%, 65% and 65% respectively.",
+          "Trains cut supply far less than demand (97% of 2019 kilometers offered in April-June 2020), maintaining coverage to reduce vehicle occupancy; BRT supply fell to 61% in the same period.",
+          "By September 2021, systems had still not recovered: BRT demand at 71 percent and buses/trolleybuses at 68 percent of 2019 ridership."
+        ]
+      },
+      "source_document_id": "987353ab-9454-473f-8f00-eb767750dd24",
+      "source_language": "es",
+      "note": "Canonical_answer/key_facts drafted from reviewer's docreview notes."
     }
   ]
 }

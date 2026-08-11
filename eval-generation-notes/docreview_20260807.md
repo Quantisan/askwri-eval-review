@@ -197,3 +197,13 @@ Queries
 * Revenues captured under these concepts can be concentrated in local public finances and, by law, assigned to a specific purpose such as public transport projects. The document notes implementation and maintenance costs must not exceed revenues received, and that transparent application and distribution schemes are needed.
 * By contrast, urban road pricing or congestion charging does not exist in Mexico as a revenue source for public transport, though the document identifies it as an opportunity to explore.
 
+### doc review 6 
+
+expected_documents: {987353ab-9454-473f-8f00-eb767750dd24, 2e5d79b9-7077-43a2-bc48-3661e7d3fd36 } 
+
+**Query: "How did public transport demand in Mexican cities change during the COVID-19 pandemic?"**
+* Demand fell by up to 70 percent in April–June 2020, the period of greatest national restrictions; the most significant shifts in mobility patterns occurred in those months.
+* Reduction factors by mode (share of pre-pandemic demand) in April–June 2020: BRT 29%, trains 33%, trolleybuses/companies 45%, ECI 45% — recovering by June–September 2021 to 69%, 56%, 65% and 65% respectively.
+* Trains cut supply far less than demand (97% of 2019 kilometers offered in April–June 2020), maintaining coverage to reduce vehicle occupancy; BRT supply fell to 61% in the same period.
+* By September 2021, systems had still not recovered: BRT demand at 71 percent and buses/trolleybuses at 68 percent of 2019 ridership.
+
