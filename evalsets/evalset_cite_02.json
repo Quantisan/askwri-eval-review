@@ -177,6 +177,102 @@
       "difficulty": "hard",
       "query_type": "quantitative_projection",
       "note": ""
+    },
+    {
+      "id": "q11_mexico-transport-covid-methodology",
+      "question": "What methodology was used to estimate COVID-19 financial impacts on Mexican urban public transport operators?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2022_impactos-economicos-pandemia-covid19-transporte-publico_0070"
+      ],
+      "expected_document_ids": [
+        "987353ab-9454-473f-8f00-eb767750dd24"
+      ],
+      "source_document_id": "987353ab-9454-473f-8f00-eb767750dd24",
+      "source_language": "es",
+      "difficulty": "medium",
+      "query_type": "methodology",
+      "note": ""
+    },
+    {
+      "id": "q12_mexico-transport-jobs-dependency",
+      "question": "How many jobs depend on the public transport sector in Mexico?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2022_impactos-economicos-pandemia-covid19-transporte-publico_0070"
+      ],
+      "expected_document_ids": [
+        "987353ab-9454-473f-8f00-eb767750dd24"
+      ],
+      "source_document_id": "987353ab-9454-473f-8f00-eb767750dd24",
+      "source_language": "es",
+      "difficulty": "medium",
+      "query_type": "quantitative_fact",
+      "note": ""
+    },
+    {
+      "id": "q13_mexico-transport-financing-barriers",
+      "question": "What barriers limit fondeo and financiamiento for urban public transport in Mexico?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2023_analisis-de-los-mecanismos-financieros-para-la_3765"
+      ],
+      "expected_document_ids": [
+        "2e5d79b9-7077-43a2-bc48-3661e7d3fd36"
+      ],
+      "source_document_id": "2e5d79b9-7077-43a2-bc48-3661e7d3fd36",
+      "source_language": "es",
+      "difficulty": "medium",
+      "query_type": "barrier_analysis",
+      "note": ""
+    },
+    {
+      "id": "q14_mexico-carbon-tax-transport-financing",
+      "question": "Why is revenue from Mexico's carbon tax not currently available for public transport, and how could that change?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2023_analisis-de-los-mecanismos-financieros-para-la_3765"
+      ],
+      "expected_document_ids": [
+        "2e5d79b9-7077-43a2-bc48-3661e7d3fd36"
+      ],
+      "source_document_id": "2e5d79b9-7077-43a2-bc48-3661e7d3fd36",
+      "source_language": "es",
+      "difficulty": "medium",
+      "query_type": "policy_mechanism",
+      "note": ""
+    },
+    {
+      "id": "q15_mexico-parking-meter-revenue",
+      "question": "How much revenue do parking meters generate in Mexican cities, and where does that money go?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2023_analisis-de-los-mecanismos-financieros-para-la_3765"
+      ],
+      "expected_document_ids": [
+        "2e5d79b9-7077-43a2-bc48-3661e7d3fd36"
+      ],
+      "source_document_id": "2e5d79b9-7077-43a2-bc48-3661e7d3fd36",
+      "source_language": "es",
+      "difficulty": "medium",
+      "query_type": "quantitative_fact",
+      "note": ""
+    },
+    {
+      "id": "q16_mexico-transport-covid-demand-change",
+      "question": "How did public transport demand in Mexican cities change during the COVID-19 pandemic?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2022_impactos-economicos-pandemia-covid19-transporte-publico_0070"
+      ],
+      "expected_document_ids": [
+        "987353ab-9454-473f-8f00-eb767750dd24"
+      ],
+      "source_document_id": "987353ab-9454-473f-8f00-eb767750dd24",
+      "source_language": "es",
+      "difficulty": "medium",
+      "query_type": "impact_assessment",
+      "note": "Cite-mode-only entry: no corresponding query for answer mode."
     }
   ]
 }

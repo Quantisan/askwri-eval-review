@@ -50,7 +50,11 @@ follows:
 2. An LLM (Claude Sonnet 5) converts each doc-review entry into a matching
    pair of test cases - one in `evalsets/evalset_cite_NN.json` and one in
    `evalsets/evalset_answer_NN.json` - sharing the same `id` and
-   `question`, so the two files stay 1:1 aligned per doc-review entry. This
+   `question`, so the two files stay 1:1 aligned per doc-review entry,
+   **except** when a query has no drafted answer yet (Cite mode only
+   requires the query + expected document(s), so such queries get a Cite
+   entry with a `note` explaining the missing Answer-mode counterpart, and
+   are added to `evalset_answer_NN.json` once a draft answer exists). This
    includes:
    - Resolving `external_id`/`document_id` for the source document, using
      `documents-list-207_*.txt`.
