@@ -1,0 +1,26 @@
+{
+  "version": "4.0",
+  "created": "2026-08-11",
+  "updated": "2026-08-11",
+  "description": "Evaluation dataset (generation 2) for AskWRI Cite mode evaluation - cross-lingual corpus (en/zh/es/pt). Test cases are built by manually reviewing one sampled KP at a time and drafting a high-level English query whose expected answer is that document. expected_external_ids/expected_document_ids are parallel arrays (same index = same document, as external_id string vs UUID document_id).",
+  "test_cases": [
+    {
+      "id": "q1_zero-emission-heavy-duty-trucks",
+      "question": "What is the projected market penetration rate of new energy heavy-duty trucks in China through 2035?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2025_zero-emission-heavy-duty-trucks_00015",
+        "2025_charging-toward-2035-policies-to-accelerate-zero_7455"
+      ],
+      "expected_document_ids": [
+        "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+        "7c2e200e-9c01-4acd-b5ef-a18041a7f258"
+      ],
+      "source_document_id": "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+      "source_language": "zh",
+      "difficulty": "medium",
+      "query_type": "quantitative_projection",
+      "note": "Source doc (zh, external_id 2025_zero-emission-heavy-duty-trucks_00015) has a possible English twin (2025_charging-toward-2035-policies-to-accelerate-zero_7455)."
+    }
+  ]
+}

@@ -11,10 +11,9 @@ wheels/
 .qmd
 node_modules
 
-# Caches
+# Caches and docs
 .cache/
-kp-docs/.cache
-kp-docs/askwri-kps
+kp-docs/
 
 # Review output (ephemeral, per-session reviewer annotations)
 review-output/

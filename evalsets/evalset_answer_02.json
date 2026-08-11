@@ -1,0 +1,38 @@
+{
+  "version": "3.0",
+  "created": "2026-08-11",
+  "updated": "2026-08-11",
+  "description": "Evaluation dataset (generation 2) for AskWRI Answer mode evaluation - cross-lingual corpus (en/zh/es/pt). Test cases are built by manually reviewing one sampled KP at a time and drafting a high-level English query whose expected answer is that document, along with a draft answer. expected_passages is intentionally left empty - chunk/excerpt-level ground truth has not been captured at this stage.",
+  "test_cases": [
+    {
+      "id": "q1_zero-emission-heavy-duty-trucks",
+      "question": "What is the projected market penetration rate of new energy heavy-duty trucks in China through 2035?",
+      "task_description": "",
+      "query_type": "quantitative_projection",
+      "difficulty": "medium",
+      "retrieval_ground_truth": {
+        "expected_external_ids": [
+          "2025_zero-emission-heavy-duty-trucks_00015",
+          "2025_charging-toward-2035-policies-to-accelerate-zero_7455"
+        ],
+        "expected_document_ids": [
+          "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+          "7c2e200e-9c01-4acd-b5ef-a18041a7f258"
+        ],
+        "expected_passages": []
+      },
+      "synthesis_ground_truth": {
+        "canonical_answer": "The document projects new energy heavy-duty truck penetration in China through 2035 under three policy scenarios: no-policy, current-policy, and enhanced-policy (current policy combined with additional enhancements). Under the no-policy scenario, regional transport penetration reaches 2%-17% by MY2030, while long-haul penetration remains at a nascent, low level all the way through MY2035. Under the current-policy scenario, the trade-in subsidy lifts long-range BEV semi-tractor penetration in regional transport to roughly 10% by MY2027. Under the enhanced-policy scenario, regional transport penetration exceeds 50% during MY2027-2030, while long-haul growth stays slow until a sharp acceleration in MY2032-2035 - implying that sustained policy support is needed through 2035 for long-haul penetration to reach meaningful levels.",
+        "key_facts": [
+          "Three scenarios are modeled: no-policy, current-policy, and enhanced-policy (current + enhanced combined).",
+          "No-policy scenario: regional transport reaches 2%-17% penetration by MY2030; long-haul stays at a nascent, low level all the way through MY2035.",
+          "Current-policy scenario: the trade-in subsidy lifts long-range BEV semi-tractor penetration in regional transport to ~10% by MY2027.",
+          "Enhanced-policy scenario: regional transport penetration exceeds 50% during MY2027-2030; long-haul growth stays slow until a sharp acceleration in MY2032-2035, implying sustained policy support is needed through 2035 for long-haul to reach meaningful levels."
+        ]
+      },
+      "source_document_id": "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+      "source_language": "zh",
+      "note": "Source doc (zh, external_id 2025_zero-emission-heavy-duty-trucks_00015) has a possible English twin (2025_charging-toward-2035-policies-to-accelerate-zero_7455). canonical_answer/key_facts drafted from reviewer's docreview notes."
+    }
+  ]
+}

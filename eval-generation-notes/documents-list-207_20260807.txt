@@ -1,0 +1,1035 @@
+document_id: 3cb9ee00-f78e-489c-ae00-98647628d717
+external_id: 2014_chengdu-private-vehicle-strategies_00034
+title: 成都市小汽车拥有与使用政策战略研究
+language: zh
+
+document_id: 0db92f06-9f6f-4659-bccf-f316038a1550
+external_id: 2014_qingdao-sustainable-transport_00033
+title: 青岛低碳和可持续交通发展战略研究
+language: zh
+
+document_id: dfd40e6c-4782-4160-b1ca-4dbbfd8923d3
+external_id: 2014_the-trillion-dollar-question_3289
+title: The Trillion Dollar Question
+language: en
+
+document_id: 2a3a6381-b8e1-4712-a0d9-41e3e7427e15
+external_id: 2015_cities-safer-by-design_00030
+title: 2015_cities-safer-by-design_00030
+language: zh
+
+document_id: 121d4065-ceb3-456d-9bd7-7486b9201b74
+external_id: 2015_cities-safer-by-design_8831
+title: Cities Safer by Design
+language: en
+
+document_id: 5b8bee48-1718-42c1-bb0a-8afd04c98437
+external_id: 2015_city-greenhouse-gas-inventories_00031
+title: 中国城市温室气体清单应用的领域、挑战和建议
+language: zh
+
+document_id: 1a8822eb-b512-4368-b027-af35c84240ab
+external_id: 2015_rail-plus-property-shenzhen_00032
+title: 中国城市轨道加物业开发的本土化实践：深圳的启示
+language: zh
+
+document_id: 87b94824-f5fd-46a7-a568-d7357e53f47d
+external_id: 2016_financing-the-urban-transition-for-sustainable_3374
+title: Financing the Urban Transition for Sustainable Development: Better Finance for Better Cities
+language: en
+
+document_id: 082cb3af-36b5-498c-b327-21b7bd011e53
+external_id: 2016_low-emission-zones-congestion-charging_00029
+title: 拥堵收费和低排放区国际经验研究
+language: zh
+
+document_id: 2f283dfe-f0a0-45bf-8454-a1ee839290fa
+external_id: 2016_towards-a-more-equal-city-framing-the-challenges_8659
+title: Towards a More Equal City: Framing the Challenges and Opportunities
+language: en
+
+document_id: 4c855510-c935-40c9-b6c9-804aa201c8d7
+external_id: 2017_chengdu-low-carbon-blueprint_00027
+title: 成都市低碳发展蓝图研究
+language: zh
+
+document_id: 15ddf487-bd62-4770-b65a-72933290e818
+external_id: 2017_confronting-the-urban-housing-crisis-in-the_9318
+title: Confronting the Urban Housing Crisis in the Global South: Adequate, Secure, and Affordable Housing
+language: en
+
+document_id: 6e3d951f-ce03-478a-adeb-dcba755abe7a
+external_id: 2017_connected-urban-growth-public-private_1272
+title: Connected Urban Growth: Public-Private Collaborations for Transforming Urban Mobility
+language: en
+
+document_id: 340ca6d2-a656-46fd-b9d1-0b4c3b0f0be9
+external_id: 2017_en-transport-emissions-social-cost_00039
+title: Transport Emissions & Social Cost Assessment: Methodology Guide
+language: en
+
+document_id: b2522100-7c1f-42e9-aec7-11997025e247
+external_id: 2017_global-review-of-finance-for-sustainable-urban_8290
+title: Global Review of Finance For Sustainable Urban Infrastructure
+language: en
+
+document_id: 5a0b3d8f-492d-40b3-8fd3-73c8bfaa9643
+external_id: 2017_global-review-of-finance-for-sustainable-urban_8997
+title: Global Review of Finance For Sustainable Urban Infrastructure
+language: en
+
+document_id: 82c1a437-41bf-4155-81bb-e6629a3b321b
+external_id: 2017_integrating-national-policies-to-deliver-compact_5239
+title: Integrating national policies to deliver compact, connected cities: an overview of transport and housing
+language: en
+
+document_id: fc99e596-9817-4e19-92c8-ad3f09c4001b
+external_id: 2017_powering-cities-in-the-global-south_6040
+title: Powering Cities in the Global South
+language: en
+
+document_id: c4f47518-f33e-43a0-a6cd-7c4bec825aa7
+external_id: 2017_rail-plus-property-development-in-china-the-pilot_7681
+title: Rail Plus Property Development in China: the Pilot Case of Shenzhen
+language: en
+
+document_id: 9c72a6b8-eb70-4ee9-b61e-a034ce238300
+external_id: 2017_urban-transport-performance-appraisal_00028
+title: 评价城市公交服务水平：国际案例分析与借鉴
+language: zh
+
+document_id: 16bf62ed-b48f-46b3-a981-2985146af813
+external_id: 2018_ahmedabad-town-planning-schemes-for-equitable_3120
+title: Ahmedabad: Town Planning Schemes for Equitable Development—Glass Half Full or Half Empty?
+language: en
+
+document_id: 32c4fcb4-355b-4759-a9b3-7b92a598e3d8
+external_id: 2018_beijing-congestion-charging-opinion_00026
+title: 2016年北京市拥堵收费政策民意调查分析报告
+language: zh
+
+document_id: ea0f67d4-418c-43d0-98e3-4c2111b8e088
+external_id: 2018_developing-prosperous-and-inclusive-cities-in_3356
+title: Developing Prosperous and Inclusive Cities in Africa – National Urban Policies to the Rescue?
+language: en
+
+document_id: 104357c2-f998-4eb3-822f-1aa9781c2245
+external_id: 2018_including-the-excluded-supporting-informal_6798
+title: Including the Excluded: Supporting Informal Workers for More Equal and Productive Cities in the Global South
+language: en
+
+document_id: 4ec5cab9-3d24-4640-8365-c9fce4998fcf
+external_id: 2018_johannesburg-confronting-spatial-inequality_3796
+title: Johannesburg: Confronting Spatial Inequality
+language: en
+
+document_id: 435fb9e6-2965-4677-86d4-2a9c0a20f9a2
+external_id: 2018_kampala-rebuilding-public-sector-legitimacy-with_6097
+title: Kampala: Rebuilding Public Sector Legitimacy with A New Approach to Sanitation Services
+language: en
+
+document_id: 4e71f1bf-4d68-4d90-9f17-5909614b2845
+external_id: 2018_porto-alegre-participatory-budgeting-and-the_5101
+title: Porto Alegre: Participatory Budgeting and the Challenge of Sustaining Transformative Change
+language: en
+
+document_id: ec468eb4-eec2-4d60-bf68-5ae9866fc62c
+external_id: 2018_prepared-communities-implementing-the-urban_2922
+title: Prepared Communities: Implementing the Urban Community Resilience Assessment in Vulnerable Neighborhoods of Three Cities
+language: en
+
+document_id: a95bfb6b-b132-4e17-8c46-978a39249273
+external_id: 2018_pune-civil-society-coalitions-policy_7091
+title: Pune: Civil Society Coalitions, Policy Contradictions, and Unsteady Transformation
+language: en
+
+document_id: 0d9a5319-78a1-4333-94b8-55fe68b15a48
+external_id: 2018_resilient-and-affordable-housing-for-all-lessons_5955
+title: Resilient and affordable housing for all: Lessons on house building from Kochi and Trivandrum, India
+language: en
+
+document_id: b15e0961-89fe-4585-b014-427b9b039e4d
+external_id: 2018_resilient-and-affordable-housing-for-all-lessons_6969
+title: Resilient and affordable housing for all: Lessons on house building from Kochi and Trivandrum, India
+language: en
+
+document_id: 9c119ea1-9b00-4c01-a896-f52c065617ea
+external_id: 2019_accelerating-building-decarbonization-eight_4024
+title: Accelerating Building Decarbonization: Eight Attainable Policy Pathways to Net Zero Carbon Buildings For All
+language: en
+
+document_id: c6bc2a1e-cc7a-4438-a583-6f1e195b1320
+external_id: 2019_barriers-to-adopting-electric-buses_4116
+title: Barriers to Adopting Electric Buses
+language: en
+
+document_id: d327889b-9615-40f4-8582-40f13764c97e
+external_id: 2019_climate-emergency-urban-opportunity_4461
+title: Climate Emergency, Urban Opportunity
+language: en
+
+document_id: 7fdfb5e2-9a3c-4911-a577-a7520ee2d670
+external_id: 2019_costs-and-emissions-appraisal-tool-for-transit_4706
+title: Costs and Emissions Appraisal Tool for Transit Buses (Technical Note)
+language: en
+
+document_id: 67529e99-40b1-46c2-9fd7-07e9964e2fc6
+external_id: 2019_en-electric-bus-adoption-guide_00123
+title: How to Enable Electric Bus Adoption in Cities Worldwide: A Guiding Report for City Transit Agencies and Bus Operating Entities
+language: en
+
+document_id: c90ba063-883b-4989-be8a-e140ae8eb748
+external_id: 2019_financing-electric-and-hybrid-electric-buses-10_6301
+title: Financing Electric and Hybrid-Electric Buses: 10 Questions City Decision-Makers Should Ask
+language: en
+
+document_id: bd1a3907-4842-49c3-ae8d-0383f4c71c80
+external_id: 2019_from-mobility-to-access-for-all-expanding-urban_8627
+title: From Mobility to Access for All: Expanding Urban Transportation Choices in the Global South
+language: en
+
+document_id: a0fe8189-d01f-4119-a1a3-bdf7aaf37c4e
+external_id: 2019_guadalajara-revisiting-public-space-interventions_9381
+title: Guadalajara: Revisiting Public Space Interventions through the Via RecreActiva
+language: en
+
+document_id: d13b6c24-d6db-493e-95a5-d4fd041c1f3a
+external_id: 2019_how-to-enable-electric-bus-adoption-in-cities_4136
+title: How to Enable Electric Bus Adoption in Cities Worldwide
+language: en
+
+document_id: d428f0c7-cc06-4c50-b94e-df5183deed11
+external_id: 2019_overcoming-the-operational-challenges-of-electric_2317
+title: Overcoming The Operational Challenges Of Electric Buses: Lessons Learnt From China
+language: zh
+
+document_id: 3a4f79a4-f3d9-4832-b1a1-c0862dc66836
+external_id: 2019_scaling-up-investment-for-sustainable-urban_2716
+title: Scaling Up Investment for Sustainable Urban Infrastructure: A Guide to National and Subnational Reform
+language: en
+
+document_id: 1b598061-7aed-4c9d-922e-94dbe0049d0f
+external_id: 2019_surabaya-the-legacy-of-participatory-upgrading-of_2176
+title: Surabaya: The Legacy of Participatory Upgrading of Informal Settlements
+language: en
+
+document_id: ab12bcae-8d37-47c2-8bdf-8b265df59961
+external_id: 2019_the-evolution-of-bike-sharing-10-questions-on-the_1977
+title: The Evolution of Bike Sharing: 10 Questions on the Emergence of New Technologies, Opportunities, and Risks
+language: en
+
+document_id: afe53e4b-f8b7-42cf-9e13-e713d95429e0
+external_id: 2019_toward-net-zero-emissions-in-the-road-transport_1735
+title: Toward Net Zero Emissions in the Road Transport Sector in China
+language: zh
+
+document_id: 0616ebac-f4df-4aed-8f62-42bd6c168ad8
+external_id: 2019_unaffordable-and-undrinkable-rethinking-urban_7685
+title: Unaffordable and Undrinkable: Rethinking Urban Water Access in the Global South
+language: en
+
+document_id: 504c3435-b0ff-4454-b9bd-e388edb5c92b
+external_id: 2019_unlocking-the-potential-for-transformative_9741
+title: Unlocking the Potential for Transformative Climate Adaptation in Cities
+language: en
+
+document_id: e453e5d0-cbae-416b-87e5-c6926ee098bd
+external_id: 2019_untreated-and-unsafe-solving-the-urban-sanitation_4318
+title: Untreated and Unsafe: Solving the Urban Sanitation Crisis in the Global South
+language: en
+
+document_id: 227776c6-b95c-4fc2-99f9-8d512765598e
+external_id: 2019_upward-and-outward-growth-managing-urban_2841
+title: Upward and Outward Growth: Managing Urban Expansion for More Equitable Cities in the Global South
+language: en
+
+document_id: 9a0efd02-1d7c-4da0-b99a-dd6e6687de7f
+external_id: 2019_zhuzhou-complete-street-design-manual_2976
+title: Zhuzhou Complete Street Design Manual
+language: zh
+
+document_id: 7bc8edfa-e5ad-4613-b9b9-f10fa8aabd23
+external_id: 2020_acciones-federales-para-la-planeacion-urbana_3682
+title: Acciones federales para la planeación urbana: hacia mejores ciudades para todos
+language: es
+
+document_id: d24f1e12-50f0-46c6-bfb7-957e779701b4
+external_id: 2020_acciones-federales-planeacion-urbana_0152
+title: Acciones federales para la planeación urbana: hacia mejores ciudades para todos
+language: es
+
+document_id: 011d9c93-3206-46d7-b365-8278f5ee8126
+external_id: 2020_design-manual-on-safe-access-to-public_5869
+title: Design Manual on Safe Access to Public Transportation in China
+language: zh
+
+document_id: 98cc253e-8d96-4499-b67a-38baffe2f3f2
+external_id: 2020_dockless-bike-sharing_00124
+title: 共享单车如何影响城市
+language: zh
+
+document_id: d7047ed9-9b18-4fa5-b94e-8917ec2594d1
+external_id: 2020_green-gray-assessment-evaluar-costos-beneficios_XXXX
+title: GREEN-GRAY ASSESSMENT: CÓMO EVALUAR LOS COSTOS Y BENEFICIOS DE LA INFRAESTRUCTURA VERDE EN LOS SISTEMAS DE SUMINISTRO DE AGUA
+language: es
+
+document_id: 2b012351-39d3-49b7-808c-8c51c2c45779
+external_id: 2020_housing-policies-for-sustainable-and-inclusive_3963
+title: Housing policies for sustainable and inclusive cities: How national governments can deliver affordable housing and compact urban development
+language: en
+
+document_id: 416a01af-1c79-4db1-a356-182f0577f844
+external_id: 2020_how-dockless-bike-sharing-changes-lives-an_2277
+title: How Dockless Bike Sharing Changes Lives: An Analysis of Chinese Cities
+language: en
+
+document_id: 16019c11-c9b1-434c-b585-648c388430f8
+external_id: 2020_impactar-tool-valuing-air-quality-health-impacts_1028
+title: ImpactAr Tool: Valuing Air Quality Health Impacts of Urban Bus Fleet Changes in Brazil (2020)
+language: en
+
+document_id: 481ca5c9-f3be-40b1-8b0c-28b026d90256
+external_id: 2020_indice-de-desigualdad-urbana_3387
+title: Índice de Desigualdad Urbana
+language: es
+
+document_id: c754fcd5-4c43-4bfe-a7a0-b10d0e08ae63
+external_id: 2020_informal-and-semiformal-services-in-latin-america_2995
+title: Informal and Semiformal Services in Latin America: An Overview of Public Transportation Reforms
+language: en
+
+document_id: 1c1e38e5-064d-4968-b183-cfbaa00b9e44
+external_id: 2020_las-mujeres-y-el-transporte-en-bogota-las-cuentas_3254
+title: Las Mujeres y el transporte en Bogotá: las cuentas
+language: es
+
+document_id: 2133889f-9fe0-4645-a7b8-bf547b4a4798
+external_id: 2020_net-zero-urban-transport_00022
+title: 城市的交通“净零”排放：路径分析方法、关键举措和对策建议
+language: zh
+
+document_id: c01a522f-ddaf-4c54-bc90-93001871bbf0
+external_id: 2020_quantifying-the-grid-impacts-from-large-adoption_6748
+title: Quantifying the Grid Impacts from Large Adoption of Electric Vehicles in China
+language: zh
+
+document_id: 0184c892-9912-4af7-b205-7d5337d9132f
+external_id: 2020_the-costs-and-benefits-appraisal-tool-for-transit_6714
+title: The Costs and Benefits Appraisal Tool for Transit Buses (Working Paper)
+language: en
+
+document_id: 8a60ae74-ad49-4df3-a928-e1ae3b3944e2
+external_id: 2020_the-economic-case-for-greening-the-global_4548
+title: The Economic Case for Greening the Global Recovery through Cities: 7 priorities for national governments
+language: en
+
+document_id: 1ee9ce8d-618a-4922-9507-b01454ba445f
+external_id: 2020_the-economic-case-for-greening-the-global_5627
+title: The Economic Case for Greening the Global Recovery through Cities: 7 priorities for national governments
+language: en
+
+document_id: a572c8d6-e688-4d1d-b441-cd7b785c3293
+external_id: 2020_the-future-of-urban-mobility-the-case-for_6259
+title: The Future of Urban Mobility: The case for electric bus deployment in Bogotá, Colombia
+language: en
+
+document_id: 3ee4586b-7f05-4f33-b93d-bfece2eff5a0
+external_id: 2020_understanding-the-impact-of-bus-aggregators-on_5716
+title: Understanding the Impact of Bus Aggregators on Urban Mobility in India’s National Capital Region
+language: en
+
+document_id: 6cda0c77-e8c3-4ff6-b1a4-0752fa0b64b8
+external_id: 2020_urban-land-value-capture-in-sao-paulo-addis-ababa_4308
+title: Urban Land Value Capture in São Paulo, Addis Ababa, and Hyderabad: Differing Interpretations, Equity Impacts, and Enabling Conditions
+language: en
+
+document_id: 7c89deca-a38e-4cbf-85a3-83555572a5de
+external_id: 2020_vehicle-grid-integration-china_00101
+title: 中国电动汽车与电网协同的路线图与政策建议
+language: zh
+
+document_id: 56edad43-9124-4874-9ac3-5ae7f6ea2870
+external_id: 2021_10-questions-to-ask-about-planning-financing-and_8828
+title: 10 Questions to Ask About Planning, Financing and Implementing Transit Oriented Development Strategies
+language: en
+
+document_id: a049aff0-e3fa-43e4-a8e5-1fc2fa3a3415
+external_id: 2021_accelerating-innovation-in-urban-service-delivery_1054
+title: Accelerating Innovation in Urban Service Delivery in Indian Cities: Lessons from TheCityFix Labs India
+language: en
+
+document_id: 8838685e-9a9a-4897-9e60-0defb85423c7
+external_id: 2021_demand-responsive-transit-understanding-emerging_8185
+title: Demand Responsive Transit: Understanding Emerging Solutions
+language: en
+
+document_id: 607b0a9b-4adc-482c-a408-d8350f103955
+external_id: 2021_el-costo-de-la-expansion-urbana-en-mexico_2705
+title: El costo de la expansión urbana en México
+language: es
+
+document_id: 4e8e07e7-f2ae-4f0c-8863-32cbd80f7332
+external_id: 2021_el-costo-de-la-expansion-urbana-en-mexico_9471
+title: El costo de la expansión urbana en México
+language: es
+
+document_id: c24caa2b-f1e6-4721-ba78-1faae7e91f68
+external_id: 2021_electrifying-ride-hailing-in-the-united-states_1753
+title: Electrifying Ride-Hailing in the United States, Europe, and Canada: How to Enable Ride-Hailing Drivers to Switch to Electric Vehicles
+language: en
+
+document_id: b5ae8180-7894-40fd-9565-33b974848fc8
+external_id: 2021_future-mobility-calculator-an-electric-mobility_8375
+title: Future Mobility Calculator: An electric mobility infrastructure tool
+language: en
+
+document_id: 72d29f56-cee9-4a15-ad4d-baf622cbf0a3
+external_id: 2021_future-mobility-calculator-an-electric-mobility_8974
+title: Future Mobility Calculator: An electric mobility infrastructure tool
+language: en
+
+document_id: 27f0deb5-b590-4124-b83c-2515ea7481ed
+external_id: 2021_impact-driven-investing-in-new-mobility_9121
+title: Impact-Driven Investing in New Mobility Enterprises: Perspectives from Kampala, Uganda, and Hyderabad, India
+language: en
+
+document_id: d4778856-e28c-47df-9e55-b50744f12817
+external_id: 2021_low-speed-zone-guide_6603
+title: Low-Speed Zone Guide
+language: en
+
+document_id: fb609d32-b9a0-4d30-af42-658dce515f90
+external_id: 2021_medindo-mp25-com-sensores-de-baixo-custo_6821
+title: Medindo MP2,5 com Sensores de Baixo Custo
+language: pt
+
+document_id: f9debea4-e4fb-4db3-8685-22f4b51036cb
+external_id: 2021_mexican-cities-expansion-trends-and-their-impacts_9595
+title: Mexican Cities: Expansion trends and their impacts
+language: en
+
+document_id: ec0bd5db-197c-4533-b4ed-2968bfe5ca8c
+external_id: 2021_mexico-frontrunners-adapting-to-climate-change-in_8904
+title: Mexico Frontrunners | Adapting to climate change in mountain cities: Lessons from Xalapa, Mexico.
+language: en
+
+document_id: 15faec69-be41-4b2d-ad99-8d43be3e5345
+external_id: 2021_mexico-frontrunners-creating-safe-affordable-and_5127
+title: Mexico Frontrunners | Creating safe, affordable and sustainable housing in cities: Lessons from EcoCasa in Hermosillo
+language: en
+
+document_id: effdc486-07e4-49ee-831d-7d7ca8d01b36
+external_id: 2021_mexico-frontrunners-creating-safe-affordable-and_6429
+title: Mexico Frontrunners | Creating safe, affordable and sustainable housing in cities: Lessons from EcoCasa in Hermosillo
+language: en
+
+document_id: f99a0200-7655-416f-8bd5-fb4415338dba
+external_id: 2021_mexico-frontrunners-sustainable-mobility-for_2332
+title: Mexico Frontrunners | Sustainable mobility for sustainable cities: Lessons from cycling schemes in Mexico City and Guadalajara, Mexico
+language: en
+
+document_id: 521b1d88-fbef-4127-be18-037f2c921bef
+external_id: 2021_open-communication-protocols-vehicle-grid_1665
+title: Open Communication Protocols Vehicle Grid Integration China Global Experiences
+language: zh
+
+document_id: 0891a0e6-488f-46af-804c-92b8b3ec3ae2
+external_id: 2021_pole-mounted-electric-vehicle-charging_6046
+title: Pole-Mounted Electric Vehicle Charging: Preliminary Guidance for a Low-Cost and More Accessible Public Charging Solution for U.S. Cities
+language: en
+
+document_id: 8bf8474d-0cb9-4cb3-9c6e-558b608a3551
+external_id: 2021_ruas-completas-no-brasil-promovendo-uma-mudanca_5028
+title: Ruas Completas no Brasil: Promovendo uma mudança de paradigma
+language: pt
+
+document_id: 231a37e2-fa2c-40c2-b961-0154d8d9a2d5
+external_id: 2021_safe-bicycle-lane-design-principles-responding-to_3441
+title: Safe Bicycle Lane Design Principles: Responding to Cycling Needs in Cities during COVID and Beyond
+language: en
+
+document_id: 4c1aba65-11e8-4954-bbc3-cb5abc92b668
+external_id: 2021_seizing-brazils-urban-opportunity_3268
+title: Seizing Brazil’s Urban Opportunity
+language: en
+
+document_id: a13c6fbb-9acd-4825-b5fc-46731e14a301
+external_id: 2021_seizing-chinas-urban-opportunity_00015
+title: 抓住中国城市机遇：将城市置于“十四五”规划以及气候韧性和净零排放国家愿景的核心位置
+language: zh
+
+document_id: efabf9bb-9f66-4727-a021-c497edab8f22
+external_id: 2021_seizing-chinas-urban-opportunity_9025
+title: Seizing China’s Urban Opportunity
+language: en
+
+document_id: cf12c06f-51a7-421f-bfe1-191da4d6dc1c
+external_id: 2021_seizing-indias-urban-opportunity_1949
+title: Seizing India’s Urban Opportunity
+language: en
+
+document_id: b848befb-8900-4465-a446-9ff58cb09c58
+external_id: 2021_seizing-indonesias-urban-opportunity_3408
+title: Seizing Indonesia’s Urban Opportunity
+language: en
+
+document_id: d640b2cb-4e88-401d-89bd-05fba70e61b3
+external_id: 2021_seizing-mexicos-urban-opportunity_3303
+title: Seizing Mexico’s Urban Opportunity
+language: en
+
+document_id: 597935f7-c542-491c-bde3-a9e3de990416
+external_id: 2021_seizing-south-africas-urban-opportunity_4664
+title: Seizing South Africa’s Urban Opportunity
+language: en
+
+document_id: dca3fd44-bfec-4d4f-9e2b-f5896491ebb2
+external_id: 2021_seizing-the-urban-opportunity_8690
+title: Seizing the Urban Opportunity
+language: en
+
+document_id: c4372bf8-ab48-46ff-baf9-1f85a396e3ac
+external_id: 2021_seven-transformations-for-more-equitable-and_8038
+title: Seven Transformations for More Equitable and Sustainable Cities
+language: en
+
+document_id: 23447a2a-f8f3-44ad-8339-f586edf4af4f
+external_id: 2021_simulator-to-quantify-and-manage-electric-vehicle_1145
+title: Simulator to Quantify and Manage Electric Vehicle Load Impacts on Low-voltage Distribution Grids
+language: en
+
+document_id: e6b6749e-2d73-4b3d-8319-c1c52eead885
+external_id: 2021_steering-a-green-healthy-and-inclusive-recovery_1692
+title: Steering a Green, Healthy, and Inclusive Recovery Through Transport
+language: en
+
+document_id: 6ebb35c4-be31-4679-a946-0fadca4f58b8
+external_id: 2021_synergizing-land-value-capture-and-transit_4839
+title: Synergizing Land Value Capture and Transit-Oriented Development: A Study of Bengaluru Metro
+language: en
+
+document_id: 693d9e5c-343c-4b47-9e1f-d818c01f4114
+external_id: 2021_water-resilience-in-a-changing-urban-context_8364
+title: Water Resilience in a Changing Urban Context: Africa's Challenge and Pathways for Action
+language: en
+
+document_id: 64342098-ff08-4d30-840b-6ac7d0deff6e
+external_id: 2021_zero-emission-logistic-vehicles-promotion_1319
+title: Zero-Emission Logistic Vehicles Promotion Challenges and Experiences: Beijing Case Study
+language: zh
+
+document_id: 6a5e424b-b894-450f-967e-1b64ddfd24d4
+external_id: 2022_china-road-transport-decarbonization_00145
+title: 迈向碳中和目标：中国道路交通领域中长期减排战略
+language: zh
+
+document_id: adafe321-99f8-4ebd-8a9c-f4752459fd13
+external_id: 2022_decarbonizing-chinas-road-transport-sector_2101
+title: Decarbonizing China's road transport sector: strategies towards carbon neutrality
+language: en
+
+document_id: 259e33fe-b08f-4295-8b31-14e5de45046c
+external_id: 2022_decarbonizing-hong-kongs-roads-pathways-towards-a_8751
+title: Decarbonizing Hong Kong’s Roads: Pathways Towards a Net-Zero Road Transport System
+language: en
+
+document_id: 1255d11e-a139-4d4a-bf4b-9e83e95a870c
+external_id: 2022_developing-an-electric-mobility-roadmap_8409
+title: Developing an Electric Mobility Roadmap: International Experiences from Subnational Case Studies for Vietnamese Cities
+language: en
+
+document_id: 1960c9fe-0ef5-4b6f-8b13-ef8e66f5a448
+external_id: 2022_guia-de-entornos-caminables-seguros_2940
+title: Guía de entornos caminables seguros
+language: es
+
+document_id: a3334c0d-9349-4c8e-bd7e-8d939c92cdd2
+external_id: 2022_impactar-tool-valuing-air-quality-health-impacts_4741
+title: ImpactAr Tool: Valuing Air Quality Health Impacts of Urban Bus Fleet Changes in Brazil (2022)
+language: en
+
+document_id: 987353ab-9454-473f-8f00-eb767750dd24
+external_id: 2022_impactos-economicos-pandemia-covid19-transporte-publico_0070
+title: IMPACTOS ECONÓMICOS DE LA PANDEMIA DE COVID-19 EN EL TRANSPORTE PÚBLICO URBANO EN CIUDADES MEXICANAS
+language: es
+
+document_id: bfd64910-a883-4af4-b80a-792bbb9796d5
+external_id: 2022_introduction-and-case-studies-of-mobility-as-a_9845
+title: Introduction and Case Studies of Mobility as a Service (MAAS) Practice Guide
+language: zh
+
+document_id: 0bcb1016-83f3-419e-95b3-d44e71b9b1a5
+external_id: 2022_nature-based-solutions-in-sub-saharan-africa-for_1106
+title: Nature-Based Solutions in Sub-Saharan Africa for Climate and Water Resilience
+language: en
+
+document_id: 47b63c82-42d3-4fc0-aebb-bff94205e6a1
+external_id: 2022_research-on-medium-and-long-term-in-depth_4687
+title: Research on Medium- and Long-Term In-Depth Emission Reduction in Guangdong Province's Road Traffic Sector
+language: zh
+
+document_id: 57f1a3a5-9595-4907-82a7-d50dccb300f0
+external_id: 2022_rolling-out-electric-buses-a-guidebook-on-route_8515
+title: Rolling out Electric Buses: A guidebook on route prioritization and implementation planning.
+language: en
+
+document_id: afd4ede8-d163-4b1d-a12c-8a03c52d4a39
+external_id: 2022_sustainable-urban-mobility-in-the-ndcs-the_7992
+title: Sustainable Urban Mobility in the NDCs: The Essential Role of Public Transport
+language: en
+
+document_id: 31357e21-e493-4441-898d-e183f1fb5c28
+external_id: 2022_technical-note-for-a-dataset-of-us-school-bus_8896
+title: Technical Note for a Dataset of U.S. School Bus Fleets
+language: en
+
+document_id: 47c2ea7a-c619-4ab6-ac8e-e7912e42f1c3
+external_id: 2022_toward-credible-transport-carbon-dioxide_3778
+title: Toward Credible Transport Carbon Dioxide Emissions Accounting in China
+language: zh
+
+document_id: 6d7fa69b-fcee-4bf0-92e8-bcb0a5d10dde
+external_id: 2022_toward-credible-transport-carbon-dioxide_5852
+title: Toward Credible Transport Carbon Dioxide Emissions Accounting in China
+language: zh
+
+document_id: f4f38285-619f-43ef-927e-72bf594f9a4e
+external_id: 2022_transport-co2-accounting_00015
+title: 精准施策：中国省级交通领域二氧化碳排放核算方法研究
+language: zh
+
+document_id: cc24b4fd-79ca-4ccf-b326-81fe754c57ab
+external_id: 2022_urban-blue-green-conundrum-a-10-city-study-on-the_4962
+title: Urban Blue-Green Conundrum: A 10-City Study on the Impacts of Urbanization on Natural Infrastructure in India
+language: en
+
+document_id: c1660ebb-839e-407c-bcd8-ddd1fdf2f1ca
+external_id: 2022_zero-emission-delivery-zones-decarbonizing-urban_6979
+title: Zero-Emission Delivery Zones: Decarbonizing Urban Freight and Goods Delivery in U.S. Cities
+language: en
+
+document_id: c9e4deee-ca0c-4456-860e-e0dd6defe541
+external_id: 2023_accelerating-the-production-and-use-of-green_9683
+title: Accelerating the Production and Use of Green Hydrogen
+language: en
+
+document_id: 2e5d79b9-7077-43a2-bc48-3661e7d3fd36
+external_id: 2023_analisis-de-los-mecanismos-financieros-para-la_3765
+title: Análisis de los mecanismos financieros para la sostenibilidad del transporte público en ciudades mexicanas
+language: es
+
+document_id: cc5fa180-521e-4634-b120-fc63271af469
+external_id: 2023_assessing-low-carbon-strategies-of-local_2130
+title: Assessing Low-Carbon Strategies of Local Governments Through the Lens of Climate Policy Coverage
+language: zh
+
+document_id: 9df7e1b9-40a4-46ad-946c-2393bc0c619b
+external_id: 2023_assessing-the-environmental-impact-of-shared_4976
+title: Assessing the Environmental Impact of Shared Micromobility Services: A Guide for Cities
+language: en
+
+document_id: 221667a3-181b-48ea-9c1f-1aee335b759e
+external_id: 2023_assessing-the-viability-of-using-autorickshaws_2146
+title: Assessing the Viability of Using Autorickshaws for Urban Freight Delivery in India
+language: en
+
+document_id: fc1656ae-df10-4175-ae01-e8025c03d66f
+external_id: 2023_base-de-datos-ajustada-de-la-encuesta-origen_2276
+title: Base de datos ajustada de la Encuesta Origen-Destino para la Zona Metropolitana del Valle de México, 2017
+language: es
+
+document_id: 8681e85b-7bdc-416a-968f-3c0df62e99e3
+external_id: 2023_calculating-indicators-from-global-geospatial_1820
+title: Calculating Indicators From Global Geospatial Data Sets for Benchmarking and Tracking Change in the Urban Environment
+language: en
+
+document_id: 911f70d2-f0e9-4e57-aa4a-e5aea87ee150
+external_id: 2023_changing-the-demand-preference-for-electric_8865
+title: Changing the Demand Preference for Electric Vehicles in Ho Chi Minh City: Costs and Benefits From Incentives in the Early Stages of Adoption
+language: en
+
+document_id: 7009a0f3-2f87-4c92-bacf-490b3cde7e09
+external_id: 2023_ciencia-participativa-accion-para-un-aire-limpio_6722
+title: Ciencia participativa: acción para un aire limpio
+language: es
+
+document_id: 8dfb646f-9cd0-484a-b3c0-3db87a43e40e
+external_id: 2023_deciphering-chinas-provincial-transport-carbon_5424
+title: Deciphering China’s Provincial Transport Carbon Emissions: Status Quo and Growth Trends
+language: zh
+
+document_id: 34421981-7700-4779-bd81-981db95cfdbf
+external_id: 2023_developing-an-electric-mobility-roadmap-for_9237
+title: Developing an Electric Mobility Roadmap for Vietnam: Global Experiences From National Case Studies
+language: en
+
+document_id: f41df91b-138d-4dd6-9ba8-d95d2d911009
+external_id: 2023_electric-school-bus-us-market-study-and-buyers_1646
+title: Electric School Bus U.S. Market Study and Buyer’s Guide: A Resource for School Bus Operators Pursuing Fleet Electrification
+language: en
+
+document_id: 56ba8eb6-2fff-4644-8bb0-a09504594499
+external_id: 2023_electric-school-bus-us-market-study-and-buyers_5598
+title: Electric School Bus U.S. Market Study and Buyer’s Guide: A Resource for School Bus Operators Pursuing Fleet Electrification
+language: en
+
+document_id: 66ec635b-1731-4c60-9359-a1dff731f18a
+external_id: 2023_estimating-future-local-climate-hazard_4480
+title: Estimating Future Local Climate Hazard Probabilities
+language: en
+
+document_id: 1fd246fc-08b4-4d1d-b80a-f233990cf9ee
+external_id: 2023_exploring-wri-ross-centers-experience-in-mexico_6692
+title: Exploring WRI Ross Center’s Experience in Mexico City: A Deep City-Level Engagement Approach
+language: en
+
+document_id: 3d31df40-4d1e-4110-a334-8603d6125ebe
+external_id: 2023_financial-analysis-of-charging-station-fact_2082
+title: Financial Analysis of Charging station (FACt)
+language: en
+
+document_id: 30da3896-aa7d-4de8-9025-0cae4f51ee31
+external_id: 2023_improving-metro-access-in-india_1276
+title: Improving Metro Access in India
+language: en
+
+document_id: 167e4351-3cf3-4e21-941f-768cfd6a8db3
+external_id: 2023_local-government-climate-policy_00092
+title: 基于气候政策覆盖度看地方政府低碳策略
+language: zh
+
+document_id: 43f3b81b-af5b-4e17-a01c-71786ef1fbf5
+external_id: 2023_morphology-of-delhi-national-capital-regions_3263
+title: Morphology of Delhi National Capital Region’s Economic Geography and Its Implications for Planning
+language: en
+
+document_id: 41375643-c698-44e7-9d29-88ea477cba8f
+external_id: 2023_our-journey-with-the-city-deciphering-wri-india_5344
+title: Our Journey with the City: Deciphering WRI India Ross Center’s Influence in Bengaluru
+language: en
+
+document_id: cb5982c5-2e9b-4be7-bf38-1eecb58a4cd6
+external_id: 2023_pathway-green-transition-transport-mexico_0121
+title: A Pathway for a Green Transition of the Transport Sector in Mexico: Feasible Interventions That Are Environmentally, Economically, and Socially Beneficial
+language: en
+
+document_id: aa17469b-a9ee-49ea-a287-ceba8e184ed9
+external_id: 2023_public-bicycle-sharing-in-india-lessons-learned_1422
+title: Public Bicycle Sharing in India: Lessons Learned from Implementation in Three Cities
+language: en
+
+document_id: 17d3d0cc-1733-496f-b4b4-ddb6e15767c4
+external_id: 2023_supporting-the-energy-transition-by-addressing_6756
+title: Supporting the Energy Transition by Addressing Technology Gaps of Electrolyzers
+language: en
+
+document_id: 02603294-1f0e-406a-896a-3f6c44666b0b
+external_id: 2023_visioning-to-implementation-national-transport_8631
+title: Visioning to Implementation: National Transport Decarbonization Policies That Match Climate Targets in China, India, and Vietnam
+language: en
+
+document_id: f2e680d0-ba7f-4680-a735-e9932a29f1ba
+external_id: 2024_accelerating-nature-based-solutions-in-brazilian_3331
+title: Accelerating Nature-Based Solutions in Brazilian Cities
+language: en
+
+document_id: b4aa3e77-d14b-4efd-a281-04c490a58b27
+external_id: 2024_accelerating-zero-emission-truck-adoption-in_6287
+title: Accelerating zero emission truck adoption in urban applications: Beijing analysis and recommendations
+language: zh
+
+document_id: 104d4074-8931-4a10-a520-42e074273cff
+external_id: 2024_access-to-climate-finance-in-low-and-middle_4708
+title: Access to Climate Finance in Low and Middle-Income Countries: 14 Case Studies in the Transport Sector
+language: en
+
+document_id: 03ed3347-d07c-47b9-baea-64b111a8255b
+external_id: 2024_a-comparative-study-of-low-carbon-development_7471
+title: A Comparative Study of Low-Carbon Development Levels in Over 100 Cities Worldwide: Insights into China's Urban Low-Carbon Development Path
+language: zh
+
+document_id: 02eb81cc-9359-4b1f-b01a-cc6cb3b775f7
+external_id: 2024_a-fare-look-funding-urban-public-transport_7541
+title: A Fare Look: Funding Urban Public Transport Operations
+language: en
+
+document_id: 4bdbed99-9ea1-4970-8572-46cc0de51465
+external_id: 2024_assessing-financing-challenges-for-implementing_4732
+title: Assessing Financing Challenges for Implementing the Large-scale Electric Bus Program in India
+language: en
+
+document_id: ee5cc94b-d61a-4b1e-a05a-84a0124a13a2
+external_id: 2024_city-scale-city-relevant-climate-hazard_3175
+title: City-Scale, City-Relevant Climate Hazard Indicators Under 1.5°C, 2.0°C, and 3.0°C of Global Warming
+language: en
+
+document_id: 0540a282-59d9-4040-9a03-e592ab48140d
+external_id: 2024_climate-resilient-cities-assessing-differential_1543
+title: Climate Resilient Cities: Assessing Differential Vulnerability to Climate Hazards in Urban India
+language: en
+
+document_id: 6a97168e-00c0-41f5-b8c7-18c50b6059f8
+external_id: 2024_dataset-of-us-school-bus-depots_6105
+title: Dataset of U.S. School Bus Depots
+language: en
+
+document_id: 029a7718-8880-4787-ac6c-d737db666287
+external_id: 2024_electrifying-us-school-bus-fleets-equitably-to_7005
+title: Electrifying US School Bus Fleets Equitably to Reduce Air Pollution Exposure in Underserved Communities
+language: en
+
+document_id: e193b464-ac71-401a-ba08-f7f9c88ac389
+external_id: 2024_enabling-the-shift-to-electric-auto-rickshaws-a_6804
+title: Enabling the Shift to Electric Auto-Rickshaws: A Guidebook for Electrification of Auto-rickshaw Fleets in Indian Cities
+language: en
+
+document_id: 751b772e-6903-4c56-aeb0-09a72ff54360
+external_id: 2024_feasibility-of-zero-emission-freight-zones_1267
+title: Feasibility of zero emission freight zones: scenario analysis and risk assessment
+language: zh
+
+document_id: c5598372-e832-40f1-a779-4ccfe69b1327
+external_id: 2024_guide-for-safe-speeds-managing-traffic-speeds-to_4833
+title: Guide for Safe Speeds: Managing Traffic Speeds to Save Lives and Improve Livability | GRSF
+language: en
+
+document_id: 94b2925b-c24f-4e8a-8846-64901d96165b
+external_id: 2024_jobs-near-metro-rail-transit-in-bengaluru_9210
+title: Jobs Near Metro Rail Transit in Bengaluru: Enabling an Accessible and Productive City
+language: en
+
+document_id: 3d6680ad-5127-43fc-bf01-76d22bfda214
+external_id: 2024_manual-da-pesquisa-de-satisfacao-qualionibus_7600
+title: Manual da Pesquisa de Satisfação QualiÔnibus
+language: pt
+
+document_id: a2935bf9-f8fb-4312-88e8-e1b2b56de1bd
+external_id: 2024_open-e-bus-blueprint_4307
+title: Open E-Bus Blueprint
+language: en
+
+document_id: e36cae4c-c6fb-441b-adf0-f43e2aec9ad9
+external_id: 2024_optimizing-container-ports-transportation-and_9894
+title: Optimizing container ports’ transportation and Distribution systems toward a low-carbon future: A Shenzhen port case study
+language: zh
+
+document_id: eeaa3d0f-fe94-4518-a63a-f6b5f2686fc6
+external_id: 2024_pathways-to-decarbonize-indias-transport-sector_2978
+title: Pathways to decarbonize India’s transport sector: Scenario analysis using the Energy Policy Simulator
+language: en
+
+document_id: efda7d35-7dc2-4d09-9421-aedba634439e
+external_id: 2024_real-world-electric-bus-operation-trend-in_3497
+title: Real-world Electric Bus Operation: Trend in Technology, Performance, Degradation, and Lifespan of Batteries
+language: en
+
+document_id: dad9e5fc-83a4-45a6-8cff-075144238eb3
+external_id: 2024_stronger-ndcs-with-cities-states-and-regions_3703
+title: Stronger NDCs With Cities, States, and Regions: Recommendations for National Governments
+language: en
+
+document_id: d79ef747-9490-461c-b9da-27c7a96ee033
+external_id: 2024_techno-economic-feasibility-analysis-of-zero_7051
+title: Techno-Economic Feasibility Analysis of Zero-Emission Trucks in Urban and Regional Delivery Use Cases: A Case Study of Guangdong Province, China
+language: en
+
+document_id: 61d7d9a2-7881-4b35-a553-ad9382520094
+external_id: 2024_zero-emission-trucks-guangdong_00006
+title: 新能源货车在城市和区域运输场景中的技术与经济可行性分析：以中国广东省为例
+language: zh
+
+document_id: fc4027eb-30c3-45c7-b78b-b0579e000aee
+external_id: 2025_accessibility-to-public-green-areas-case-study-in_6254
+title: Accessibility to public green areas: case study in Belo Horizonte, Brazil
+language: en
+
+document_id: 7f874e0e-1c87-483d-8802-1c0c1bc46773
+external_id: 2025_aire-limpio-en-barrios-vitales_9425
+title: Aire limpio en Barrios Vitales
+language: es
+
+document_id: c3613213-e4e3-4864-8d58-65ed2e09605b
+external_id: 2025_a-just-transition-in-the-downstream-automotive_1481
+title: A “just” Transition in the Downstream Automotive Segment: Evidence from Delhi
+language: en
+
+document_id: 6d9c53f2-d8d0-450b-8f79-2db5a104108d
+external_id: 2025_assessing-supply-chain-barriers-to-and_3205
+title: Assessing Supply Chain Barriers to and Opportunities for Advancing Road Transport Electrification in Kenya
+language: en
+
+document_id: b27e589f-28e6-4a2e-bd79-3003b2a3d165
+external_id: 2025_calculating-indicators-from-global-geospatial_3765
+title: Calculating Indicators From Global Geospatial Data Sets for Benchmarking and Tracking Change in the Urban Environment
+language: en
+
+document_id: 7c2e200e-9c01-4acd-b5ef-a18041a7f258
+external_id: 2025_charging-toward-2035-policies-to-accelerate-zero_7455
+title: Charging toward 2035: Policies to accelerate zero-emission heavy-duty trucks in China’s regional and long-haul freight
+language: en
+
+document_id: 3517c812-27be-4c06-b9fd-e833fdad543c
+external_id: 2025_completing-the-trip-establishing-a-global_1426
+title: Completing the Trip: Establishing a Global Quantified Climate Goal for the Transport Sector
+language: en
+
+document_id: 16c757a6-7c3b-466c-a621-cb096ad000f1
+external_id: 2025_driving-forward-on-a-clean-ride-for-kids_5008
+title: Driving Forward on a Clean Ride for Kids
+language: en
+
+document_id: fa6ff7b4-df6c-4d03-a46b-2eb00f0bb375
+external_id: 2025_fare-free-bus-travel-scheme-for-women-lessons_2822
+title: Fare-free Bus Travel Scheme for Women: Lessons from Delhi
+language: en
+
+document_id: ce8572d8-0ba6-4424-a9a6-e87a4b56e4fd
+external_id: 2025_financial-impact-assessment-for-zero-emission_8156
+title: Financial Impact Assessment for Zero-Emission Trucks (Fi-ZET)
+language: en
+
+document_id: f829dac4-6efe-4e7a-8216-1a02898cb7fe
+external_id: 2025_from-concept-to-application-analyzing-just_6237
+title: From Concept to Application: Analyzing Just Transition in the Core Climate Documents of 80 Paris Agreement Parties
+language: zh
+
+document_id: 417854e8-d84a-4ff5-84e6-2e2f23de94f3
+external_id: 2025_improving-school-infrastructure-for-healthier_3532
+title: Improving School Infrastructure for Healthier Students and Communities
+language: en
+
+document_id: b83a188b-58ce-400a-b5fa-1ad43d129049
+external_id: 2025_motorcycle-safety-and-urban-road-infrastructure_8478
+title: Motorcycle safety and urban road infrastructure
+language: en
+
+document_id: e313372e-4880-4a0f-bd30-5fd66ec0740c
+external_id: 2025_multilevel-action-for-community-led-climate_7058
+title: Multilevel Action for Community-led Climate Resilience in Informal Settlements
+language: en
+
+document_id: 7f11d67a-02ec-402f-9072-c58ff877da2c
+external_id: 2025_navigating-sustainability-comparative-study-of_3814
+title: Navigating sustainability: Comparative Study of China’s and International Standards for Sustainable Transportation Fuels
+language: zh
+
+document_id: 2781162e-c0d8-4524-9a7b-debb2a52fe32
+external_id: 2025_needs-assessment-for-equitable-school-bus_6149
+title: Needs Assessment for Equitable School Bus Electrification in U.S. School Districts
+language: en
+
+document_id: 3846a69b-a5b1-43f2-a24c-d3de4f949595
+external_id: 2025_panduan-pelaksanaan-inventarisasi-pohon-perkotaan_4324
+title: Panduan Pelaksanaan Inventarisasi Pohon Perkotaan
+language: en
+
+document_id: 8197ebe9-1a2d-4c97-8ae3-dfbed85116c3
+external_id: 2025_roadmap-to-100-electrifying-the-full-us-school_7216
+title: Roadmap to 100: Electrifying the full US school bus fleet
+language: en
+
+document_id: dbf213bc-d445-461a-bb95-ed66ea0936aa
+external_id: 2025_safer-streets-in-mumbai-reflecting-on-a-decade-of_7058
+title: Safer Streets in Mumbai: Reflecting on a Decade of Processes & Solutions for Road Safety
+language: en
+
+document_id: 5b78f24d-ba54-4b4e-b213-821162ce5f16
+external_id: 2025_seguridad-de-motociclistas-infraestructura-vias-urbanas_0030
+title: Seguridad de motociclistas e infraestructura de vías urbanas: Recomendaciones para el diseño y la planificación de vías urbanas para reducir el número de usuarios fallecidos y lesionados de vehículos con motor de dos ruedas en países de ingresos bajos y medios
+language: es
+
+document_id: 9947fa60-28b4-4130-babc-31dd943f851c
+external_id: 2025_technical-note-for-a-dataset-modeling-the_1957
+title: Technical Note for a Dataset Modeling the Societal Health and Climate Benefits Associated With Transitioning the US School Bus Fleet From Diesel to Electric
+language: en
+
+document_id: 0e9005a7-d6b3-42d8-ade3-0d29e144fbc9
+external_id: 2025_technical-note-for-a-dataset-of-electric-school_9675
+title: Technical Note for A Dataset Of Electric School Bus Adoption In The United States
+language: en
+
+document_id: c1d991ac-b5ea-42ce-8400-ce439bf9f1e8
+external_id: 2025_the-projected-ev-transition-in-the-indian_3470
+title: The Projected EV Transition in the Indian Automotive Manufacturing Industry: Perceptions and Enterprise-level Strategies
+language: en
+
+document_id: 71d8b96a-2b04-4d5c-ac13-aaad1ca2fe63
+external_id: 2025_toward-a-framework-to-support-better-decision_4539
+title: Toward a Framework to Support Better Decision-making in India’s Mobility Planning: Supply, Demand, and Performance
+language: en
+
+document_id: 74679054-5a26-4bf4-b11a-cad6c4382ca0
+external_id: 2025_trinta-anos-de-expansao-vertical-e-horizontal-em_9049
+title: Trinta anos de expansão vertical e horizontal em cidades brasileiras
+language: pt
+
+document_id: 00be4a1d-33cc-4b56-a4d5-d15af0a5cc27
+external_id: 2025_zero-emission-heavy-duty-trucks_00015
+title: 驶向2035: 中国新能源重卡在区域与长途运输场景中的推广潜力研究
+language: zh
+
+document_id: 41a31988-aedd-48b1-a4b4-396505311935
+external_id: 2026_50-anos-ciclovia-bogota_XXXX
+title: 50 años de la Ciclovía de Bogotá
+language: es
+
+document_id: 4a5674cd-33f5-4d0f-98ba-56ebe9a5f101
+external_id: 25May_Battery Aadhaar For India_Expert Note
+title: Battery Aadhaar for India: Potential Pathways for a Domestic Battery Data Management Framework
+language: en
+
+document_id: f19176ab-0935-459f-b03a-2ccda62cadb9
+external_id: 26_tech_esb-adoption_version-10
+title: Technical Note for a Dataset of Electric School Bus Adoption in the United States
+language: en
+
+document_id: 0a8a9a04-1e47-4820-8ac4-0e71a6a8875f
+external_id: assessing-urban-road-networks-using-geospatial-metrics_c
+title: Assessing Urban Road Networks Using Geospatial Metrics
+language: en
+
+document_id: 2151c919-9c07-4e75-9ada-20cadbf1935b
+external_id: bridging-national-and-local-climate-adaptation-in-brazil-india-and-indonesia
+title: Vertical Integration: Bridging National and Local Climate Adaptation in Indonesia, Brazil and India
+language: en
+
+document_id: 240a2ee1-0c9f-4b41-aa3a-2e65c238562e
+external_id: climate-readiness-urban-transformation-wri-ross-center-prize-for-cities-cycle-2023-2024
+title: Climate Readiness As a Driver of Urban Transformation: Lessons From the WRI Ross Center Prize for Cities Cycle 2023–2024
+language: en
+
+document_id: 4dad4bef-fbb8-4972-9856-af803e5b0906
+external_id: FINAL_Working Paper_Just Transition_1905
+title: Driving a Just EV Transition in India: Supply Chain Practices for Large Automotive Manufacturing Enterprises
+language: en
+
+document_id: 7eadad61-eec8-485d-8bd4-fa376cc738f6
+external_id: flooding-nairobi-informal-settlements
+title: Flooding in Nairobi's Informal Settlements: Advancing Equitable and Resilient Solutions
+language: en
+
+document_id: 5ce0e576-54cc-43ed-95bd-fc2c2c3000c5
+external_id: mapping-scenarios-and-estimating-the-potential-for-heat-resilient-infrastructure-in-cities-technical-note
+title: Mapping Scenarios and Estimating the Potential for Heat-Resilient Infrastructure in Cities
+language: en
+
+document_id: 2be35c4c-552a-4329-a31e-a0d76bc7030b
+external_id: modeling-hyperlocal-heat-exposure-with-open-source-data
+title: Modeling Hyperlocal Heat Exposure With Open-Source Data
+language: en
+
+document_id: 25c1f96e-1925-4c62-a2a1-55eb2a36adbe
+external_id: using-flexible-funding-in-long-horizon-urban-transformation-work-evidence-from-the-wri-ross-center-deep-dive-initiative
+title: Using Flexible Funding in Long-Horizon Urban Transformation Work: Evidence from the WRI Ross Center Deep Dive Cities Initiative
+language: en
+
+document_id: 67e8f418-46a5-4991-a0eb-a083c55b658b
+external_id: wri_brasil-root_causes_2024_disaster_rs
+title: Understanding Risk Construction: Root Causes of the 2024 Climate Disaster in Rio Grande do Sul
+language: en
+
+document_id: a73128e7-3da6-4825-8b18-03f2bde66f20
+external_id: wri-india-nup-report
+title: Equitable, Productive, Low-Carbon and Resilient System of Cities in India: National Urbanization Policy Recommendations
+language: en
+
