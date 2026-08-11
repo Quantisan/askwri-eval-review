@@ -129,6 +129,54 @@
       "difficulty": "medium",
       "query_type": "behavioral_impact",
       "note": "Source doc (zh, external_id 2020_dockless-bike-sharing_00124) has a possible English twin (2020_how-dockless-bike-sharing-changes-lives-an_2277)."
+    },
+    {
+      "id": "q8_yantian-port-mode-shift-targets",
+      "question": "Can Yantian Port realistically meet the mode-shift targets set in Shenzhen's Master Plan (2035), or would it require more aggressive measures than a \"stated policy\" trajectory?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2024_optimizing-container-ports-transportation-and_9894"
+      ],
+      "expected_document_ids": [
+        "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9"
+      ],
+      "source_document_id": "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9",
+      "source_language": "zh",
+      "difficulty": "hard",
+      "query_type": "policy_feasibility",
+      "note": ""
+    },
+    {
+      "id": "q9_yantian-port-rail-water-barriers",
+      "question": "What are the barriers to expanding rail-water intermodal transport (road-to-rail) at Yantian Port?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2024_optimizing-container-ports-transportation-and_9894"
+      ],
+      "expected_document_ids": [
+        "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9"
+      ],
+      "source_document_id": "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9",
+      "source_language": "zh",
+      "difficulty": "medium",
+      "query_type": "barrier_analysis",
+      "note": ""
+    },
+    {
+      "id": "q10_yantian-port-drayage-electrification-co2",
+      "question": "How much would well-to-wheel CO2 emissions decline if drayage truck electrification reached 95% by 2035 at Yantian Port, and how does that compare to rail and water mode-shift measures?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2024_optimizing-container-ports-transportation-and_9894"
+      ],
+      "expected_document_ids": [
+        "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9"
+      ],
+      "source_document_id": "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9",
+      "source_language": "zh",
+      "difficulty": "hard",
+      "query_type": "quantitative_projection",
+      "note": ""
     }
   ]
 }

@@ -202,6 +202,90 @@
       "source_document_id": "98cc253e-8d96-4499-b67a-38baffe2f3f2",
       "source_language": "zh",
       "note": "Source doc (zh, external_id 2020_dockless-bike-sharing_00124) has a possible English twin (2020_how-dockless-bike-sharing-changes-lives-an_2277). canonical_answer/key_facts drafted from reviewer's docreview notes."
+    },
+    {
+      "id": "q8_yantian-port-mode-shift-targets",
+      "question": "Can Yantian Port realistically meet the mode-shift targets set in Shenzhen's Master Plan (2035), or would it require more aggressive measures than a \"stated policy\" trajectory?",
+      "query_type": "policy_feasibility",
+      "difficulty": "hard",
+      "retrieval_ground_truth": {
+        "expected_external_ids": [
+          "2024_optimizing-container-ports-transportation-and_9894"
+        ],
+        "expected_document_ids": [
+          "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9"
+        ],
+        "expected_passages": []
+      },
+      "synthesis_ground_truth": {
+        "canonical_answer": "Yantian Port would find it very difficult to meet the mode-shift targets set in Shenzhen's Master Plan (2035) without aggressive policy measures. Under the \"Stated_policy\" (realistic/conservative) scenario, the port cannot reach the targets by either 2025 or 2035, and roadways would still account for the majority of throughput; even by 2025 there is almost no progress, with well-to-wheel CO2 emissions falling only 1% versus 2022 and road throughput actually rising 5% above 2022 levels. Only the \"Enhanced_policy\" scenario achieves the targets: by 2035, railways and waterways combined account for over 50% of port throughput (roadway share drops to 35%, waterway rises to 45%, and railway to 20%). Reaching the Enhanced_policy targets therefore requires aggressive short-term action, such as accelerating the Yantian-Pinghunan railway retrofit, since the Stated_policy trajectory alone is insufficient.",
+        "key_facts": [
+          "The scenario analysis found it would be very difficult for Yantian Port to reach the Master Plan (2035) mode-shift targets without aggressive measures.",
+          "Under the \"Stated_policy\" (realistic/conservative) scenario, the port cannot reach the targets by either 2025 or 2035; roadways would still account for the majority of throughput.",
+          "Only the \"Enhanced_policy\" scenario assumes the targets are met: by 2035, railways and waterways combined account for over 50% of port throughput (roadway share drops to 35%, waterway to 45%, railway to 20%).",
+          "Even in the Stated_policy scenario, 2025 shows almost no progress - WTW CO2 emissions fall only 1% versus 2022, and road throughput actually rises 5% above 2022 levels.",
+          "Conclusion: achieving the Enhanced_policy targets requires aggressive short-term action (e.g., accelerating the Yantian-Pinghunan railway retrofit), since the Stated_policy trajectory alone is insufficient."
+        ]
+      },
+      "source_document_id": "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9",
+      "source_language": "zh",
+      "note": ""
+    },
+    {
+      "id": "q9_yantian-port-rail-water-barriers",
+      "question": "What are the barriers to expanding rail-water intermodal transport (road-to-rail) at Yantian Port?",
+      "query_type": "barrier_analysis",
+      "difficulty": "medium",
+      "retrieval_ground_truth": {
+        "expected_external_ids": [
+          "2024_optimizing-container-ports-transportation-and_9894"
+        ],
+        "expected_document_ids": [
+          "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9"
+        ],
+        "expected_passages": []
+      },
+      "synthesis_ground_truth": {
+        "canonical_answer": "Expanding rail-water intermodal transport at Yantian Port faces several barriers. Rail infrastructure capacity is limited: the Yantian-Pinghunan railway (built 1994) is a single non-electrified track with low capacity, handling only about 1% of Yantian Port's container throughput as of 2022, and the parallel Pingnan railway serving the western port area was actually demolished to make way for Qianhai district road network construction. Cargo sources for rail are unstable and limited - rail freight volumes are inconsistent, so railways don't prioritize container shipments, causing unreliable empty-container allocation, scheduling, and delivery times. Cost is also a barrier: rail \"door-to-door\" pricing (about 3,290 RMB, Yantian to Qingyuan) is higher than trucking (about 2,200 RMB) under current pricing mechanisms, though trunk-line rail discounts (50-60%) and subsidies (200 RMB/TEU) can nearly close the gap. Rail is also slower: it takes nearly 3 days from container pickup to return, versus 1 day for trucking, due to marshalling/decoupling steps and dependency on train scheduling, empty wagons, and loading slots. A retrofit is already underway - the Yantian-Pinghunan railway upgrade (to double-track, electrified, 120 km/h) began construction in December 2022, targeting completion around 2027.",
+        "key_facts": [
+          "Rail infrastructure capacity: the Yantian-Pinghunan railway (built 1994) is a single non-electrified track with low capacity, handling only ~1% of Yantian Port's container throughput as of 2022.",
+          "The parallel Pingnan railway serving the western port area was actually demolished to make way for Qianhai district road network construction.",
+          "Unstable/limited cargo sources: rail freight volumes are inconsistent, so railways don't prioritize container shipments, causing unreliable empty-container allocation, scheduling, and delivery times.",
+          "Cost: rail \"door-to-door\" pricing (~3,290 RMB, Yantian to Qingyuan) is higher than trucking (~2,200 RMB) under current pricing mechanisms, though trunk-line rail discounts (50-60%) and subsidies (200 RMB/TEU) can nearly close the gap.",
+          "Time competitiveness: rail transport takes nearly 3 days (container pickup to return) versus 1 day for trucking, due to marshalling/decoupling steps and dependency on train scheduling, empty wagons, and loading slots.",
+          "Retrofitting is underway: the Yantian-Pinghunan railway upgrade (to double-track, electrified, 120 km/h) began construction in December 2022, targeting completion around 2027."
+        ]
+      },
+      "source_document_id": "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9",
+      "source_language": "zh",
+      "note": ""
+    },
+    {
+      "id": "q10_yantian-port-drayage-electrification-co2",
+      "question": "How much would well-to-wheel CO2 emissions decline if drayage truck electrification reached 95% by 2035 at Yantian Port, and how does that compare to rail and water mode-shift measures?",
+      "query_type": "quantitative_projection",
+      "difficulty": "hard",
+      "retrieval_ground_truth": {
+        "expected_external_ids": [
+          "2024_optimizing-container-ports-transportation-and_9894"
+        ],
+        "expected_document_ids": [
+          "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9"
+        ],
+        "expected_passages": []
+      },
+      "synthesis_ground_truth": {
+        "canonical_answer": "If drayage truck electrification at Yantian Port reached 95% fleet penetration by 2035 (assuming truck energy consumption also improves to 100 kWh/100km and Greater Bay Area grid emission factors drop to 0.36 tonnes CO2/MWh), well-to-wheel (WTW) CO2 emissions would fall 71% versus 2022, compared to only a 50% reduction under the Enhanced_policy scenario's base assumption of just 15% battery-electric truck penetration. In the 2035 Enhanced_policy scenario (a business-as-usual baseline of 392, in 10,000-tonne units), road-to-rail mode shift is the single largest contributor to emissions reduction at -195 (in 10,000-tonne units), followed by zero-emission drayage at 95% electrification at -71 (in 10,000-tonne units) - which surpasses road-to-water's -66 (in 10,000-tonne units) - leaving a net 95 (in 10,000-tonne units) remaining in 2035, a 71% cut from 2022's 332 (in 10,000-tonne units). At the more conservative 15% electrification assumption, however, the drayage measure only cuts about 1 (in 10,000-tonne units) - a negligible amount - because so few trucks are converted and the electric truck's per-km WTW advantage over diesel is only about 7% under 2022 grid/efficiency assumptions.",
+        "key_facts": [
+          "In the Enhanced_policy scenario with only 15% battery-electric truck penetration (the base assumption), WTW CO2 emissions fall 50% versus 2022.",
+          "If drayage truck electrification is pushed to 95% fleet penetration by 2035 (assuming truck energy consumption also improves to 100 kWh/100km and Greater Bay Area grid emission factors drop to 0.36 tonnes CO2/MWh), WTW CO2 emissions would fall 71% versus 2022.",
+          "Contribution breakdown to the 2035 Enhanced_policy reduction (from a 2035 BAU baseline of 392, in 10,000-tonne units): road-to-rail -195 (largest contributor), road-to-water -66, zero-emission drayage (95% scenario) -71 (second-largest, surpassing road-to-water), net result 95 remaining in 2035 - a 71% cut from 2022's 332.",
+          "At the more conservative 15% electrification assumption, the drayage measure only cuts ~1 (10,000 tonnes) - negligible - because so few trucks are converted and the electric truck's per-km WTW advantage over diesel is only ~7% under 2022 grid/efficiency assumptions."
+        ]
+      },
+      "source_document_id": "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9",
+      "source_language": "zh",
+      "note": ""
     }
   ]
 }

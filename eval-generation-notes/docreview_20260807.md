@@ -92,4 +92,45 @@ Query: "How does dockless bike-sharing affect travel behavior in Chinese cities?
 * 17%–45% of bike-share trips (varying by city) displace private motorized trips (cars, taxis, ride-hailing, motorcycles).
 * Overall, the report frames bike-sharing as a "last-mile" solution that both strengthens public transit connectivity and substitutes for short private-vehicle trips — changing the broader urban mobility ecosystem, not just individual trip choices.
 
+### doc review 3 
+
+```
+document_id: e36cae4c-c6fb-441b-adf0-f43e2aec9ad9
+external_id: 2024_optimizing-container-ports-transportation-and_9894
+filename: 2024_shenzhen-port-low-carbon-transport_00130.pdf
+title: 优化集装箱港口运输与配送系统迈向低碳未来：深圳港案例研究
+language: zh
+```
+
+Queries: 
+* Can Yantian Port realistically meet the mode-shift targets set in Shenzhen's Master Plan (2035), or would it require more aggressive measures than a "stated policy" trajectory?
+* What are the barriers to expanding rail-water intermodal transport (road-to-rail) at Yantian Port?
+* How much would well-to-wheel CO2 emissions decline if drayage truck electrification reached 95% by 2035 at Yantian Port, and how does that compare to rail and water mode-shift measures?
+
+expected_documents: {e36cae4c-c6fb-441b-adf0-f43e2aec9ad9}
+
+Query 1: "Can Yantian Port realistically meet the mode-shift targets set in Shenzhen's Master Plan (2035)...?"
+* The scenario analysis found it would be very difficult for Yantian Port to reach the Master Plan (2035) mode-shift targets without aggressive measures.
+* Under the "Stated_policy" (realistic/conservative) scenario, the port cannot reach the targets by either 2025 or 2035; roadways would still account for the majority of throughput.
+* Only the "Enhanced_policy" scenario assumes the targets are met: by 2035, railways and waterways combined account for over 50% of port throughput (roadway share drops to 35%, waterway to 45%, railway to 20%).
+* Even in the Stated_policy scenario, 2025 shows almost no progress — WTW CO2 emissions fall only 1% versus 2022, and road throughput actually rises 5% above 2022 levels.
+* Conclusion: achieving the Enhanced_policy targets requires aggressive short-term action (e.g., accelerating the Yantian-Pinghunan railway retrofit), since the Stated_policy trajectory alone is insufficient.
+
+Query 2: "What are the barriers to expanding rail-water intermodal transport (road-to-rail) at Yantian Port?"
+* Rail infrastructure capacity: the Yantian-Pinghunan railway (built 1994) is a single non-electrified track with low capacity, handling only ~1% of Yantian Port's container throughput as of 2022.
+* The parallel Pingnan railway serving the western port area was actually demolished to make way for Qianhai district road network construction.
+* Unstable/limited cargo sources: rail freight volumes are inconsistent, so railways don't prioritize container shipments, causing unreliable empty-container allocation, scheduling, and delivery times.
+* Cost: rail "door-to-door" pricing (~3,290 RMB, Yantian to Qingyuan) is higher than trucking (~2,200 RMB) under current pricing mechanisms, though trunk-line rail discounts (50–60%) and subsidies (200 RMB/TEU) can nearly close the gap.
+* Time competitiveness: rail transport takes nearly 3 days (container pickup to return) versus 1 day for trucking, due to marshalling/decoupling steps and dependency on train scheduling, empty wagons, and loading slots.
+* Retrofitting is underway: the Yantian-Pinghunan railway upgrade (to double-track, electrified, 120 km/h) began construction in December 2022, targeting completion around 2027.
+
+Query 3: "How much would WTW CO2 emissions decline if drayage electrification reached 95% by 2035...?"
+* In the Enhanced_policy scenario with only 15% battery-electric truck penetration (the base assumption), WTW CO2 emissions fall 50% versus 2022.
+* If drayage truck electrification is pushed to 95% fleet penetration by 2035 (assuming truck energy consumption also improves to 100 kWh/100km and Greater Bay Area grid emission factors drop to 0.36 tonnes CO2/MWh), WTW CO2 emissions would fall 71% versus 2022.
+* Contribution breakdown to the 2035 Enhanced_policy reduction (from a 2035 BAU baseline of 392 million tonnes... actually in 10,000-tonne units: baseline 392, ~10,000t):
+    * Road-to-rail: −195 (10,000 tonnes) — the single largest contributor
+    * Road-to-water: −66 (10,000 tonnes)
+    * Zero-emission drayage (95% scenario): −71 (10,000 tonnes) — becomes the second-largest measure, surpassing road-to-water
+    * Net result: 95 (10,000 tonnes) remaining in 2035, i.e., a 71% cut from 2022's 332 (10,000 tonnes)
+* At the more conservative 15% electrification assumption, the drayage measure only cuts ~1 (10,000 tonnes) — negligible — because so few trucks are converted and the electric truck's per-km WTW advantage over diesel is only ~7% under 2022 grid/efficiency assumptions.
 
