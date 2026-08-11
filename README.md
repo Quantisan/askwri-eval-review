@@ -68,6 +68,13 @@ follows:
    file, since it's simpler) and edits directly as needed - e.g. simplifying
    `description`/`note` fields - before moving on to review the Answer-mode
    file.
+4. **Expand expected matches**. Use a generic retrieval system (such as `tobi/qmd`) to perform
+   variations of these queries against the corpus. Use search results to
+   expand the `expected_document_*` arrays in Cite mode eval sets.
+   - This requires the corpus to be available in text/markdown.
+   - Details to be added here.
+5. **Expert review** using the marimo notebook.
+   - Details to be added here.
 
 ### Schema notes (generation 2 vs. generation 1)
 
