@@ -7,7 +7,6 @@
     {
       "id": "q1_zero-emission-heavy-duty-trucks",
       "question": "What is the projected market penetration rate of new energy heavy-duty trucks in China through 2035?",
-      "task_description": "",
       "query_type": "quantitative_projection",
       "difficulty": "medium",
       "retrieval_ground_truth": {
@@ -37,7 +36,6 @@
     {
       "id": "q2_bev-diesel-truck-tco-china",
       "question": "How does total cost of ownership compare between battery electric and diesel heavy-duty trucks in China?",
-      "task_description": "",
       "query_type": "cost_comparison",
       "difficulty": "hard",
       "retrieval_ground_truth": {
@@ -66,7 +64,6 @@
     {
       "id": "q3_regional-vs-longhaul-adoption",
       "question": "What is the difference in zero-emission truck adoption potential between regional transport and long-haul transport scenarios?",
-      "task_description": "",
       "query_type": "comparative_analysis",
       "difficulty": "medium",
       "retrieval_ground_truth": {
@@ -95,7 +92,6 @@
     {
       "id": "q4_bev-payback-periods",
       "question": "What are the payback periods for battery electric semi-trucks compared to diesel trucks in China?",
-      "task_description": "",
       "query_type": "payback_analysis",
       "difficulty": "medium",
       "retrieval_ground_truth": {
@@ -121,6 +117,91 @@
       "source_document_id": "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
       "source_language": "zh",
       "note": "Source doc (zh, external_id 2025_zero-emission-heavy-duty-trucks_00015) has a possible English twin (2025_charging-toward-2035-policies-to-accelerate-zero_7455). canonical_answer/key_facts drafted from reviewer's docreview notes."
+    },
+    {
+      "id": "q5_bikeshare-trip-substitution",
+      "question": "What share of bike-share trips replace private car, taxi, or ride-hailing trips in China?",
+      "query_type": "modal_substitution",
+      "difficulty": "medium",
+      "retrieval_ground_truth": {
+        "expected_external_ids": [
+          "2020_dockless-bike-sharing_00124",
+          "2020_how-dockless-bike-sharing-changes-lives-an_2277"
+        ],
+        "expected_document_ids": [
+          "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+          "416a01af-1c79-4db1-a356-182f0577f844"
+        ],
+        "expected_passages": []
+      },
+      "synthesis_ground_truth": {
+        "canonical_answer": "In China, dockless bike-sharing meaningfully substitutes for private motorized trips, based on survey data from 8,218 bike-share users across 12 Chinese cities. About 54% of bike-share users use bike-sharing to connect with other transport modes, and of that connecting use, 91% is to link with public transit. Across the 12 cities, 17%-45% of bike-share trips replaced private motorized trips - including private cars, taxis, ride-hailing, and motorcycles.",
+        "key_facts": [
+          "Based on survey data from 8,218 bike-share users across 12 Chinese cities.",
+          "54% of bike-share users use bike-sharing to connect with other transport modes; of those, 91% of that connecting use is to link with public transit.",
+          "Across the 12 cities, 17%-45% of bike-share trips replaced private motorized trips - including private cars, taxis, ride-hailing, and motorcycles."
+        ]
+      },
+      "source_document_id": "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+      "source_language": "zh",
+      "note": "Source doc (zh, external_id 2020_dockless-bike-sharing_00124) has a possible English twin (2020_how-dockless-bike-sharing-changes-lives-an_2277). canonical_answer/key_facts drafted from reviewer's docreview notes."
+    },
+    {
+      "id": "q6_bikeshare-co2-reduction",
+      "question": "How much CO2 emissions reduction is attributed to bike-sharing in China?",
+      "query_type": "impact_assessment",
+      "difficulty": "medium",
+      "retrieval_ground_truth": {
+        "expected_external_ids": [
+          "2020_dockless-bike-sharing_00124",
+          "2020_how-dockless-bike-sharing-changes-lives-an_2277"
+        ],
+        "expected_document_ids": [
+          "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+          "416a01af-1c79-4db1-a356-182f0577f844"
+        ],
+        "expected_passages": []
+      },
+      "synthesis_ground_truth": {
+        "canonical_answer": "Bike-sharing in China reduces CO2 emissions primarily through the share of trips that substitute for private motorized trips, since most bike-share trips substitute for walking or public transit trips and are not themselves emissions-reducing. The substitution effect for private motorized trips reduces CO2 emissions by approximately 4.8 million tonnes per year, which the report frames as equivalent to the annual CO2 absorption of about 6.8 million acres of forest.",
+        "key_facts": [
+          "Most bike-share trips substitute for walking or public transit trips (not emissions-reducing), but the portion that substitutes for private motorized trips does reduce emissions.",
+          "That substitution effect reduces CO2 emissions by approximately 4.8 million tonnes per year.",
+          "The report frames this as equivalent to the annual CO2 absorption of about 6.8 million acres of forest."
+        ]
+      },
+      "source_document_id": "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+      "source_language": "zh",
+      "note": "Source doc (zh, external_id 2020_dockless-bike-sharing_00124) has a possible English twin (2020_how-dockless-bike-sharing-changes-lives-an_2277). canonical_answer/key_facts drafted from reviewer's docreview notes."
+    },
+    {
+      "id": "q7_bikeshare-travel-behavior",
+      "question": "How does dockless bike-sharing affect travel behavior in Chinese cities?",
+      "query_type": "behavioral_impact",
+      "difficulty": "medium",
+      "retrieval_ground_truth": {
+        "expected_external_ids": [
+          "2020_dockless-bike-sharing_00124",
+          "2020_how-dockless-bike-sharing-changes-lives-an_2277"
+        ],
+        "expected_document_ids": [
+          "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+          "416a01af-1c79-4db1-a356-182f0577f844"
+        ],
+        "expected_passages": []
+      },
+      "synthesis_ground_truth": {
+        "canonical_answer": "Dockless bike-sharing has a substantial and consistent effect on travel behavior across Chinese cities: the study found high consistency in these effects across all 12 cities, despite differing economic and social development levels. 54% of users ride to connect with other transport modes, primarily public transit (91% of connecting trips), while 17%-45% of bike-share trips (varying by city) displace private motorized trips such as cars, taxis, ride-hailing, and motorcycles. Overall, the report frames bike-sharing as a \"last-mile\" solution that both strengthens public transit connectivity and substitutes for short private-vehicle trips - changing the broader urban mobility ecosystem, not just individual trip choices.",
+        "key_facts": [
+          "The study found high consistency in travel-behavior effects across all 12 cities, despite differing economic/social development levels.",
+          "54% of users ride to connect with other transport modes, primarily public transit (91% of connecting trips).",
+          "17%-45% of bike-share trips (varying by city) displace private motorized trips (cars, taxis, ride-hailing, motorcycles).",
+          "Overall, the report frames bike-sharing as a \"last-mile\" solution that both strengthens public transit connectivity and substitutes for short private-vehicle trips - changing the broader urban mobility ecosystem, not just individual trip choices."
+        ]
+      },
+      "source_document_id": "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+      "source_language": "zh",
+      "note": "Source doc (zh, external_id 2020_dockless-bike-sharing_00124) has a possible English twin (2020_how-dockless-bike-sharing-changes-lives-an_2277). canonical_answer/key_facts drafted from reviewer's docreview notes."
     }
   ]
 }

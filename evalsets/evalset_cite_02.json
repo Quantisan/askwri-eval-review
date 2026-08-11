@@ -75,6 +75,60 @@
       "difficulty": "medium",
       "query_type": "payback_analysis",
       "note": "Source doc (zh, external_id 2025_zero-emission-heavy-duty-trucks_00015) has a possible English twin (2025_charging-toward-2035-policies-to-accelerate-zero_7455)."
+    },
+    {
+      "id": "q5_bikeshare-trip-substitution",
+      "question": "What share of bike-share trips replace private car, taxi, or ride-hailing trips in China?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2020_dockless-bike-sharing_00124",
+        "2020_how-dockless-bike-sharing-changes-lives-an_2277"
+      ],
+      "expected_document_ids": [
+        "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+        "416a01af-1c79-4db1-a356-182f0577f844"
+      ],
+      "source_document_id": "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+      "source_language": "zh",
+      "difficulty": "medium",
+      "query_type": "modal_substitution",
+      "note": "Source doc (zh, external_id 2020_dockless-bike-sharing_00124) has a possible English twin (2020_how-dockless-bike-sharing-changes-lives-an_2277)."
+    },
+    {
+      "id": "q6_bikeshare-co2-reduction",
+      "question": "How much CO2 emissions reduction is attributed to bike-sharing in China?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2020_dockless-bike-sharing_00124",
+        "2020_how-dockless-bike-sharing-changes-lives-an_2277"
+      ],
+      "expected_document_ids": [
+        "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+        "416a01af-1c79-4db1-a356-182f0577f844"
+      ],
+      "source_document_id": "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+      "source_language": "zh",
+      "difficulty": "medium",
+      "query_type": "impact_assessment",
+      "note": "Source doc (zh, external_id 2020_dockless-bike-sharing_00124) has a possible English twin (2020_how-dockless-bike-sharing-changes-lives-an_2277)."
+    },
+    {
+      "id": "q7_bikeshare-travel-behavior",
+      "question": "How does dockless bike-sharing affect travel behavior in Chinese cities?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2020_dockless-bike-sharing_00124",
+        "2020_how-dockless-bike-sharing-changes-lives-an_2277"
+      ],
+      "expected_document_ids": [
+        "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+        "416a01af-1c79-4db1-a356-182f0577f844"
+      ],
+      "source_document_id": "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+      "source_language": "zh",
+      "difficulty": "medium",
+      "query_type": "behavioral_impact",
+      "note": "Source doc (zh, external_id 2020_dockless-bike-sharing_00124) has a possible English twin (2020_how-dockless-bike-sharing-changes-lives-an_2277)."
     }
   ]
 }

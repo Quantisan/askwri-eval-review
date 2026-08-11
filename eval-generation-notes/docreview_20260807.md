@@ -54,3 +54,42 @@ Query: "What are the payback periods for battery electric semi-trucks compared t
 * In long-haul, by MY2035 both BEV and FCEV heavy cargo trucks on shorter-daily-mileage routes approach roughly a 5-year payback. 
 
 
+### doc review 2
+
+98cc253e — "How Dockless Bike Sharing Affects Cities"
+
+```
+document_id: 98cc253e-8d96-4499-b67a-38baffe2f3f2
+external_id: 2020_dockless-bike-sharing_00124
+title: 共享单车如何影响城市
+language: zh
+```
+
+possible english twin: 
+416a01af-1c79-4db1-a356-182f0577f844 
+"How Dockless Bike Sharing Changes Lives: An Analysis of Chinese Cities" (en)
+
+Queries
+* "What share of bike-share trips replace private car, taxi, or ride-hailing trips in China?"
+* "How much CO2 emissions reduction is attributed to bike-sharing in China?"
+* "How does dockless bike-sharing affect travel behavior in Chinese cities?"
+
+expected_documents: {98cc253e-8d96-4499-b67a-38baffe2f3f2, 416a01af-1c79-4db1-a356-182f0577f844}
+
+Query: "What share of bike-share trips replace private car, taxi, or ride-hailing trips in China?"
+* Based on survey data from 8,218 bike-share users across 12 Chinese cities.
+* 54% of bike-share users use bike-sharing to connect with other transport modes; of those, 91% of that connecting use is to link with public transit.
+* Across the 12 cities, 17%–45% of bike-share trips replaced private motorized trips — including private cars, taxis, ride-hailing, and motorcycles.
+
+Query: "How much CO2 emissions reduction is attributed to bike-sharing in China?"
+* Most bike-share trips substitute for walking or public transit trips (not emissions-reducing), but the portion that substitutes for private motorized trips does reduce emissions.
+* That substitution effect reduces CO2 emissions by approximately 4.8 million tonnes per year.
+* The report frames this as equivalent to the annual CO2 absorption of about 6.8 million acres of forest.
+
+Query: "How does dockless bike-sharing affect travel behavior in Chinese cities?"
+* The study found high consistency in travel-behavior effects across all 12 cities, despite differing economic/social development levels.
+* 54% of users ride to connect with other transport modes, primarily public transit (91% of connecting trips).
+* 17%–45% of bike-share trips (varying by city) displace private motorized trips (cars, taxis, ride-hailing, motorcycles).
+* Overall, the report frames bike-sharing as a "last-mile" solution that both strengthens public transit connectivity and substitutes for short private-vehicle trips — changing the broader urban mobility ecosystem, not just individual trip choices.
+
+
