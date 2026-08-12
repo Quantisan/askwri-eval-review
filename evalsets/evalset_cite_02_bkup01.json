@@ -1,0 +1,280 @@
+{
+  "version": "4.0",
+  "created": "2026-08-11",
+  "updated": "2026-08-11",
+  "description": "Evaluation dataset (generation 2) for AskWRI Cite mode evaluation - cross-lingual corpus (en/zh/es/pt). Test cases are built by manually reviewing one sampled KP at a time and drafting a high-level English query whose expected answer is that document. expected_external_ids/expected_document_ids are parallel arrays (same index = same document, as external_id string vs UUID document_id). Renamed 2026-08-12 from evalset_cite_02.json to evalset_cite_02_bkup01.json (content/version 4.0 frozen, unchanged) so that name could be reused for the topic_discovery/geography_constrained/date_constrained expansion (formerly evalset_cite_03.json, now evalset_cite_02.json v4.1+). This file's 16 fact_lookup queries are kept for reference/coverage, per query_expansion_plan_citemode_20260812.md.",
+  "test_cases": [
+    {
+      "id": "q1_zero-emission-heavy-duty-trucks",
+      "question": "What is the projected market penetration rate of new energy heavy-duty trucks in China through 2035?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2025_zero-emission-heavy-duty-trucks_00015",
+        "2025_charging-toward-2035-policies-to-accelerate-zero_7455"
+      ],
+      "expected_document_ids": [
+        "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+        "7c2e200e-9c01-4acd-b5ef-a18041a7f258"
+      ],
+      "source_document_id": "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+      "source_language": "zh",
+      "difficulty": "medium",
+      "query_type": "quantitative_projection",
+      "note": "Source doc (zh, external_id 2025_zero-emission-heavy-duty-trucks_00015) has a possible English twin (2025_charging-toward-2035-policies-to-accelerate-zero_7455)."
+    },
+    {
+      "id": "q2_bev-diesel-truck-tco-china",
+      "question": "How does total cost of ownership compare between battery electric and diesel heavy-duty trucks in China?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2025_zero-emission-heavy-duty-trucks_00015",
+        "2025_charging-toward-2035-policies-to-accelerate-zero_7455"
+      ],
+      "expected_document_ids": [
+        "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+        "7c2e200e-9c01-4acd-b5ef-a18041a7f258"
+      ],
+      "source_document_id": "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+      "source_language": "zh",
+      "difficulty": "hard",
+      "query_type": "cost_comparison",
+      "note": "Source doc (zh, external_id 2025_zero-emission-heavy-duty-trucks_00015) has a possible English twin (2025_charging-toward-2035-policies-to-accelerate-zero_7455)."
+    },
+    {
+      "id": "q3_regional-vs-longhaul-adoption",
+      "question": "What is the difference in zero-emission truck adoption potential between regional transport and long-haul transport scenarios?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2025_zero-emission-heavy-duty-trucks_00015",
+        "2025_charging-toward-2035-policies-to-accelerate-zero_7455"
+      ],
+      "expected_document_ids": [
+        "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+        "7c2e200e-9c01-4acd-b5ef-a18041a7f258"
+      ],
+      "source_document_id": "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+      "source_language": "zh",
+      "difficulty": "medium",
+      "query_type": "comparative_analysis",
+      "note": "Source doc (zh, external_id 2025_zero-emission-heavy-duty-trucks_00015) has a possible English twin (2025_charging-toward-2035-policies-to-accelerate-zero_7455)."
+    },
+    {
+      "id": "q4_bev-payback-periods",
+      "question": "What are the payback periods for battery electric semi-trucks compared to diesel trucks in China?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2025_zero-emission-heavy-duty-trucks_00015",
+        "2025_charging-toward-2035-policies-to-accelerate-zero_7455"
+      ],
+      "expected_document_ids": [
+        "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+        "7c2e200e-9c01-4acd-b5ef-a18041a7f258"
+      ],
+      "source_document_id": "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+      "source_language": "zh",
+      "difficulty": "medium",
+      "query_type": "payback_analysis",
+      "note": "Source doc (zh, external_id 2025_zero-emission-heavy-duty-trucks_00015) has a possible English twin (2025_charging-toward-2035-policies-to-accelerate-zero_7455)."
+    },
+    {
+      "id": "q5_bikeshare-trip-substitution",
+      "question": "What share of bike-share trips replace private car, taxi, or ride-hailing trips in China?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2020_dockless-bike-sharing_00124",
+        "2020_how-dockless-bike-sharing-changes-lives-an_2277"
+      ],
+      "expected_document_ids": [
+        "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+        "416a01af-1c79-4db1-a356-182f0577f844"
+      ],
+      "source_document_id": "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+      "source_language": "zh",
+      "difficulty": "medium",
+      "query_type": "modal_substitution",
+      "note": "Source doc (zh, external_id 2020_dockless-bike-sharing_00124) has a possible English twin (2020_how-dockless-bike-sharing-changes-lives-an_2277)."
+    },
+    {
+      "id": "q6_bikeshare-co2-reduction",
+      "question": "How much CO2 emissions reduction is attributed to bike-sharing in China?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2020_dockless-bike-sharing_00124",
+        "2020_how-dockless-bike-sharing-changes-lives-an_2277"
+      ],
+      "expected_document_ids": [
+        "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+        "416a01af-1c79-4db1-a356-182f0577f844"
+      ],
+      "source_document_id": "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+      "source_language": "zh",
+      "difficulty": "medium",
+      "query_type": "impact_assessment",
+      "note": "Source doc (zh, external_id 2020_dockless-bike-sharing_00124) has a possible English twin (2020_how-dockless-bike-sharing-changes-lives-an_2277)."
+    },
+    {
+      "id": "q7_bikeshare-travel-behavior",
+      "question": "How does dockless bike-sharing affect travel behavior in Chinese cities?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2020_dockless-bike-sharing_00124",
+        "2020_how-dockless-bike-sharing-changes-lives-an_2277"
+      ],
+      "expected_document_ids": [
+        "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+        "416a01af-1c79-4db1-a356-182f0577f844"
+      ],
+      "source_document_id": "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+      "source_language": "zh",
+      "difficulty": "medium",
+      "query_type": "behavioral_impact",
+      "note": "Source doc (zh, external_id 2020_dockless-bike-sharing_00124) has a possible English twin (2020_how-dockless-bike-sharing-changes-lives-an_2277)."
+    },
+    {
+      "id": "q8_yantian-port-mode-shift-targets",
+      "question": "Can Yantian Port realistically meet the mode-shift targets set in Shenzhen's Master Plan (2035), or would it require more aggressive measures than a \"stated policy\" trajectory?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2024_optimizing-container-ports-transportation-and_9894"
+      ],
+      "expected_document_ids": [
+        "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9"
+      ],
+      "source_document_id": "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9",
+      "source_language": "zh",
+      "difficulty": "hard",
+      "query_type": "policy_feasibility",
+      "note": ""
+    },
+    {
+      "id": "q9_yantian-port-rail-water-barriers",
+      "question": "What are the barriers to expanding rail-water intermodal transport (road-to-rail) at Yantian Port?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2024_optimizing-container-ports-transportation-and_9894"
+      ],
+      "expected_document_ids": [
+        "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9"
+      ],
+      "source_document_id": "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9",
+      "source_language": "zh",
+      "difficulty": "medium",
+      "query_type": "barrier_analysis",
+      "note": ""
+    },
+    {
+      "id": "q10_yantian-port-drayage-electrification-co2",
+      "question": "How much would well-to-wheel CO2 emissions decline if drayage truck electrification reached 95% by 2035 at Yantian Port, and how does that compare to rail and water mode-shift measures?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2024_optimizing-container-ports-transportation-and_9894"
+      ],
+      "expected_document_ids": [
+        "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9"
+      ],
+      "source_document_id": "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9",
+      "source_language": "zh",
+      "difficulty": "hard",
+      "query_type": "quantitative_projection",
+      "note": ""
+    },
+    {
+      "id": "q11_mexico-transport-covid-methodology",
+      "question": "What methodology was used to estimate COVID-19 financial impacts on Mexican urban public transport operators?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2022_impactos-economicos-pandemia-covid19-transporte-publico_0070"
+      ],
+      "expected_document_ids": [
+        "987353ab-9454-473f-8f00-eb767750dd24"
+      ],
+      "source_document_id": "987353ab-9454-473f-8f00-eb767750dd24",
+      "source_language": "es",
+      "difficulty": "medium",
+      "query_type": "methodology",
+      "note": ""
+    },
+    {
+      "id": "q12_mexico-transport-jobs-dependency",
+      "question": "How many jobs depend on the public transport sector in Mexico?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2022_impactos-economicos-pandemia-covid19-transporte-publico_0070"
+      ],
+      "expected_document_ids": [
+        "987353ab-9454-473f-8f00-eb767750dd24"
+      ],
+      "source_document_id": "987353ab-9454-473f-8f00-eb767750dd24",
+      "source_language": "es",
+      "difficulty": "medium",
+      "query_type": "quantitative_fact",
+      "note": ""
+    },
+    {
+      "id": "q13_mexico-transport-financing-barriers",
+      "question": "What barriers limit fondeo and financiamiento for urban public transport in Mexico?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2023_analisis-de-los-mecanismos-financieros-para-la_3765"
+      ],
+      "expected_document_ids": [
+        "2e5d79b9-7077-43a2-bc48-3661e7d3fd36"
+      ],
+      "source_document_id": "2e5d79b9-7077-43a2-bc48-3661e7d3fd36",
+      "source_language": "es",
+      "difficulty": "medium",
+      "query_type": "barrier_analysis",
+      "note": ""
+    },
+    {
+      "id": "q14_mexico-carbon-tax-transport-financing",
+      "question": "Why is revenue from Mexico's carbon tax not currently available for public transport, and how could that change?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2023_analisis-de-los-mecanismos-financieros-para-la_3765"
+      ],
+      "expected_document_ids": [
+        "2e5d79b9-7077-43a2-bc48-3661e7d3fd36"
+      ],
+      "source_document_id": "2e5d79b9-7077-43a2-bc48-3661e7d3fd36",
+      "source_language": "es",
+      "difficulty": "medium",
+      "query_type": "policy_mechanism",
+      "note": ""
+    },
+    {
+      "id": "q15_mexico-parking-meter-revenue",
+      "question": "How much revenue do parking meters generate in Mexican cities, and where does that money go?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2023_analisis-de-los-mecanismos-financieros-para-la_3765"
+      ],
+      "expected_document_ids": [
+        "2e5d79b9-7077-43a2-bc48-3661e7d3fd36"
+      ],
+      "source_document_id": "2e5d79b9-7077-43a2-bc48-3661e7d3fd36",
+      "source_language": "es",
+      "difficulty": "medium",
+      "query_type": "quantitative_fact",
+      "note": ""
+    },
+    {
+      "id": "q16_mexico-transport-covid-demand-change",
+      "question": "How did public transport demand in Mexican cities change during the COVID-19 pandemic?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2022_impactos-economicos-pandemia-covid19-transporte-publico_0070",
+        "2023_analisis-de-los-mecanismos-financieros-para-la_3765"
+      ],
+      "expected_document_ids": [
+        "987353ab-9454-473f-8f00-eb767750dd24",
+        "2e5d79b9-7077-43a2-bc48-3661e7d3fd36"
+      ],
+      "source_document_id": "987353ab-9454-473f-8f00-eb767750dd24",
+      "source_language": "es",
+      "difficulty": "medium",
+      "query_type": "impact_assessment",
+      "note": ""
+    }
+  ]
+}

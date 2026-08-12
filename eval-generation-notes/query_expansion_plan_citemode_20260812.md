@@ -81,13 +81,16 @@ relabeling of the first two clusters.
 |---|---|---|---|---|
 | `topic_discovery` | "What's already there on X?" — topic only, no place/time filter | "What has WRI published on financing mechanisms for public transport?" | Topically substantive — doc meaningfully discusses the topic | Many (cluster-sized, e.g. 4-8+) — **majority of new queries** |
 | `geography_constrained` | Discovery query scoped to a specific place | "What has WRI published on zero-emission heavy-duty truck adoption in China?" | Topically substantive + place-scoped — docs on-topic but set elsewhere must be excluded | Many (cluster-sized) |
-| `date_constrained` | Discovery query scoped to a time window (e.g. "since YYYY") | "What has WRI published on electric buses since 2022?" (illustrative — no vetted example yet) | Topically substantive + date-scoped — docs on-topic but outside the window must be excluded | TBD — watching for a well-populated (multi-year) topic as clusters are reviewed |
+| `date_constrained` | Discovery query scoped to a time window (e.g. "since YYYY") | "What has WRI published on financing mechanisms for public transport since 2022?" (`d5`, first vetted example) | Topically substantive + date-scoped — docs on-topic but outside the window must be excluded | 1 so far (`d5`) — watching for more well-populated (multi-year) topics as clusters are reviewed |
 | `binary_presence` | "Is there anything about X?" | "Has WRI Cities written about bike-sharing's climate impact in China?" | Same as topic_discovery, but framed as existence-check | Few — mostly positive (topic exists), with a smaller number of deliberate negative cases (topic plausibly relevant but absent from this corpus, expecting an empty result) |
 | `fact_lookup` | Precise fact/figure retrieval — actually better suited to Answer mode | (existing 16 queries) | Answer-bearing — doc contains the specific fact/figure | Few (1-2) — **retained for coverage** (users may not distinguish Cite from Answer mode) but no new additions planned this round |
 
 ## Versioning decision
 
-- `evalsets/evalset_cite_02.json` — **frozen as-is**. Existing 16
+**(Original decision below; superseded by the 2026-08-12 renaming update
+that follows it — kept for historical record.)**
+
+- `evalsets/evalset_cite_02.json` (v4.0) — **frozen as-is**. Existing 16
   `fact_lookup` queries kept for Answer-style-query-in-Cite-mode coverage.
 - `evalsets/evalset_cite_03.json` — **new file**, where `topic_discovery`
   and `binary_presence` queries are developed.
@@ -98,7 +101,25 @@ relabeling of the first two clusters.
   Answer-mode pair, mirroring the existing pattern for fact_lookup queries
   with no drafted answer yet.
 
-## Schema notes for evalset_cite_03.json
+**Update 2026-08-12 (post-review renaming):** once clusters 1-4 were
+complete, the files were renamed for clarity and a third dataset was added:
+
+- `evalsets/evalset_cite_01.json` (v3.1) — **new file**, a straight schema
+  migration of `source_evalsets/cite-golden-dataset.json` (the original,
+  frozen "generation 1" golden set, v3.0, 11 test cases, 169-doc-corpus
+  era) into the parallel-array schema. `expected_document_ids` (UUIDs) are
+  left as empty-string placeholders pending a full-corpus reconciliation
+  pass (deferred since the corpus is expected to change again shortly).
+  `source_evalsets/cite-golden-dataset.json` itself remains untouched.
+- `evalsets/evalset_cite_02.json` (was `evalset_cite_02_bkup01.json`'s
+  original name) — **renamed to `evalset_cite_02_bkup01.json`, v4.0,
+  frozen/unchanged**. The 16 `fact_lookup` queries live here now.
+- `evalsets/evalset_cite_03.json` — **renamed to `evalset_cite_02.json`,
+  version bumped 5.0 → 4.1**, continuing the "generation 2" file lineage
+  instead of starting a new generation number. This is the file with
+  `d1`-`d5` (topic_discovery/geography_constrained/date_constrained).
+
+## Schema notes for evalset_cite_02.json (formerly evalset_cite_03.json)
 
 - `source_document_id` / `source_language`: kept as the original reviewed
   document when a new query is a *variation* on that review session (i.e.
@@ -106,7 +127,8 @@ relabeling of the first two clusters.
   was drafted). Left empty for genuinely new topics not tied to any single
   prior review session.
 - `expected_external_ids` / `expected_document_ids`: same parallel-array
-  structure as `evalset_cite_02.json`.
+  structure as `evalset_cite_02_bkup01.json` (schema originally established
+  there, when it was still named `evalset_cite_02.json`).
 - New queries are Cite-only; no `retrieval_ground_truth`/Answer-mode
   counterpart is created.
 
@@ -137,20 +159,42 @@ relabeling of the first two clusters.
      pulling the full document text via `qmd get` to check for a real
      substantive passage vs. a passing mention.
 4. **Apply**: add approved documents to `expected_external_ids` /
-   `expected_document_ids` in `evalset_cite_03.json`.
+   `expected_document_ids` in `evalset_cite_02.json` (formerly
+   `evalset_cite_03.json`).
 
-## Draft topic_discovery queries (4, one per existing doc-review cluster)
+## Draft topic_discovery queries (4, one per existing doc-review cluster) — ALL COMPLETE
 
-| Cluster | Draft query | source_document_id | source_language |
-|---|---|---|---|
-| Zero-emission HD trucks, China (q1-q4's doc) | "What has WRI published on zero-emission heavy-duty truck adoption in China?" | `00be4a1d-33cc-4b56-a4d5-d15af0a5cc27` | zh |
-| Dockless bike-sharing, China (q5-q7's doc) | "What research has WRI done on dockless bike-sharing in Chinese cities?" | `98cc253e-8d96-4499-b67a-38baffe2f3f2` | zh |
-| Yantian Port / container ports (q8-q10's doc) | "What has WRI written about decarbonizing container port and drayage operations in China?" | `e36cae4c-c6fb-441b-adf0-f43e2aec9ad9` | zh |
-| Mexico public transport financing (q11-q16's docs) | "What has WRI published on financing mechanisms for public transport in Mexico?" | `987353ab-9454-473f-8f00-eb767750dd24` (or `2e5d79b9-...`, both source the same cluster) | es |
+| Cluster | Draft query | source_document_id | source_language | Result |
+|---|---|---|---|---|
+| Zero-emission HD trucks, China (q1-q4's doc) | "What has WRI published on zero-emission heavy-duty truck adoption in China?" | `00be4a1d-33cc-4b56-a4d5-d15af0a5cc27` | zh | `d1` (`geography_constrained`), 11 docs |
+| Dockless bike-sharing, China (q5-q7's doc) | "What research has WRI done on dockless bike-sharing in Chinese cities?" | `98cc253e-8d96-4499-b67a-38baffe2f3f2` | zh | `d2` (`geography_constrained`), 3 docs |
+| Container ports / drayage (q8-q10's doc) | "What has WRI written about decarbonizing container port and drayage operations?" (geography constraint dropped — see taxonomy update above) | `e36cae4c-c6fb-441b-adf0-f43e2aec9ad9` | zh | `d3` (`topic_discovery`), 1 doc — unchanged by dropping "in China"; genuinely a single-doc topic |
+| Public transport financing (q11-q16's docs) | "What has WRI published on financing mechanisms for public transport?" (geography constraint dropped) | `2e5d79b9-7077-43a2-bc48-3661e7d3fd36` | es | `d4` (`topic_discovery`), 9 docs — dropping "in Mexico" surfaced a much richer multi-country set; also spawned `d5` (`date_constrained`, "...since 2022", 5 docs), the first vetted example of that query_type |
 
-Cluster 1 is complete — see `evalset_cite_03.json` (test case
-`d1_zero-emission-heavy-duty-trucks-discovery`, 11 expected docs, full
-rationale in its `note` field). Clusters 2-4 pending.
+All 4 clusters from `evalset_cite_02_bkup01.json`'s 16-query doc-review
+batch now have discovery-style counterparts in
+`evalsets/evalset_cite_02.json` (`d1`-`d5`). Note this only covers the ~3%
+of the 207-doc corpus (5-7 documents) that the original manual doc-review
+session happened to sample — see "Coverage limits" below.
+
+## Coverage limits (added 2026-08-12)
+
+The 16 `fact_lookup` queries in `evalset_cite_02_bkup01.json` were all
+derived from just 5 manually-reviewed source documents (7 including known
+translation twins), organized into 4 topical clusters. `fact_lookup`
+queries are many-to-one against a source doc, but
+`topic_discovery`/`geography_constrained`/`date_constrained` collapse back
+down to ~1 query per cluster — so 16 fact-lookup queries could only ever
+produce ~4 discovery-style queries (5 with `d5`'s temporal variant). This
+is a structural ceiling of the doc-review batch, not a shortfall in this
+round's execution. Getting real breadth for these query types (the plan's
+stated goal of "majority of new queries") requires sampling fresh
+topics/documents directly from the corpus, not derived from the existing
+16-query batch — see also `evalsets/evalset_cite_01.json` (migrated
+2026-08-12 from `source_evalsets/cite-golden-dataset.json`), which already
+covers 11 more topics/query-types independent of this batch, pending a
+full-corpus reconciliation pass to resolve its placeholder
+`expected_document_ids`.
 
 ## binary_presence plan
 
@@ -166,7 +210,21 @@ rationale in its `note` field). Clusters 2-4 pending.
 ## Parked / open items
 
 - Verify the two twin-pair hypotheses confirmed during cluster 1's review
-  (see `evalset_cite_03.json`'s note field: `61d7d9a2`/`d79ef747` and
-  `6a5e424b`/`adafe321`) against `issuelog_20260807.md` and update that log
-  from "less probable" to confirmed.
-- Design negative binary_presence topics + verification pass.
+  (see `evalset_cite_02.json`'s (formerly `evalset_cite_03.json`) note
+  field: `61d7d9a2`/`d79ef747` and `6a5e424b`/`adafe321`) against
+  `issuelog_20260807.md` and update that log from "less probable" to
+  confirmed. Still not done.
+- Design negative binary_presence topics + verification pass. Not started.
+- `binary_presence` queries generally (positive + negative) — not started.
+- Once the corpus is finalized: resolve `evalset_cite_01.json`'s placeholder
+  `expected_document_ids`, re-check its previously-pruned candidates against
+  the final catalog (at least 7 already confirmed back as of 2026-08-12 —
+  see that file's `description` field), and consider fresh zh/es/pt
+  counterparts among the newer documents.
+- Sample fresh topics/documents directly from the corpus (not derived from
+  the existing 16-query batch) for more `topic_discovery`/
+  `geography_constrained`/`date_constrained` breadth — see "Coverage
+  limits" above.
+- Consider adding an `amorphous_exclusion`-style query_type (e.g. "X but
+  exclude Y"), following `cite-golden-dataset.json`'s `q11` precedent —
+  not yet added to this file's taxonomy.

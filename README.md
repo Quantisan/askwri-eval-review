@@ -20,7 +20,17 @@ two query modes:
   reference data, covering the original 169-document corpus.
 - `evalsets/` - newer eval sets, built from the manual doc-review process
   described below (e.g. `evalset_cite_02.json`, `evalset_answer_02.json`).
-  This is where newly generated eval sets will be added.
+  This is where newly generated eval sets will be added. Also includes:
+  - `evalset_cite_01.json` - a schema-migrated copy of
+    `source_evalsets/cite-golden-dataset.json` (v3.1), converted to the
+    generation-2+ parallel-array schema. `expected_document_ids` (UUIDs)
+    are left as empty-string placeholders pending a full-corpus
+    reconciliation pass; the original `source_evalsets/` file is untouched.
+  - `evalset_cite_02_bkup01.json` (v4.0) - the original 16 `fact_lookup`
+    queries, frozen/unchanged, renamed from `evalset_cite_02.json` on
+    2026-08-12 so that name could be reused for the
+    `topic_discovery`/`geography_constrained`/`date_constrained` expansion
+    (formerly `evalset_cite_03.json`, now `evalset_cite_02.json` v4.1+).
 - `eval-generation-notes/` - working notes from manual document review,
   tracked in git for diffability. Includes:
   - `docreview_*.md` - human-authored notes per document reviewed (query +
