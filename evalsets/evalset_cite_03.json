@@ -37,8 +37,100 @@
       "source_document_id": "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
       "source_language": "zh",
       "difficulty": "medium",
+      "query_type": "geography_constrained",
+      "note": "Includes two possible twin-language pairs confirmed by retrieval score parity."
+    },
+    {
+      "id": "d2_dockless-bike-sharing-discovery",
+      "question": "What research has WRI done on dockless bike-sharing in Chinese cities?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2020_dockless-bike-sharing_00124",
+        "2020_how-dockless-bike-sharing-changes-lives-an_2277",
+        "2019_the-evolution-of-bike-sharing-10-questions-on-the_1977"
+      ],
+      "expected_document_ids": [
+        "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+        "416a01af-1c79-4db1-a356-182f0577f844",
+        "ab12bcae-8d37-47c2-8bdf-8b265df59961"
+      ],
+      "source_document_id": "98cc253e-8d96-4499-b67a-38baffe2f3f2",
+      "source_language": "zh",
+      "difficulty": "medium",
+      "query_type": "geography_constrained",
+      "note": ""
+    },
+    {
+      "id": "d3_container-port-decarbonization-discovery",
+      "question": "What has WRI written about decarbonizing container port and drayage operations?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2024_optimizing-container-ports-transportation-and_9894"
+      ],
+      "expected_document_ids": [
+        "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9"
+      ],
+      "source_document_id": "e36cae4c-c6fb-441b-adf0-f43e2aec9ad9",
+      "source_language": "zh",
+      "difficulty": "medium",
       "query_type": "topic_discovery",
-      "note": "Variation on the q1-q4 review session (evalset_cite_02.json), reframed as a literature-discovery query. expected_* built via qmd vsearch + human review using a 'topically substantive' relevance standard (broader than answer-bearing). Includes two twin-language pairs confirmed by retrieval score parity, previously only 'less probable' hypotheses in issuelog_20260807.md: (1) 2022_china-road-transport-decarbonization_00145 (zh) / 2022_decarbonizing-chinas-road-transport-sector_2101 (en); (2) 2024_techno-economic-feasibility-analysis-of-zero_7051 (en) / 2024_zero-emission-trucks-guangdong_00006 (zh). A follow-up review of candidates scoring 0.50-0.67 (below the initial cutoff) added 3 more: 2021_zero-emission-logistic-vehicles-promotion_1319 and 2024_feasibility-of-zero-emission-freight-zones_1267 (directly on-topic, just scored lower), and 2023_visioning-to-implementation-national-transport_8631 (covers China/India/Vietnam, but contains a substantive China-specific HDV/BEV truck passage in its executive summary, verified via full-text read). Reviewed but excluded from this sweep: a WRI India Fi-ZET tool (India-specific, not China), and several topically-adjacent-but-not-central docs (Hong Kong roads, China provincial transport carbon accounting, container port decarbonization). No Answer-mode counterpart planned for this query (per query_expansion_plan_citemode_20260812.md)."
+      "note": ""
+    },
+    {
+      "id": "d4_public-transport-financing-discovery",
+      "question": "What has WRI published on financing mechanisms for public transport?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2023_analisis-de-los-mecanismos-financieros-para-la_3765",
+        "2022_impactos-economicos-pandemia-covid19-transporte-publico_0070",
+        "2024_a-fare-look-funding-urban-public-transport_7541",
+        "2024_access-to-climate-finance-in-low-and-middle_4708",
+        "2014_the-trillion-dollar-question_3289",
+        "2019_financing-electric-and-hybrid-electric-buses-10_6301",
+        "2024_assessing-financing-challenges-for-implementing_4732",
+        "2021_10-questions-to-ask-about-planning-financing-and_8828",
+        "2019_barriers-to-adopting-electric-buses_4116"
+      ],
+      "expected_document_ids": [
+        "2e5d79b9-7077-43a2-bc48-3661e7d3fd36",
+        "987353ab-9454-473f-8f00-eb767750dd24",
+        "02eb81cc-9359-4b1f-b01a-cc6cb3b775f7",
+        "104d4074-8931-4a10-a520-42e074273cff",
+        "dfd40e6c-4782-4160-b1ca-4dbbfd8923d3",
+        "c90ba063-883b-4989-be8a-e140ae8eb748",
+        "4bdbed99-9ea1-4970-8572-46cc0de51465",
+        "56edad43-9124-4874-9ac3-5ae7f6ea2870",
+        "c6bc2a1e-cc7a-4438-a583-6f1e195b1320"
+      ],
+      "source_document_id": "2e5d79b9-7077-43a2-bc48-3661e7d3fd36",
+      "source_language": "es",
+      "difficulty": "medium",
+      "query_type": "topic_discovery",
+      "note": "Dropping geography constraint from a previous version."
+    },
+    {
+      "id": "d5_public-transport-financing-since-2022",
+      "question": "What has WRI published on financing mechanisms for public transport since 2022?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2023_analisis-de-los-mecanismos-financieros-para-la_3765",
+        "2022_impactos-economicos-pandemia-covid19-transporte-publico_0070",
+        "2024_a-fare-look-funding-urban-public-transport_7541",
+        "2024_access-to-climate-finance-in-low-and-middle_4708",
+        "2024_assessing-financing-challenges-for-implementing_4732"
+      ],
+      "expected_document_ids": [
+        "2e5d79b9-7077-43a2-bc48-3661e7d3fd36",
+        "987353ab-9454-473f-8f00-eb767750dd24",
+        "02eb81cc-9359-4b1f-b01a-cc6cb3b775f7",
+        "104d4074-8931-4a10-a520-42e074273cff",
+        "4bdbed99-9ea1-4970-8572-46cc0de51465"
+      ],
+      "source_document_id": "2e5d79b9-7077-43a2-bc48-3661e7d3fd36",
+      "source_language": "es",
+      "difficulty": "medium",
+      "query_type": "date_constrained",
+      "note": "date_constrained test case variation of d4; Reuses d4's answer set. Will likely confirm post-retrieval filtering system in AskWRI."
     }
   ]
 }

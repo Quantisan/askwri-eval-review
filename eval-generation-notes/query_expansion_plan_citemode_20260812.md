@@ -70,11 +70,18 @@ discovery query (they do substantively discuss the topic).
 
 ## New Cite-mode query taxonomy
 
-Single tier, three `query_type` values:
+Single tier, five `query_type` values. `topic_discovery` is reserved for the
+*general* case (topic only, no place/time filter); `geography_constrained`
+and `date_constrained` are discovery queries that add a specific filter
+dimension on top of the topic. This distinction was added 2026-08-12 mid-way
+through cluster review — see "Parked / open items" for retroactive
+relabeling of the first two clusters.
 
 | query_type | Description | Example | Relevance standard | Expected volume |
 |---|---|---|---|---|
-| `topic_discovery` | "What's already there on X?" | "What has WRI published on zero-emission heavy-duty truck adoption in China?" | Topically substantive — doc meaningfully discusses the topic | Many (cluster-sized, e.g. 4-8+) — **majority of new queries** |
+| `topic_discovery` | "What's already there on X?" — topic only, no place/time filter | "What has WRI published on financing mechanisms for public transport?" | Topically substantive — doc meaningfully discusses the topic | Many (cluster-sized, e.g. 4-8+) — **majority of new queries** |
+| `geography_constrained` | Discovery query scoped to a specific place | "What has WRI published on zero-emission heavy-duty truck adoption in China?" | Topically substantive + place-scoped — docs on-topic but set elsewhere must be excluded | Many (cluster-sized) |
+| `date_constrained` | Discovery query scoped to a time window (e.g. "since YYYY") | "What has WRI published on electric buses since 2022?" (illustrative — no vetted example yet) | Topically substantive + date-scoped — docs on-topic but outside the window must be excluded | TBD — watching for a well-populated (multi-year) topic as clusters are reviewed |
 | `binary_presence` | "Is there anything about X?" | "Has WRI Cities written about bike-sharing's climate impact in China?" | Same as topic_discovery, but framed as existence-check | Few — mostly positive (topic exists), with a smaller number of deliberate negative cases (topic plausibly relevant but absent from this corpus, expecting an empty result) |
 | `fact_lookup` | Precise fact/figure retrieval — actually better suited to Answer mode | (existing 16 queries) | Answer-bearing — doc contains the specific fact/figure | Few (1-2) — **retained for coverage** (users may not distinguish Cite from Answer mode) but no new additions planned this round |
 
