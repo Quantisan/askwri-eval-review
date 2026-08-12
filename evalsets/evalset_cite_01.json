@@ -23,8 +23,8 @@
       "source_document_id": "",
       "source_language": "",
       "difficulty": "medium",
-      "query_type": "topic_area",
-      "note": ""
+      "query_type": "topic_discovery",
+      "note": "query_type migrated 2026-08-12 from original 'topic_area' (cite-golden-dataset.json taxonomy) to 'topic_discovery' (evalset_cite_02.json taxonomy)."
     },
     {
       "id": "q2_bangalore_geography",
@@ -49,8 +49,8 @@
       "source_document_id": "",
       "source_language": "",
       "difficulty": "medium",
-      "query_type": "geography",
-      "note": ""
+      "query_type": "geography_constrained",
+      "note": "query_type migrated 2026-08-12 from original 'geography' (cite-golden-dataset.json taxonomy) to 'geography_constrained' (evalset_cite_02.json taxonomy)."
     },
     {
       "id": "q3_children_pollution",
@@ -74,7 +74,7 @@
       "source_language": "",
       "difficulty": "hard",
       "query_type": "thematic_intersection",
-      "note": ""
+      "note": "query_type migrated 2026-08-12 from original 'thematic_intersection' (cite-golden-dataset.json taxonomy) to 'thematic_intersection' (evalset_cite_02.json taxonomy)."
     },
     {
       "id": "q4_climate_brazil",
@@ -95,8 +95,8 @@
       "source_document_id": "",
       "source_language": "",
       "difficulty": "hard",
-      "query_type": "thematic_geographic_intersection",
-      "note": ""
+      "query_type": "geography_constrained",
+      "note": "query_type migrated 2026-08-12 from original 'thematic_geographic_intersection' (cite-golden-dataset.json taxonomy) to 'geography_constrained' (evalset_cite_02.json taxonomy)."
     },
     {
       "id": "q5_micromobility",
@@ -129,8 +129,8 @@
       "source_document_id": "",
       "source_language": "",
       "difficulty": "hard",
-      "query_type": "fuzzy_topic",
-      "note": "Removed enabling-shift-electric-auto-rickshaws (not in catalog)"
+      "query_type": "topic_discovery",
+      "note": "Removed enabling-shift-electric-auto-rickshaws (not in catalog). query_type migrated 2026-08-12 from original 'fuzzy_topic' (cite-golden-dataset.json taxonomy) to 'topic_discovery' (evalset_cite_02.json taxonomy)."
     },
     {
       "id": "q6_school_bus_health",
@@ -155,8 +155,8 @@
       "source_document_id": "",
       "source_language": "",
       "difficulty": "medium",
-      "query_type": "intervention_impact",
-      "note": "ImpactAr tool covers health impacts of bus fleet electrification, though not school buses specifically"
+      "query_type": "thematic_intersection",
+      "note": "ImpactAr tool covers health impacts of bus fleet electrification, though not school buses specifically. query_type migrated 2026-08-12 from original 'intervention_impact' (cite-golden-dataset.json taxonomy) to 'thematic_intersection' (evalset_cite_02.json taxonomy)."
     },
     {
       "id": "q7_jakarta_housing",
@@ -177,8 +177,8 @@
       "source_document_id": "",
       "source_language": "",
       "difficulty": "hard",
-      "query_type": "solution_focused",
-      "note": "Updated from negative test (0 expected) to include adjacent/related docs per user guidance. Surabaya is other Indonesia city, rest are global scope housing solutions."
+      "query_type": "topic_discovery",
+      "note": "Updated from negative test (0 expected) to include adjacent/related docs per user guidance. Surabaya is other Indonesia city, rest are global scope housing solutions. query_type migrated 2026-08-12 from original 'solution_focused' (cite-golden-dataset.json taxonomy) to 'topic_discovery' (evalset_cite_02.json taxonomy)."
     },
     {
       "id": "q8_hydrogen",
@@ -197,8 +197,8 @@
       "source_document_id": "",
       "source_language": "",
       "difficulty": "medium",
-      "query_type": "niche_technology",
-      "note": "First 2 are directly on hydrogen, last 2 include hydrogen in energy analysis. Removed completing-trip (not in catalog)"
+      "query_type": "topic_discovery",
+      "note": "First 2 are directly on hydrogen, last 2 include hydrogen in energy analysis. Removed completing-trip (not in catalog). query_type migrated 2026-08-12 from original 'niche_technology' (cite-golden-dataset.json taxonomy) to 'topic_discovery' (evalset_cite_02.json taxonomy)."
     },
     {
       "id": "q9_world_resources_report",
@@ -243,8 +243,8 @@
       "source_document_id": "",
       "source_language": "",
       "difficulty": "medium",
-      "query_type": "umbrella_program",
-      "note": "16 papers total: 2 framing/synthesis, 7 thematic, 7 city case studies"
+      "query_type": "membership",
+      "note": "16 papers total: 2 framing/synthesis, 7 thematic, 7 city case studies. query_type migrated 2026-08-12 from original 'umbrella_program' (cite-golden-dataset.json taxonomy) to 'membership' (evalset_cite_02.json taxonomy)."
     },
     {
       "id": "q10_urban_finance_since_2020",
@@ -267,8 +267,8 @@
       "source_document_id": "",
       "source_language": "",
       "difficulty": "hard",
-      "query_type": "amorphous_temporal",
-      "note": "Date filter: 2020 onwards. Removed 5 docs not in catalog: rolling-out-electric-buses, access-climate-finance, assessing-financing-challenges, changing-demand-preference, financial-analysis-charging-station-fact"
+      "query_type": "date_constrained",
+      "note": "Date filter: 2020 onwards. Removed 5 docs not in catalog: rolling-out-electric-buses, access-climate-finance, assessing-financing-challenges, changing-demand-preference, financial-analysis-charging-station-fact. query_type migrated 2026-08-12 from original 'amorphous_temporal' (cite-golden-dataset.json taxonomy) to 'date_constrained' (evalset_cite_02.json taxonomy)."
     },
     {
       "id": "q11_urban_finance_exclude_ebuses",
@@ -295,8 +295,8 @@
       "source_document_id": "",
       "source_language": "",
       "difficulty": "hard",
-      "query_type": "amorphous_exclusion",
-      "note": "Urban finance minus electric buses. Removed seizing-the-urban-opportunity (not in catalog). 2026-07-22: removed 4 electric-bus expected_urls that contradicted the query's own exclusion clause (financing-electric-and-hybrid-electric-buses, assessing-financing-challenges-implementing-large-scale-electric-bus-program-india, rolling-out-electric-buses, the-future-of-urban-mobility-electric-bus-deployment-in-bogota-colombia)."
+      "query_type": "topic_exclusion",
+      "note": "Urban finance minus electric buses. Removed seizing-the-urban-opportunity (not in catalog). 2026-07-22: removed 4 electric-bus expected_urls that contradicted the query's own exclusion clause (financing-electric-and-hybrid-electric-buses, assessing-financing-challenges-implementing-large-scale-electric-bus-program-india, rolling-out-electric-buses, the-future-of-urban-mobility-electric-bus-deployment-in-bogota-colombia). query_type migrated 2026-08-12 from original 'amorphous_exclusion' (cite-golden-dataset.json taxonomy) to 'topic_exclusion' (evalset_cite_02.json taxonomy)."
     }
   ],
   "metadata": {
@@ -305,17 +305,12 @@
     "unique_documents": 54,
     "note": "11 expected docs removed from original 72 (not in catalog). URL typo fixed: healthier-students-and-communities → healthier-communities. Pruned 3 more URLs missing from current corpus: improving-school-infrastructure-healthier-communities (q3, q6), Pathways-to-Decarbonize-the-Road-Transport-Sector-in-Guangdong (q8)",
     "query_types": [
-      "topic_area",
-      "geography",
+      "date_constrained",
+      "geography_constrained",
+      "membership",
       "thematic_intersection",
-      "thematic_geographic_intersection",
-      "fuzzy_topic",
-      "intervention_impact",
-      "solution_focused",
-      "niche_technology",
-      "umbrella_program",
-      "amorphous_temporal",
-      "amorphous_exclusion"
+      "topic_discovery",
+      "topic_exclusion"
     ],
     "changes_from_v2": [
       "Converted document_urls to document_ids",
@@ -331,6 +326,32 @@
       "Added Q10: Urban finance since 2020 (amorphous + temporal)",
       "Added Q11: Urban finance excluding e-buses (amorphous + exclusion)",
       "Skipped Q12: Major flagship publications (4 URLs missing from catalog)"
-    ]
+    ],
+    "query_type_migration_2026_08_12": {
+      "topic_discovery": [
+        "topic_area",
+        "fuzzy_topic",
+        "niche_technology",
+        "solution_focused"
+      ],
+      "geography_constrained": [
+        "geography",
+        "thematic_geographic_intersection"
+      ],
+      "date_constrained": [
+        "amorphous_temporal"
+      ],
+      "thematic_intersection": [
+        "thematic_intersection",
+        "intervention_impact"
+      ],
+      "membership": [
+        "umbrella_program"
+      ],
+      "topic_exclusion": [
+        "amorphous_exclusion"
+      ]
+    },
+    "query_type_migration_note": "Original 11 cite-golden-dataset.json query_types were mapped onto evalset_cite_02.json's taxonomy on 2026-08-12: topic_area/fuzzy_topic/niche_technology/solution_focused all collapsed into topic_discovery (same relevance mechanic; fuzziness/niche-ness/solution-framing are topic-definition nuances, not independent constraint axes); geography/thematic_geographic_intersection collapsed into geography_constrained; amorphous_temporal renamed date_constrained. Three genuinely new axes were added to the shared taxonomy: thematic_intersection (topic x topic co-occurrence), membership (retrieval by named series/partnership/collaboration membership, broadened from the narrower 'umbrella_program' -- e.g. 'documents WRI wrote in partnership with X', not just report series), and topic_exclusion (renamed from amorphous_exclusion, 'X but exclude Y'). See query_expansion_plan_citemode_20260812.md for the full taxonomy table."
   }
 }

@@ -70,54 +70,45 @@ discovery query (they do substantively discuss the topic).
 
 ## New Cite-mode query taxonomy
 
-Single tier, five `query_type` values. `topic_discovery` is reserved for the
-*general* case (topic only, no place/time filter); `geography_constrained`
-and `date_constrained` are discovery queries that add a specific filter
-dimension on top of the topic. This distinction was added 2026-08-12 mid-way
-through cluster review — see "Parked / open items" for retroactive
-relabeling of the first two clusters.
+Single tier, eight `query_type` values. `topic_discovery` is reserved
+for the *general* case (topic only, no place/time/theme/framing filter);
+`geography_constrained`, `date_constrained`, `thematic_intersection`, and
+`topic_exclusion` are discovery queries that add a specific, independently
+-applicable filter dimension on top of the topic. `membership` is a
+different kind of query entirely — retrieval by named
+series/partnership/collaboration, not by topical content matching at all.
 
 | query_type | Description | Example | Relevance standard | Expected volume |
 |---|---|---|---|---|
-| `topic_discovery` | "What's already there on X?" — topic only, no place/time filter | "What has WRI published on financing mechanisms for public transport?" | Topically substantive — doc meaningfully discusses the topic | Many (cluster-sized, e.g. 4-8+) — **majority of new queries** |
+| `topic_discovery` | "What's already there on X?" — topic only, no place/time/theme/framing filter. Also covers narrow/niche topics and topics with fuzzy boundaries or a solution-oriented framing baked into the topic definition itself (these are topic-definition nuances, not independent constraint axes) | "What has WRI published on financing mechanisms for public transport?" | Topically substantive — doc meaningfully discusses the topic | Many (cluster-sized, e.g. 4-8+) — **majority of new queries** |
 | `geography_constrained` | Discovery query scoped to a specific place | "What has WRI published on zero-emission heavy-duty truck adoption in China?" | Topically substantive + place-scoped — docs on-topic but set elsewhere must be excluded | Many (cluster-sized) |
 | `date_constrained` | Discovery query scoped to a time window (e.g. "since YYYY") | "What has WRI published on financing mechanisms for public transport since 2022?" (`d5`, first vetted example) | Topically substantive + date-scoped — docs on-topic but outside the window must be excluded | 1 so far (`d5`) — watching for more well-populated (multi-year) topics as clusters are reviewed |
+| `thematic_intersection` | Two substantive themes must co-occur in the same doc (not a place/time filter — a content co-occurrence requirement) | "What has WRI published on children and pollution?" (`cite_01` `q3`) | Both themes must be substantively present, not just one with a passing mention of the other | 2 so far, both from `evalset_cite_01.json` (`q3`, `q6`) |
+| `topic_exclusion` | "X but exclude Y" — a negative content filter on top of a broad topic | "Have we published anything to do with urban finance — please exclude anything to do with electric buses?" (`cite_01` `q11`) | Topically substantive on X, AND must not be primarily about excluded sub-topic Y | 1 so far, from `evalset_cite_01.json` (`q11`) |
+| `membership` | Retrieval by membership in a named series, program, or partnership/collaboration — not by topical content matching | "Give me all the papers published as part of the Cities World Resources Report" / "What has WRI written in partnership with X?" | Doc must be a confirmed member of the named series/program/collaboration (editorial/institutional metadata, not topic relevance) | 1 so far, from `evalset_cite_01.json` (`q9`, renamed from `umbrella_program` and broadened to include partnership/collaboration framings) |
 | `binary_presence` | "Is there anything about X?" | "Has WRI Cities written about bike-sharing's climate impact in China?" | Same as topic_discovery, but framed as existence-check | Few — mostly positive (topic exists), with a smaller number of deliberate negative cases (topic plausibly relevant but absent from this corpus, expecting an empty result) |
 | `fact_lookup` | Precise fact/figure retrieval — actually better suited to Answer mode | (existing 16 queries) | Answer-bearing — doc contains the specific fact/figure | Few (1-2) — **retained for coverage** (users may not distinguish Cite from Answer mode) but no new additions planned this round |
 
-## Versioning decision
 
-**(Original decision below; superseded by the 2026-08-12 renaming update
-that follows it — kept for historical record.)**
+## Cite-mode evalset files (current state)
 
-- `evalsets/evalset_cite_02.json` (v4.0) — **frozen as-is**. Existing 16
-  `fact_lookup` queries kept for Answer-style-query-in-Cite-mode coverage.
-- `evalsets/evalset_cite_03.json` — **new file**, where `topic_discovery`
-  and `binary_presence` queries are developed.
+- `source_evalsets/cite-golden-dataset.json` (v3.0) — original "generation
+  1" golden set, 11 test cases, 169-doc-corpus era. Frozen, untouched.
+- `evalsets/evalset_cite_01.json` (v3.1) — `cite-golden-dataset.json`
+  migrated to the generation-2+ parallel-array schema. 11 test cases, 8
+  `query_type` values. `expected_document_ids` (UUIDs) are empty-string
+  placeholders pending a full-corpus reconciliation pass.
+- `evalsets/evalset_cite_02_bkup01.json` (v4.0) — the original 16
+  `fact_lookup` queries. Frozen, kept for Answer-style-query-in-Cite-mode
+  coverage.
+- `evalsets/evalset_cite_02.json` (v4.1) — `topic_discovery`/
+  `geography_constrained`/`date_constrained` queries (`d1`-`d5`). Current
+  focus of active development.
 - `evalsets/evalset_answer_*.json` — untouched. New Cite-only query types
-  (`topic_discovery`, `binary_presence`) do not get Answer-mode
-  counterparts (no single synthesizable answer for "what's already there on
-  X?"). Each such test case includes a `note` explaining why there's no
-  Answer-mode pair, mirroring the existing pattern for fact_lookup queries
-  with no drafted answer yet.
-
-**Update 2026-08-12 (post-review renaming):** once clusters 1-4 were
-complete, the files were renamed for clarity and a third dataset was added:
-
-- `evalsets/evalset_cite_01.json` (v3.1) — **new file**, a straight schema
-  migration of `source_evalsets/cite-golden-dataset.json` (the original,
-  frozen "generation 1" golden set, v3.0, 11 test cases, 169-doc-corpus
-  era) into the parallel-array schema. `expected_document_ids` (UUIDs) are
-  left as empty-string placeholders pending a full-corpus reconciliation
-  pass (deferred since the corpus is expected to change again shortly).
-  `source_evalsets/cite-golden-dataset.json` itself remains untouched.
-- `evalsets/evalset_cite_02.json` (was `evalset_cite_02_bkup01.json`'s
-  original name) — **renamed to `evalset_cite_02_bkup01.json`, v4.0,
-  frozen/unchanged**. The 16 `fact_lookup` queries live here now.
-- `evalsets/evalset_cite_03.json` — **renamed to `evalset_cite_02.json`,
-  version bumped 5.0 → 4.1**, continuing the "generation 2" file lineage
-  instead of starting a new generation number. This is the file with
-  `d1`-`d5` (topic_discovery/geography_constrained/date_constrained).
+  do not get Answer-mode counterparts (no single synthesizable answer for
+  "what's already there on X?"); each such test case's `note` explains why,
+  mirroring the existing pattern for fact_lookup queries with no drafted
+  answer yet.
 
 ## Schema notes for evalset_cite_02.json (formerly evalset_cite_03.json)
 
@@ -224,7 +215,11 @@ full-corpus reconciliation pass to resolve its placeholder
 - Sample fresh topics/documents directly from the corpus (not derived from
   the existing 16-query batch) for more `topic_discovery`/
   `geography_constrained`/`date_constrained` breadth — see "Coverage
-  limits" above.
-- Consider adding an `amorphous_exclusion`-style query_type (e.g. "X but
-  exclude Y"), following `cite-golden-dataset.json`'s `q11` precedent —
-  not yet added to this file's taxonomy.
+  limits" above. This should now also target the 3 new query_types added
+  2026-08-12 (`thematic_intersection`, `topic_exclusion`, `membership`),
+  each of which currently has only 1-2 examples, all from the migrated
+  `evalset_cite_01.json` (still pending UUID resolution) rather than a
+  freshly-vetted, fully-resolved example against the current corpus.
+- DONE (2026-08-12): taxonomy expanded from 5 to 8 `query_type` values by
+  mapping `cite-golden-dataset.json`'s 11 types onto the shared taxonomy —
+  see "New Cite-mode query taxonomy" above.
