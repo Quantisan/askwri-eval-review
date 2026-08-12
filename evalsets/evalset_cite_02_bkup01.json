@@ -2,7 +2,7 @@
   "version": "4.0",
   "created": "2026-08-11",
   "updated": "2026-08-11",
-  "description": "Evaluation dataset (generation 2) for AskWRI Cite mode evaluation - cross-lingual corpus (en/zh/es/pt). Test cases are built by manually reviewing one sampled KP at a time and drafting a high-level English query whose expected answer is that document. expected_external_ids/expected_document_ids are parallel arrays (same index = same document, as external_id string vs UUID document_id). Renamed 2026-08-12 from evalset_cite_02.json to evalset_cite_02_bkup01.json (content/version 4.0 frozen, unchanged) so that name could be reused for the topic_discovery/geography_constrained/date_constrained expansion (formerly evalset_cite_03.json, now evalset_cite_02.json v4.1+). This file's 16 fact_lookup queries are kept for reference/coverage, per query_expansion_plan_citemode_20260812.md.",
+  "description": "Evaluation dataset (generation 2) for AskWRI Cite mode evaluation - cross-lingual corpus (en/zh/es/pt). Test cases are built by manually reviewing one sampled KP at a time and drafting a high-level English query whose expected answer is that document. expected_external_ids/expected_document_ids are parallel arrays (same index = same document, as external_id string vs UUID document_id). Renamed 2026-08-12 from evalset_cite_02.json to evalset_cite_02_bkup01.json (content/version 4.0 frozen, unchanged) so that name could be reused for the topic_discovery/geography_constrained/date_constrained expansion (formerly evalset_cite_03.json, now evalset_cite_02.json v4.1+). This file's 16 fact_lookup queries are kept for reference/coverage, per expected_doc_expansion_plan_citemode_20260812.md.",
   "test_cases": [
     {
       "id": "q1_zero-emission-heavy-duty-trucks",
