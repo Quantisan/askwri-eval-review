@@ -1,0 +1,44 @@
+{
+  "version": "5.0",
+  "created": "2026-08-12",
+  "updated": "2026-08-12",
+  "description": "Evaluation dataset (generation 2+) for AskWRI Cite mode- cross-lingual corpus (en/zh/es/pt). Buildign queries based on literature-discovery style queries ('What's already there on X?') and existence-check queries. Unlike evalset_cite_02.json's fact-lookup queries, these use a broader 'topically substantive' relevance standard.",
+  "test_cases": [
+    {
+      "id": "d1_zero-emission-heavy-duty-trucks-discovery",
+      "question": "What has WRI published on zero-emission heavy-duty truck adoption in China?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2025_zero-emission-heavy-duty-trucks_00015",
+        "2025_charging-toward-2035-policies-to-accelerate-zero_7455",
+        "2022_china-road-transport-decarbonization_00145",
+        "2024_techno-economic-feasibility-analysis-of-zero_7051",
+        "2022_decarbonizing-chinas-road-transport-sector_2101",
+        "2019_toward-net-zero-emissions-in-the-road-transport_1735",
+        "2024_accelerating-zero-emission-truck-adoption-in_6287",
+        "2024_zero-emission-trucks-guangdong_00006",
+        "2021_zero-emission-logistic-vehicles-promotion_1319",
+        "2024_feasibility-of-zero-emission-freight-zones_1267",
+        "2023_visioning-to-implementation-national-transport_8631"
+      ],
+      "expected_document_ids": [
+        "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+        "7c2e200e-9c01-4acd-b5ef-a18041a7f258",
+        "6a5e424b-b894-450f-967e-1b64ddfd24d4",
+        "d79ef747-9490-461c-b9da-27c7a96ee033",
+        "adafe321-99f8-4ebd-8a9c-f4752459fd13",
+        "afe53e4b-f8b7-42cf-9e13-e713d95429e0",
+        "b4aa3e77-d14b-4efd-a281-04c490a58b27",
+        "61d7d9a2-7881-4b35-a553-ad9382520094",
+        "64342098-ff08-4d30-840b-6ac7d0deff6e",
+        "751b772e-6903-4c56-aeb0-09a72ff54360",
+        "02603294-1f0e-406a-896a-3f6c44666b0b"
+      ],
+      "source_document_id": "00be4a1d-33cc-4b56-a4d5-d15af0a5cc27",
+      "source_language": "zh",
+      "difficulty": "medium",
+      "query_type": "topic_discovery",
+      "note": "Variation on the q1-q4 review session (evalset_cite_02.json), reframed as a literature-discovery query. expected_* built via qmd vsearch + human review using a 'topically substantive' relevance standard (broader than answer-bearing). Includes two twin-language pairs confirmed by retrieval score parity, previously only 'less probable' hypotheses in issuelog_20260807.md: (1) 2022_china-road-transport-decarbonization_00145 (zh) / 2022_decarbonizing-chinas-road-transport-sector_2101 (en); (2) 2024_techno-economic-feasibility-analysis-of-zero_7051 (en) / 2024_zero-emission-trucks-guangdong_00006 (zh). A follow-up review of candidates scoring 0.50-0.67 (below the initial cutoff) added 3 more: 2021_zero-emission-logistic-vehicles-promotion_1319 and 2024_feasibility-of-zero-emission-freight-zones_1267 (directly on-topic, just scored lower), and 2023_visioning-to-implementation-national-transport_8631 (covers China/India/Vietnam, but contains a substantive China-specific HDV/BEV truck passage in its executive summary, verified via full-text read). Reviewed but excluded from this sweep: a WRI India Fi-ZET tool (India-specific, not China), and several topically-adjacent-but-not-central docs (Hong Kong roads, China provincial transport carbon accounting, container port decarbonization). No Answer-mode counterpart planned for this query (per query_expansion_plan_citemode_20260812.md)."
+    }
+  ]
+}
