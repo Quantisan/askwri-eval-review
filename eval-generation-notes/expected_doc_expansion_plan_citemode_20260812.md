@@ -190,13 +190,17 @@ full-corpus reconciliation pass to resolve its placeholder
 ## binary_presence plan
 
 - Positive queries (topic known to exist in corpus): count TBD, expected to
-  be a small set, developed after the 4 topic_discovery queries above.
+  be a small set. Not started.
 - Negative queries (topic plausibly relevant to WRI Cities but absent from
   this 207-doc corpus): target ~4 across the eval set eventually. Each
   candidate topic must be verified via `qmd vsearch` (confirming
   consistently low scores across the corpus) before being locked in as an
-  expected-empty-result test case. Deferred until positive queries are
-  done.
+  expected-empty-result test case. DONE (2026-08-12): first batch of 3
+  landed (`d8`-`d10`: surveillance tech for climate resilience, urban
+  vertical farming/rooftop agriculture, nuclear microreactors for
+  city-level power grids) — all "farther afield" topics, verified via
+  `qmd vsearch` showing only generic query-boilerplate overlap with no
+  substantively on-topic hits. ~1 more to reach the ~4 target.
 
 ## Parked / open items
 
@@ -204,9 +208,11 @@ full-corpus reconciliation pass to resolve its placeholder
   (see `evalset_cite_02.json`'s (formerly `evalset_cite_03.json`) note
   field: `61d7d9a2`/`d79ef747` and `6a5e424b`/`adafe321`) against
   `issuelog_20260807.md` and update that log from "less probable" to
-  confirmed. Still not done.
-- Design negative binary_presence topics + verification pass. Not started.
-- `binary_presence` queries generally (positive + negative) — not started.
+  confirmed. Still not done. Also now applies to `d7`'s two suspected
+  duplicate-ingest pairs (2019 e-bus adoption guide; transit-bus
+  costs/emissions appraisal tool).
+- Positive `binary_presence` queries — not started.
+- One more negative `binary_presence` candidate to reach the ~4 target.
 - Once the corpus is finalized: resolve `evalset_cite_01.json`'s placeholder
   `expected_document_ids`, re-check its previously-pruned candidates against
   the final catalog (at least 7 already confirmed back as of 2026-08-12 —
@@ -215,11 +221,15 @@ full-corpus reconciliation pass to resolve its placeholder
 - Sample fresh topics/documents directly from the corpus (not derived from
   the existing 16-query batch) for more `topic_discovery`/
   `geography_constrained`/`date_constrained` breadth — see "Coverage
-  limits" above. This should now also target the 3 new query_types added
-  2026-08-12 (`thematic_intersection`, `topic_exclusion`, `membership`),
-  each of which currently has only 1-2 examples, all from the migrated
-  `evalset_cite_01.json` (still pending UUID resolution) rather than a
-  freshly-vetted, fully-resolved example against the current corpus.
+  limits" above.
+- DONE (2026-08-12): first fresh (non-cite_01-derived) `membership` (`d6`,
+  "Seizing the Urban Opportunity" series, 8 docs) and `topic_exclusion`
+  (`d7`, electric buses excluding school buses, 14 docs) examples landed.
+  `thematic_intersection` still has only the 2 examples from the migrated
+  `evalset_cite_01.json` (pending UUID resolution) — still needs a fresh,
+  freshly-vetted example against the current corpus. Also still open: a
+  fresh `topic_discovery`/`geography_constrained` cluster on heat
+  resilience/climate hazards in cities (flagged but not yet pursued).
 - DONE (2026-08-12): taxonomy expanded from 5 to 8 `query_type` values by
   mapping `cite-golden-dataset.json`'s 11 types onto the shared taxonomy —
   see "New Cite-mode query taxonomy" above.
