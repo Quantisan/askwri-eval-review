@@ -1,11 +1,18 @@
 # AskWRI Eval Review
 
-Tools and datasets for building and reviewing evaluation sets for AskWRI's
+This repository builds ground-truth evaluation datasets for AskWRI. It covers
 two query modes:
 
-- **Cite mode** - given a question, retrieve the correct source document(s).
-- **Answer mode** - given a question, retrieve the correct passages *and*
-  synthesize a correct answer.
+- **Cite mode** retrieves the correct source documents for a question.
+- **Answer mode** retrieves relevant passages and generates a correct answer.
+
+The repository outputs JSON fixtures compatible with AskWRI's evaluation
+harness. It does not run AskWRI or calculate evaluation scores.
+
+Ground truth is created independently from AskWRI's retrieval system. Source
+documents and identifiers may be read from AskWRI's Postgres database, but
+AskWRI's retrieval and production embedding model must not be used to create or
+expand expected results. Query expansion uses `qmd` with Qwen embeddings.
 
 ## Directory layout
 
@@ -43,9 +50,7 @@ two query modes:
 
 ## Eval-generation process (generation 2+)
 
-The corpus grew from 169 documents to a 207-document cross-lingual corpus
-(English, Chinese, Spanish, Portuguese). New eval sets are being built as
-follows:
+Eval sets for the 207-document cross-lingual corpus are built as follows:
 
 1. A human reviewer works through the corpus one document (or
    cross-lingual twin-pair) at a time, recording notes in
