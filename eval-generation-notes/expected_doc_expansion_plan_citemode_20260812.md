@@ -230,6 +230,17 @@ full-corpus reconciliation pass to resolve its placeholder
   freshly-vetted example against the current corpus. Also still open: a
   fresh `topic_discovery`/`geography_constrained` cluster on heat
   resilience/climate hazards in cities (flagged but not yet pursued).
+- DONE (2026-08-12): second `membership` example landed (`d11`, "What has
+  WRI written with the Coalition for Urban Transitions?", 26 docs) — a
+  deliberate contrast pair with `d6`: partnership/authoring-entity
+  membership (broader -- includes explicit "in partnership with"/"prepared
+  for CUT" language) vs. named-report-series membership (narrower).
+  Surfaced that CUT was a much longer-running initiative (2016-2021, "a
+  special initiative of the New Climate Economy project") than the 2021
+  series alone -- worth keeping in mind if more CUT-adjacent queries are
+  drafted later, and a candidate case study for the notebook review step
+  given the number of judgment calls involved in separating genuine
+  partnership language from mere citations/acknowledgments.
 - DONE (2026-08-12): taxonomy expanded from 5 to 8 `query_type` values by
   mapping `cite-golden-dataset.json`'s 11 types onto the shared taxonomy —
   see "New Cite-mode query taxonomy" above.
