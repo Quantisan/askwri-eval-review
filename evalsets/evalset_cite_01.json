@@ -1,7 +1,7 @@
 {
   "version": "3.1",
   "created": "2025-11-07",
-  "updated": "2026-08-12",
+  "updated": "2026-08-13",
   "description": "Evaluation dataset (generation 1, migrated) for AskWRI Cite mode. Migrated 2026-08-12 from source_evalsets/cite-golden-dataset.json (v3.0, frozen reference covering the original 169-document corpus) into the generation-2+ schema (parallel expected_external_ids/expected_document_ids arrays) used by evalsets/evalset_cite_02.json. This migration is schema-only: expected_document_ids (UUIDs) are left as empty-string placeholders, since resolving them requires the documents-list-207 lookup, and the corpus is expected to change again shortly. No catalog revalidation, re-search, or doc re-addition was performed this round -- expected_external_ids are carried over exactly as they were in cite-golden-dataset.json (i.e. already reflecting that source's prior 'not in catalog' prunings from the 169-doc-corpus era). A follow-up pass, once the corpus is finalized, should: (1) resolve expected_document_ids via documents-list-207_*.txt, (2) re-check previously-pruned candidates against the current/final catalog (at least 7 were already confirmed back in catalog as of 2026-08-12: rolling-out-electric-buses, access-to-climate-finance, assessing-financing-challenges, changing-the-demand-preference, financial-analysis-of-charging-station-fact, seizing-the-urban-opportunity, improving-school-infrastructure-for-healthier -- see git history / prior chat log for details), and (3) consider whether any topics now have new zh/es/pt counterparts among the 26 recently-added documents. source_evalsets/cite-golden-dataset.json remains the frozen, untouched original reference.",
   "test_cases": [
     {
@@ -252,15 +252,9 @@
       "task_description": "Retrieve all papers that were published after a specific date on an amorphous intersection. 'Urban finance' is a concatenation of two amorphous terms and not thing as such, so expecting to return all things in our corpus to do with finance, which is mostly electric buses and transportation.",
       "expected_external_ids": [
         "2024_a-fare-look-funding-urban-public-transport_7541",
-        "2021_synergizing-land-value-capture-and-transit_4839",
-        "2017_global-review-of-finance-for-sustainable-urban_8997",
-        "2017_global-review-of-finance-for-sustainable-urban_8290",
-        "2019_climate-emergency-urban-opportunity_4461"
+        "2021_synergizing-land-value-capture-and-transit_4839"
       ],
       "expected_document_ids": [
-        "",
-        "",
-        "",
         "",
         ""
       ],
@@ -268,7 +262,7 @@
       "source_language": "",
       "difficulty": "hard",
       "query_type": "date_constrained",
-      "note": "Date filter: 2020 onwards. Removed 5 docs not in catalog: rolling-out-electric-buses, access-climate-finance, assessing-financing-challenges, changing-demand-preference, financial-analysis-charging-station-fact. query_type migrated 2026-08-12 from original 'amorphous_temporal' (cite-golden-dataset.json taxonomy) to 'date_constrained' (evalset_cite_02.json taxonomy)."
+      "note": "Date filter: 2020 onwards. Removed 5 docs not in catalog: rolling-out-electric-buses, access-climate-finance, assessing-financing-challenges, changing-demand-preference, financial-analysis-charging-station-fact. query_type migrated 2026-08-12 from original 'amorphous_temporal' (cite-golden-dataset.json taxonomy) to 'date_constrained' (evalset_cite_02.json taxonomy). FIXED 2026-08-13: removed 3 docs that predate the query's 'since 2020' cutoff (verified via date_published frontmatter, not just filename year): 2017_global-review-of-finance-for-sustainable-urban_8997/_8290 (12/1/2017) and 2019_climate-emergency-urban-opportunity_4461 (9/19/2019). This was a genuine date-filter bug inherited from cite-golden-dataset.json (v3.0), not a slug-vs-real-date mismatch -- flagged by Paul Lam. source_evalsets/cite-golden-dataset.json left untouched (frozen reference)."
     },
     {
       "id": "q11_urban_finance_exclude_ebuses",
@@ -300,10 +294,7 @@
     }
   ],
   "metadata": {
-    "total_test_cases": 11,
-    "total_expected_documents": 70,
-    "unique_documents": 54,
-    "note": "11 expected docs removed from original 72 (not in catalog). URL typo fixed: healthier-students-and-communities → healthier-communities. Pruned 3 more URLs missing from current corpus: improving-school-infrastructure-healthier-communities (q3, q6), Pathways-to-Decarbonize-the-Road-Transport-Sector-in-Guangdong (q8)",
+    "note": "Some expected docs removed from the original cite-golden-dataset.json (not in catalog). URL typo fixed: healthier-students-and-communities → healthier-communities. Pruned URLs missing from current corpus: improving-school-infrastructure-healthier-communities (q3, q6), Pathways-to-Decarbonize-the-Road-Transport-Sector-in-Guangdong (q8). 2026-08-13: removed 3 more from q10 that predated its 'since 2020' filter (date-filter bug inherited from cite-golden-dataset.json, flagged by Paul Lam) -- see q10's note.",
     "query_types": [
       "date_constrained",
       "geography_constrained",
