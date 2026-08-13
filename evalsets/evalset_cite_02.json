@@ -1,7 +1,7 @@
 {
   "version": "4.1",
   "created": "2026-08-11",
-  "updated": "2026-08-12",
+  "updated": "2026-08-13",
   "description": "Evaluation dataset (generation 2+) for AskWRI Cite mode - cross-lingual corpus (en/zh/es/pt). Builds on literature-discovery style queries ('What's already there on X?') and existence-check queries. Unlike evalset_cite_02_bkup01.json's fact-lookup queries (the frozen v4.0 predecessor of this file, since renamed), these use a broader 'topically substantive' relevance standard.",
   "test_cases": [
     {
@@ -393,6 +393,26 @@
       "difficulty": "medium",
       "query_type": "membership",
       "note": "individual-authorship variant of membership. Sourced directly 'authors:' metadata field."
+    },
+    {
+      "id": "d15_flooding-risk-informal-settlements-intersection",
+      "question": "What has WRI published on flooding risk in informal settlements?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2025_multilevel-action-for-community-led-climate_7058",
+        "2018_resilient-and-affordable-housing-for-all-lessons_5955",
+        "2018_resilient-and-affordable-housing-for-all-lessons_6969"
+      ],
+      "expected_document_ids": [
+        "e313372e-4880-4a0f-bd30-5fd66ec0740c",
+        "0d9a5319-78a1-4333-94b8-55fe68b15a48",
+        "b15e0961-89fe-4585-b014-427b9b039e4d"
+      ],
+      "source_document_id": "",
+      "source_language": "",
+      "difficulty": "hard",
+      "query_type": "thematic_intersection",
+      "note": "query_type thematic_intersection, with topics 'flooding risk' and 'informal settlements' as the two target concepts. The Kochi/Trivandrum doc is a likely duplicate-ingest twin (two doc_ids, same content)."
     }
   ]
 }

@@ -27,6 +27,9 @@ Fixed by:
   in the top 2 results, including correct cross-lingual retrieval (English
   query surfacing a Chinese-titled source document).
 
+Follow this template to invoke qmd: 
+`mise exec -- npx qmd vsearch "example query" -n 10 --format json --no-rerank 2>&1 | head -5`
+
 ### Embedding model choice
 
 AskWRI production uses `cohere-embed-v4` (via AWS Bedrock). qmd is
@@ -184,40 +187,6 @@ batch now have discovery-style counterparts in
 of the 207-doc corpus (5-7 documents) that the original manual doc-review
 session happened to sample — see "Coverage limits" below.
 
-## Coverage limits (added 2026-08-12)
-
-The 16 `fact_lookup` queries in `evalset_cite_02_bkup01.json` were all
-derived from just 5 manually-reviewed source documents (7 including known
-translation twins), organized into 4 topical clusters. `fact_lookup`
-queries are many-to-one against a source doc, but
-`topic_discovery`/`geography_constrained`/`date_constrained` collapse back
-down to ~1 query per cluster — so 16 fact-lookup queries could only ever
-produce ~4 discovery-style queries (5 with `d5`'s temporal variant). This
-is a structural ceiling of the doc-review batch, not a shortfall in this
-round's execution. Getting real breadth for these query types (the plan's
-stated goal of "majority of new queries") requires sampling fresh
-topics/documents directly from the corpus, not derived from the existing
-16-query batch — see also `evalsets/evalset_cite_01.json` (migrated
-2026-08-12 from `source_evalsets/cite-golden-dataset.json`), which already
-covers 11 more topics/query-types independent of this batch, pending a
-full-corpus reconciliation pass to resolve its placeholder
-`expected_document_ids`.
-
-## binary_presence plan
-
-- Positive queries (topic known to exist in corpus): count TBD, expected to
-  be a small set. Not started.
-- Negative queries (topic plausibly relevant to WRI Cities but absent from
-  this 207-doc corpus): target ~4 across the eval set eventually. Each
-  candidate topic must be verified via `qmd vsearch` (confirming
-  consistently low scores across the corpus) before being locked in as an
-  expected-empty-result test case. DONE (2026-08-12): first batch of 3
-  landed (`d8`-`d10`: surveillance tech for climate resilience, urban
-  vertical farming/rooftop agriculture, nuclear microreactors for
-  city-level power grids) — all "farther afield" topics, verified via
-  `qmd vsearch` showing only generic query-boilerplate overlap with no
-  substantively on-topic hits. ~1 more to reach the ~4 target.
-
 ## Parked / open items
 
 - Verify the two twin-pair hypotheses confirmed during cluster 1's review
@@ -227,8 +196,6 @@ full-corpus reconciliation pass to resolve its placeholder
   confirmed. Still not done. Also now applies to `d7`'s two suspected
   duplicate-ingest pairs (2019 e-bus adoption guide; transit-bus
   costs/emissions appraisal tool).
-- Positive `binary_presence` queries — not started.
-- One more negative `binary_presence` candidate to reach the ~4 target.
 - Once the corpus is finalized: resolve `evalset_cite_01.json`'s placeholder
   `expected_document_ids`, re-check its previously-pruned candidates against
   the final catalog (at least 7 already confirmed back as of 2026-08-12 —
@@ -238,25 +205,3 @@ full-corpus reconciliation pass to resolve its placeholder
   the existing 16-query batch) for more `topic_discovery`/
   `geography_constrained`/`date_constrained` breadth — see "Coverage
   limits" above.
-- DONE (2026-08-12): first fresh (non-cite_01-derived) `membership` (`d6`,
-  "Seizing the Urban Opportunity" series, 8 docs) and `topic_exclusion`
-  (`d7`, electric buses excluding school buses, 14 docs) examples landed.
-  `thematic_intersection` still has only the 2 examples from the migrated
-  `evalset_cite_01.json` (pending UUID resolution) — still needs a fresh,
-  freshly-vetted example against the current corpus. Also still open: a
-  fresh `topic_discovery`/`geography_constrained` cluster on heat
-  resilience/climate hazards in cities (flagged but not yet pursued).
-- DONE (2026-08-12): second `membership` example landed (`d11`, "What has
-  WRI written with the Coalition for Urban Transitions?", 26 docs) — a
-  deliberate contrast pair with `d6`: partnership/authoring-entity
-  membership (broader -- includes explicit "in partnership with"/"prepared
-  for CUT" language) vs. named-report-series membership (narrower).
-  Surfaced that CUT was a much longer-running initiative (2016-2021, "a
-  special initiative of the New Climate Economy project") than the 2021
-  series alone -- worth keeping in mind if more CUT-adjacent queries are
-  drafted later, and a candidate case study for the notebook review step
-  given the number of judgment calls involved in separating genuine
-  partnership language from mere citations/acknowledgments.
-- DONE (2026-08-12): taxonomy expanded from 5 to 8 `query_type` values by
-  mapping `cite-golden-dataset.json`'s 11 types onto the shared taxonomy —
-  see "New Cite-mode query taxonomy" above.
