@@ -1,8 +1,8 @@
 {
-  "version": "4.3",
+  "version": "4.1",
   "created": "2026-08-11",
   "updated": "2026-08-12",
-  "description": "Evaluation dataset (generation 2+) for AskWRI Cite mode - cross-lingual corpus (en/zh/es/pt). Builds on literature-discovery style queries ('What's already there on X?') and existence-check queries. Unlike evalset_cite_02_bkup01.json's fact-lookup queries (the frozen v4.0 predecessor of this file, since renamed), these use a broader 'topically substantive' relevance standard. v4.2 adds fresh (non-cite_01-derived) membership and topic_exclusion examples, plus a first batch of negative binary_presence test cases. v4.3 adds a second membership example (d11) contrasting named-series vs. partnership/authoring-entity membership against d6.",
+  "description": "Evaluation dataset (generation 2+) for AskWRI Cite mode - cross-lingual corpus (en/zh/es/pt). Builds on literature-discovery style queries ('What's already there on X?') and existence-check queries. Unlike evalset_cite_02_bkup01.json's fact-lookup queries (the frozen v4.0 predecessor of this file, since renamed), these use a broader 'topically substantive' relevance standard.",
   "test_cases": [
     {
       "id": "d1_zero-emission-heavy-duty-trucks-discovery",
@@ -305,6 +305,60 @@
       "difficulty": "hard",
       "query_type": "membership",
       "note": "Contrast pair with d6: partnership/authoring-entity membership (broader) vs. named report series (narrower). Includes d6's 8 docs plus the 2019 precursor d6 excludes, plus docs with explicit 'in partnership with' / 'prepared for CUT' language. Excludes docs that only cite or acknowledge CUT in passing."
+    },
+    {
+      "id": "d12_climate-hazards-heat-resilience-discovery",
+      "question": "What has WRI published on climate hazards and heat resilience in cities?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2024_climate-resilient-cities-assessing-differential_1543",
+        "2024_city-scale-city-relevant-climate-hazard_3175",
+        "2019_unlocking-the-potential-for-transformative_9741",
+        "2018_prepared-communities-implementing-the-urban_2922",
+        "2025_multilevel-action-for-community-led-climate_7058",
+        "2023_estimating-future-local-climate-hazard_4480",
+        "2021_mexico-frontrunners-adapting-to-climate-change-in_8904",
+        "2021_water-resilience-in-a-changing-urban-context_8364",
+        "2022_nature-based-solutions-in-sub-saharan-africa-for_1106",
+        "2025_calculating-indicators-from-global-geospatial_3765"
+      ],
+      "expected_document_ids": [
+        "0540a282-59d9-4040-9a03-e592ab48140d",
+        "ee5cc94b-d61a-4b1e-a05a-84a0124a13a2",
+        "504c3435-b0ff-4454-b9bd-e388edb5c92b",
+        "ec468eb4-eec2-4d60-bf68-5ae9866fc62c",
+        "e313372e-4880-4a0f-bd30-5fd66ec0740c",
+        "66ec635b-1731-4c60-9359-a1dff731f18a",
+        "ec0bd5db-197c-4533-b4ed-2968bfe5ca8c",
+        "693d9e5c-343c-4b47-9e1f-d818c01f4114",
+        "0bcb1016-83f3-419e-95b3-d44e71b9b1a5",
+        "b27e589f-28e6-4a2e-bd79-3003b2a3d165"
+      ],
+      "source_document_id": "",
+      "source_language": "",
+      "difficulty": "medium",
+      "query_type": "topic_discovery",
+      "note": "Excluded as a distinct topic: Climate Emergency Urban Opportunity (decarbonization/mitigation-focused, not hazards/resilience), Untreated and Unsafe: Urban Sanitation Crisis, and Kampala sanitation services (sanitation governance, not climate hazards). Also note 3 catalog docs on this exact topic (Flooding in Nairobi's Informal Settlements; Mapping Scenarios for Heat-Resilient Infrastructure; Modeling Hyperlocal Heat Exposure) are not yet indexed in qmd (no markdown generated) and could not be evaluated."
+    },
+    {
+      "id": "d13_low-cost-air-quality-monitoring-discovery",
+      "question": "What has WRI published on low-cost air quality sensors and monitoring in cities?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2021_medindo-mp25-com-sensores-de-baixo-custo_6821",
+        "2023_ciencia-participativa-accion-para-un-aire-limpio_6722",
+        "2025_aire-limpio-en-barrios-vitales_9425"
+      ],
+      "expected_document_ids": [
+        "fb609d32-b9a0-4d30-af42-658dce515f90",
+        "7009a0f3-2f87-4c92-bacf-490b3cde7e09",
+        "7f874e0e-1c87-483d-8802-1c0c1bc46773"
+      ],
+      "source_document_id": "",
+      "source_language": "",
+      "difficulty": "medium",
+      "query_type": "topic_discovery",
+      "note": ""
     }
   ]
 }

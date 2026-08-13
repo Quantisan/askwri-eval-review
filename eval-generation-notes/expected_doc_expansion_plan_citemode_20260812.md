@@ -123,6 +123,22 @@ series/partnership/collaboration, not by topical content matching at all.
 - New queries are Cite-only; no `retrieval_ground_truth`/Answer-mode
   counterpart is created.
 
+## Session working agreement (added 2026-08-13)
+
+**One question block at a time.** When picking up a new round of query
+expansion, agree on scope with the human first — a single cluster/topic/
+query_type to work on next — before doing any research (catalog scanning,
+`qmd vsearch` sanity checks, etc.) or drafting a multi-item plan. Do not
+survey the whole "Parked / open items" backlog, propose several new test
+cases at once, and fire off a multi-part question block unprompted — that
+gets ahead of the human and is harder to steer. Concretely:
+
+1. Ask what to work on next (or confirm a specific item the human already
+   named).
+2. Do the research/search for *that one thing* only.
+3. Review results together in chat (per "Per-query workflow" below).
+4. Apply, commit if asked, *then* ask what's next.
+
 ## Per-query workflow
 
 1. **Search**: run `qmd vsearch "<verbatim question>" -n 10 --format json
