@@ -359,6 +359,40 @@
       "difficulty": "medium",
       "query_type": "topic_discovery",
       "note": ""
+    },
+    {
+      "id": "d14_pawan-mulukutla-authorship",
+      "question": "What has WRI published that was authored or co-authored by Pawan Mulukutla?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2022_rolling-out-electric-buses-a-guidebook-on-route_8515",
+        "2023_accelerating-the-production-and-use-of-green_9683",
+        "2023_assessing-the-viability-of-using-autorickshaws_2146",
+        "2023_financial-analysis-of-charging-station-fact_2082",
+        "2023_supporting-the-energy-transition-by-addressing_6756",
+        "2024_assessing-financing-challenges-for-implementing_4732",
+        "2024_open-e-bus-blueprint_4307",
+        "2024_real-world-electric-bus-operation-trend-in_3497",
+        "2025_financial-impact-assessment-for-zero-emission_8156",
+        "2025_toward-a-framework-to-support-better-decision_4539"
+      ],
+      "expected_document_ids": [
+        "57f1a3a5-9595-4907-82a7-d50dccb300f0",
+        "c9e4deee-ca0c-4456-860e-e0dd6defe541",
+        "221667a3-181b-48ea-9c1f-1aee335b759e",
+        "3d31df40-4d1e-4110-a334-8603d6125ebe",
+        "17d3d0cc-1733-496f-b4b4-ddb6e15767c4",
+        "4bdbed99-9ea1-4970-8572-46cc0de51465",
+        "a2935bf9-f8fb-4312-88e8-e1b2b56de1bd",
+        "efda7d35-7dc2-4d09-9421-aedba634439e",
+        "ce8572d8-0ba6-4424-a9a6-e87a4b56e4fd",
+        "71d8b96a-2b04-4d5c-ac13-aaad1ca2fe63"
+      ],
+      "source_document_id": "",
+      "source_language": "",
+      "difficulty": "medium",
+      "query_type": "membership",
+      "note": "individual-authorship variant of membership. Sourced directly 'authors:' metadata field."
     }
   ]
 }
