@@ -208,29 +208,24 @@ legacy-suffix set whose UUID didn't change.)
 `"2026-08-13"` → `"2026-08-17"`, `description` extended with a sentence
 noting the 2026-08-17 document-id reconciliation and the 4 dropped entries.
 
-## Handoff to step 4 (new LLM session)
+## Status
 
-Corpus repair (steps 1-3 above) is orthogonal to *expanding* coverage onto
-new documents. That's step 4 of the generation-2+ process (`README.md`)
-and should follow the existing session working agreement in
-`expected_doc_expansion_plan_citemode_20260812.md` ("one question block at
-a time"). Start a fresh session with:
+This dump gives me updated metadata and IDs. That's great!
 
-> Continue the Cite-mode eval expansion work described in
-> `eval-generation-notes/expected_doc_expansion_plan_citemode_20260812.md`.
-> The corpus was refreshed on 2026-08-17 (see
-> `eval-generation-notes/issuelog_20260817.md` and
-> `eval-generation-notes/evalset_repair_and_expansion_citemode_20260817.md`
-> for what changed) and `evalsets/evalset_cite_02.json` has already been
-> reconciled against the new document ids (v4.2) — that repair work is
-> done, don't redo it. What's *not* done yet: checking whether any of the
-> newly-added corpus documents from this refresh warrant new
-> `expected_document_ids` entries (existing test cases) or new test cases
-> entirely. Candidates to look at first: the 12 documents newly surfaced
-> via `scripts/db_text_to_markdown_s3_docs.py` (previously untapped
-> `document_texts` rows with S3-hosted source PDFs) and
-> `2026_fortaleciendo-sinergias-electromovilidad-calidad-aire_XXXX` (likely
-> not yet searchable — check if its placeholder/TEXT-PENDING markdown file
-> has been replaced with real body text; if not, skip it as unevaluable
-> for now). Per the working agreement, start by asking what to work on
-> first rather than surveying everything at once.
+I now have a corpus with 206 documents with updated metadata and IDs. 
+(There are 5 docs with "withdrawn" stastus. These are in the document list that you sent me, but I won't use them in any evalsets.)
+I have document content (in markdown format) for all of this corpus but one. 
+The one KP for which I'm missing document text is 2026_fortaleciendo-sinergias-electromovilidad-calidad-aire_XXXX
+
+So evals will use up to 200 documents:
+  en: 148
+  zh: 34
+  es: 14
+  pt: 3
+  id: 1
+
+I was surprised to see one in Indonesian:
+`2025_panduan-pelaksanaan-inventarisasi-pohon-perkotaan_4324`. This is not a
+new doc; it was previously labeled as en-lang, instead of id-lang. I
+confirmed that the markdown content is in Bahasa. I figure I should write
+an eval query that targets this one.
