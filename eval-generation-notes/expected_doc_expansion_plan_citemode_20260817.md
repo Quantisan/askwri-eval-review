@@ -107,9 +107,32 @@ gets ahead of the human and is harder to steer. Concretely:
   the full UUID-reconciliation pass (per `evalset_cite_01.json`'s own
   `description` field) is still open.
 - Add new queries to the eval set to
-   - for coverage on the new id-lang doc. 
+   - ~~for coverage on the new id-lang doc.~~ **Done 2026-08-18** — see
+     "2026-08-18: new query for the id-lang doc" below.
    - for better coverage over the `query_type` -- discuss together and
      decide. We don't need an even distribution, this is a subjective call. 
+
+### 2026-08-18: new query for the id-lang doc
+
+Added `d16_urban-tree-inventory-discovery` to `evalset_cite_02.json`,
+targeting `2025_panduan-pelaksanaan-inventarisasi-pohon-perkotaan_4324`
+(`document_id: ed7cc7fe-de63-4015-ba74-fe0cd84fe05f`) — the doc flagged in
+the background section above as previously mislabeled `en`-lang instead of
+`id` (Bahasa Indonesia). Content: a WRI Indonesia guidebook on urban tree
+inventory methodology (field measurement + GIS), piloted in Jakarta,
+Denpasar, Medan, Pekanbaru, and Makassar.
+
+- Question: "What has WRI published on urban tree inventory methods?"
+- `query_type: topic_discovery`, single expected doc. Checked via 3 `qmd
+  vsearch` phrasings (with/without "Indonesian cities", broader "urban
+  forestry/tree canopy" wording) — this is a genuine single-doc topic in the
+  current corpus; every phrasing gives one strong hit (0.73–0.76) then a
+  sharp drop to generic-urban noise (~0.6, nothing else actually about
+  trees). Geography constraint doesn't change the result set, so classified
+  as plain `topic_discovery` rather than `geography_constrained`, per the
+  `d3` (container ports) precedent.
+- No version bump this round (per human instruction) — `evalset_cite_02.json`
+  stays at 4.3 with 16 test cases (`d1`–`d16`).
 
 ### 2026-08-18: survey of new-refresh documents against existing queries
 

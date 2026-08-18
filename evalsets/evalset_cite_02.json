@@ -413,6 +413,22 @@
       "difficulty": "hard",
       "query_type": "thematic_intersection",
       "note": "query_type thematic_intersection, with topics 'flooding risk' and 'informal settlements' as the two target concepts. Flooding in Nairobi's Informal Settlements added 2026-08-18 -- new document surfaced by the 2026-08-17 corpus refresh, direct title/executive-summary match confirmed via qmd vsearch (top result, score 0.72)."
+    },
+    {
+      "id": "d16_urban-tree-inventory-discovery",
+      "question": "What has WRI published on urban tree inventory methods?",
+      "task_description": "",
+      "expected_external_ids": [
+        "2025_panduan-pelaksanaan-inventarisasi-pohon-perkotaan_4324"
+      ],
+      "expected_document_ids": [
+        "ed7cc7fe-de63-4015-ba74-fe0cd84fe05f"
+      ],
+      "source_document_id": "ed7cc7fe-de63-4015-ba74-fe0cd84fe05f",
+      "source_language": "id",
+      "difficulty": "medium",
+      "query_type": "topic_discovery",
+      "note": "Single-doc topic. Targets the id-lang (Bahasa Indonesia) document flagged in the 2026-08-17 corpus refresh -- previously mislabeled en-lang. Confirmed via qmd vsearch: only this doc scores substantively (0.73-0.76 across phrasings), sharp drop to generic-urban noise (~0.6) for everything else; geography constraint ('in Indonesian cities') doesn't change the result set, so classified as plain topic_discovery per the d3 precedent."
     }
   ]
 }
