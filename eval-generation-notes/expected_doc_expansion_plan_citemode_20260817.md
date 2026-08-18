@@ -95,15 +95,88 @@ gets ahead of the human and is harder to steer. Concretely:
 
 ## open items
 
-- review current queries in Cite-01 and Cite-02 to ensure no new expected_document* needed to be
+- ~~review current queries in Cite-01 and Cite-02 to ensure no new expected_document* needed to be
   added to existing queries. Since new documents are now available, we can
   focus our inspection on those new documents
-  (evalset_repair_and_expansion_citemode_20260817.md) 
-- review cite_01 (Anne's queries) to reflect the new corpus (new IDs, etc)
+  (evalset_repair_and_expansion_citemode_20260817.md)~~ **Done 2026-08-18** — see
+  "2026-08-18: survey of new-refresh documents against existing queries" below.
+- review cite_01 (Anne's queries) to reflect the new corpus (new IDs, etc) —
+  **partially done**: q4 (`climate_brazil`) got 2 new documents with resolved
+  `expected_document_ids` (2026-08-18, see below), but the file's other 10
+  test cases still have empty-string `expected_document_ids` placeholders —
+  the full UUID-reconciliation pass (per `evalset_cite_01.json`'s own
+  `description` field) is still open.
 - Add new queries to the eval set to
    - for coverage on the new id-lang doc. 
    - for better coverage over the `query_type` -- discuss together and
      decide. We don't need an even distribution, this is a subjective call. 
+
+### 2026-08-18: survey of new-refresh documents against existing queries
+
+The 2026-08-17 corpus refresh (`evalset_repair_and_expansion_citemode_20260817.md`)
+added 12 non-standard-id ("S3-pipeline") documents, 11 of which are
+genuinely new content (the 12th, `26_tech_esb-adoption_version-10`, is a
+same-content rename of an already-known doc). Checked all 11 against every
+existing Cite-01/Cite-02 query via `qmd vsearch` + reading the actual
+document content (not just titles/scores — a few high-scoring hits turned
+out to be false positives on inspection).
+
+**Added** (4 documents, to 3 test cases):
+- `evalset_cite_02.json` `d12` (`climate-hazards-heat-resilience-discovery`):
+  `mapping-scenarios-and-estimating-the-potential-for-heat-resilient-infrastructure-in-cities-technical-note`,
+  `modeling-hyperlocal-heat-exposure-with-open-source-data` (both were
+  explicitly named in d12's own prior `note` as "not yet indexed, could not
+  be evaluated" — now indexed and confirmed on-topic), and
+  `wri_brasil-root_causes_2024_disaster_rs` (flood-disaster root causes in
+  Brazil — climate-hazard content).
+- `evalset_cite_02.json` `d15` (`flooding-risk-informal-settlements-intersection`):
+  `flooding-nairobi-informal-settlements` — direct title/executive-summary
+  match, top `qmd vsearch` hit (0.72).
+- `evalset_cite_01.json` `q4` (`climate_brazil`):
+  `bridging-national-and-local-climate-adaptation-in-brazil-india-and-indonesia`
+  (top hit, 0.75) and `wri_brasil-root_causes_2024_disaster_rs` (cross-listed
+  with d12 above) — both substantively about Brazil-specific climate
+  adaptation/vulnerability, not tangential mentions.
+
+**Checked and excluded** (6 documents) — high vector-similarity score but
+not actually on-topic once the content was read:
+- `climate-readiness-urban-transformation-wri-ross-center-prize-for-cities-cycle-2023-2024`
+  and `using-flexible-funding-in-long-horizon-urban-transformation-work-...`
+  both scored highest for `d11`'s Coalition for Urban Transitions query
+  (0.74, 0.72) but contain **zero** mentions of "Coalition for Urban
+  Transitions" anywhere — false positive on generic "urban transformation"
+  phrasing, not the named partnership `d11` actually requires.
+- `wri-india-nup-report` — a ~1M-char omnibus India national-urbanization-
+  policy report. Scored in the top 15 for `d12`, `d15`, and `d11`'s queries,
+  but climate resilience / flooding / finance are each just one of ~7
+  thematic chapters — passing coverage, not primary focus (same standard as
+  `d11`'s existing "excludes docs that only cite/acknowledge in passing").
+- `FINAL_Working Paper_Just Transition_1905` (EV supply-chain labor
+  practices, India) — scored in `d7`'s (electric buses) top 15, but is about
+  automotive-manufacturing workforce/supply-chain equity broadly, not buses.
+  Also checked against `d14` (Pawan Mulukutla authorship): he appears only
+  in the acknowledgments, not the `authors:` field, so excluded per d14's
+  own stated standard.
+- `25May_Battery Aadhaar For India_Expert Note` (battery data-management
+  framework) — no defensible match to any existing query; also an
+  acknowledgments-only mention of Pawan Mulukutla, excluded from `d14` same
+  as above.
+- `assessing-urban-road-networks-using-geospatial-metrics_c` — checked
+  against cite_01 `q2` (Bangalore): Bengaluru is 1 of 4 example cities in a
+  cross-city methodology paper, not primary geographic focus.
+
+No action needed for `26_tech_esb-adoption_version-10` (the rename) — same
+school-bus-specific content as before, correctly still excluded from `d7`.
+
+**Leftover, no existing-query match at all** (candidates for a possible
+future net-new-`topic_discovery`-queries round, not actioned this pass):
+`wri-india-nup-report`, `assessing-urban-road-networks-using-geospatial-metrics_c`,
+`using-flexible-funding-in-long-horizon-urban-transformation-work-...`,
+`25May_Battery Aadhaar For India_Expert Note`,
+`FINAL_Working Paper_Just Transition_1905`,
+`climate-readiness-urban-transformation-wri-ross-center-prize-for-cities-cycle-2023-2024`.
+
+Version bumps: `evalset_cite_02.json` 4.2 → 4.3, `evalset_cite_01.json` 3.1 → 3.2.
 
 The evalset currently has 15 questions across 7 query_types:
  4  topic_discovery

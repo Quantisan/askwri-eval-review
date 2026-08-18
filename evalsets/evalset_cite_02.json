@@ -1,8 +1,8 @@
 {
-  "version": "4.2",
+  "version": "4.3",
   "created": "2026-08-11",
-  "updated": "2026-08-17",
-  "description": "Evaluation dataset (generation 2+) for AskWRI Cite mode - cross-lingual corpus (en/zh/es/pt). Builds on literature-discovery style queries ('What's already there on X?') and existence-check queries. Unlike evalset_cite_02_bkup01.json's fact-lookup queries (the frozen v4.0 predecessor of this file, since renamed), these use a broader 'topically substantive' relevance standard. Reconciled 2026-08-17 against a refreshed corpus snapshot (documents-list_20260817.txt supersedes documents-list-207_20260807.txt): document_id UUIDs remapped by external_id, and 4 expected-document entries dropped (2 withdrawn, 1 removed duplicate, counted once each across d11/d15) that are no longer resolvable in the current corpus.",
+  "updated": "2026-08-18",
+  "description": "Evaluation dataset (generation 2+) for AskWRI Cite mode - cross-lingual corpus (en/zh/es/pt). Builds on literature-discovery style queries ('What's already there on X?') and existence-check queries. Unlike previous fact-lookup queries, these use a broader 'topically substantive' relevance standard. Reconciled 2026-08-17 against a refreshed corpus snapshot.",
   "test_cases": [
     {
       "id": "d1_zero-emission-heavy-duty-trucks-discovery",
@@ -314,7 +314,10 @@
         "2021_mexico-frontrunners-adapting-to-climate-change-in_8904",
         "2021_water-resilience-in-a-changing-urban-context_8364",
         "2022_nature-based-solutions-in-sub-saharan-africa-for_1106",
-        "2025_calculating-indicators-from-global-geospatial_3765"
+        "2025_calculating-indicators-from-global-geospatial_3765",
+        "mapping-scenarios-and-estimating-the-potential-for-heat-resilient-infrastructure-in-cities-technical-note",
+        "modeling-hyperlocal-heat-exposure-with-open-source-data",
+        "wri_brasil-root_causes_2024_disaster_rs"
       ],
       "expected_document_ids": [
         "b5c503bc-31ce-4f79-b80d-4598be2411a3",
@@ -326,13 +329,16 @@
         "7c980340-3d1e-42f4-a092-f45e06e4908b",
         "9a107830-918b-446e-b5ee-4e95f1867045",
         "6d705c39-d2d3-4e86-9425-530dffc722e8",
-        "15831ee5-42b4-43c9-8297-02e474534d30"
+        "15831ee5-42b4-43c9-8297-02e474534d30",
+        "5ce0e576-54cc-43ed-95bd-fc2c2c3000c5",
+        "2be35c4c-552a-4329-a31e-a0d76bc7030b",
+        "67e8f418-46a5-4991-a0eb-a083c55b658b"
       ],
       "source_document_id": "",
       "source_language": "",
       "difficulty": "medium",
       "query_type": "topic_discovery",
-      "note": "Excluded as a distinct topic: Climate Emergency Urban Opportunity (decarbonization/mitigation-focused, not hazards/resilience), Untreated and Unsafe: Urban Sanitation Crisis, and Kampala sanitation services (sanitation governance, not climate hazards). Also note 3 catalog docs on this exact topic (Flooding in Nairobi's Informal Settlements; Mapping Scenarios for Heat-Resilient Infrastructure; Modeling Hyperlocal Heat Exposure) are not yet indexed in qmd (no markdown generated) and could not be evaluated."
+      "note": "Excluded as a distinct topic: Climate Emergency Urban Opportunity (decarbonization/mitigation-focused, not hazards/resilience), Untreated and Unsafe: Urban Sanitation Crisis, and Kampala sanitation services (sanitation governance, not climate hazards). 2026-08-17 corpus refresh added Mapping Scenarios for Heat-Resilient Infrastructure, Modeling Hyperlocal Heat Exposure, and Root Causes of the 2024 Rio Grande do Sul climate disaster (Brazil flood) -- all 3 confirmed on-topic and added; a 4th refresh doc on this exact topic, Flooding in Nairobi's Informal Settlements, went to d15 instead (thematic_intersection with informal settlements is a better fit there). wri-india-nup-report also scored well here but was excluded: climate vulnerability/resilience is just one of ~7 thematic chapters in an omnibus national policy report, not primary focus."
     },
     {
       "id": "d13_low-cost-air-quality-monitoring-discovery",
@@ -394,17 +400,19 @@
       "task_description": "",
       "expected_external_ids": [
         "2025_multilevel-action-for-community-led-climate_7058",
-        "2018_resilient-and-affordable-housing-for-all-lessons_5955"
+        "2018_resilient-and-affordable-housing-for-all-lessons_5955",
+        "flooding-nairobi-informal-settlements"
       ],
       "expected_document_ids": [
         "5e71b477-deca-4144-aade-ef9236fc62c2",
-        "5db22bba-99dc-43be-8fb4-fd21ec98f4e7"
+        "5db22bba-99dc-43be-8fb4-fd21ec98f4e7",
+        "7eadad61-eec8-485d-8bd4-fa376cc738f6"
       ],
       "source_document_id": "",
       "source_language": "",
       "difficulty": "hard",
       "query_type": "thematic_intersection",
-      "note": "query_type thematic_intersection, with topics 'flooding risk' and 'informal settlements' as the two target concepts."
+      "note": "query_type thematic_intersection, with topics 'flooding risk' and 'informal settlements' as the two target concepts. Flooding in Nairobi's Informal Settlements added 2026-08-18 -- new document surfaced by the 2026-08-17 corpus refresh, direct title/executive-summary match confirmed via qmd vsearch (top result, score 0.72)."
     }
   ]
 }

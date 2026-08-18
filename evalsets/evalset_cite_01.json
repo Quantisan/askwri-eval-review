@@ -1,8 +1,8 @@
 {
-  "version": "3.1",
+  "version": "3.2",
   "created": "2025-11-07",
-  "updated": "2026-08-13",
-  "description": "Evaluation dataset (generation 1, migrated) for AskWRI Cite mode. Migrated 2026-08-12 from source_evalsets/cite-golden-dataset.json (v3.0, frozen reference covering the original 169-document corpus) into the generation-2+ schema (parallel expected_external_ids/expected_document_ids arrays) used by evalsets/evalset_cite_02.json. This migration is schema-only: expected_document_ids (UUIDs) are left as empty-string placeholders, since resolving them requires the documents-list-207 lookup, and the corpus is expected to change again shortly. No catalog revalidation, re-search, or doc re-addition was performed this round -- expected_external_ids are carried over exactly as they were in cite-golden-dataset.json (i.e. already reflecting that source's prior 'not in catalog' prunings from the 169-doc-corpus era). A follow-up pass, once the corpus is finalized, should: (1) resolve expected_document_ids via documents-list-207_*.txt, (2) re-check previously-pruned candidates against the current/final catalog (at least 7 were already confirmed back in catalog as of 2026-08-12: rolling-out-electric-buses, access-to-climate-finance, assessing-financing-challenges, changing-the-demand-preference, financial-analysis-of-charging-station-fact, seizing-the-urban-opportunity, improving-school-infrastructure-for-healthier -- see git history / prior chat log for details), and (3) consider whether any topics now have new zh/es/pt counterparts among the 26 recently-added documents. source_evalsets/cite-golden-dataset.json remains the frozen, untouched original reference.",
+  "updated": "2026-08-18",
+  "description": "Evaluation dataset (generation 1, migrated) for AskWRI Cite mode. Migrated 2026-08-12 from source_evalsets/cite-golden-dataset.json (v3.0, frozen reference covering the original 169-document corpus) into the generation-2+ schema (parallel expected_external_ids/expected_document_ids arrays). A follow-up pass, once the corpus is finalized, should: (1) resolve expected_document_ids via documents-list-207_*.txt, (2) re-check previously-pruned candidates against the current/final catalog, and (3) consider whether any topics now have new zh/es/pt counterparts among the 26 recently-added documents. 2026-08-18: q4 (climate adaptation in Brazil) got 2 documents added from the 2026-08-17 corpus refresh's new S3-pipeline docs, with resolved expected_document_ids (documents-list_20260817.txt) -- the rest of this file's expected_document_ids are still unresolved placeholders, pending the full Cite-01 reconciliation pass described above (now against documents-list_20260817.txt, which supersedes documents-list-207).",
   "test_cases": [
     {
       "id": "q1_land_value_capture",
@@ -84,19 +84,23 @@
         "2024_accelerating-nature-based-solutions-in-brazilian_3331",
         "2025_accessibility-to-public-green-areas-case-study-in_6254",
         "2018_prepared-communities-implementing-the-urban_2922",
-        "2021_seizing-brazils-urban-opportunity_3268"
+        "2021_seizing-brazils-urban-opportunity_3268",
+        "bridging-national-and-local-climate-adaptation-in-brazil-india-and-indonesia",
+        "wri_brasil-root_causes_2024_disaster_rs"
       ],
       "expected_document_ids": [
         "",
         "",
         "",
-        ""
+        "",
+        "2151c919-9c07-4e75-9ada-20cadbf1935b",
+        "67e8f418-46a5-4991-a0eb-a083c55b658b"
       ],
       "source_document_id": "",
       "source_language": "",
       "difficulty": "hard",
       "query_type": "geography_constrained",
-      "note": "query_type migrated 2026-08-12 from original 'thematic_geographic_intersection' (cite-golden-dataset.json taxonomy) to 'geography_constrained' (evalset_cite_02.json taxonomy)."
+      "note": "query_type migrated 2026-08-12 from original 'thematic_geographic_intersection' (cite-golden-dataset.json taxonomy) to 'geography_constrained' (evalset_cite_02.json taxonomy). 2026-08-18: added 2 documents from the 2026-08-17 corpus refresh (Bridging National and Local Climate Adaptation in Brazil/India/Indonesia -- top qmd vsearch hit, 0.75; Root Causes of the 2024 Rio Grande do Sul climate disaster -- 0.69), both confirmed substantively about Brazil-specific climate adaptation/vulnerability, not tangential mentions. These 2 entries have resolved expected_document_ids; the other 4 (pre-existing) are still empty-string placeholders pending the broader Cite-01 UUID-reconciliation pass."
     },
     {
       "id": "q5_micromobility",
