@@ -2,7 +2,7 @@
   "version": "3.2",
   "created": "2025-11-07",
   "updated": "2026-08-18",
-  "description": "Evaluation dataset (generation 1, migrated) for AskWRI Cite mode. Migrated 2026-08-12 from source_evalsets/cite-golden-dataset.json (v3.0, frozen reference covering the original 169-document corpus) into the generation-2+ schema (parallel expected_external_ids/expected_document_ids arrays). A follow-up pass, once the corpus is finalized, should: (1) resolve expected_document_ids via documents-list-207_*.txt, (2) re-check previously-pruned candidates against the current/final catalog, and (3) consider whether any topics now have new zh/es/pt counterparts among the 26 recently-added documents. 2026-08-18: q4 (climate adaptation in Brazil) got 2 documents added from the 2026-08-17 corpus refresh's new S3-pipeline docs, with resolved expected_document_ids (documents-list_20260817.txt) -- the rest of this file's expected_document_ids are still unresolved placeholders, pending the full Cite-01 reconciliation pass described above (now against documents-list_20260817.txt, which supersedes documents-list-207).",
+  "description": "Evaluation dataset (generation 1, migrated) for AskWRI Cite mode. Migrated 2026-08-12 from source_evalsets/cite-golden-dataset.json (v3.0, frozen reference covering the original 169-document corpus) into the generation-2+ schema (parallel expected_external_ids/expected_document_ids arrays). 2026-08-18: full reconciliation against the 206-doc corpus (documents-list_20260817.txt) -- all expected_document_ids resolved to real UUIDs; q4 additionally gained 2 new-refresh documents (Brazil climate adaptation/disaster docs); q5's one dead reference (a confirmed-removed duplicate) dropped; 7 documents previously pruned as 'not in catalog' in the 169-doc-corpus era, now confirmed back, re-added across q3/q6/q10/q11 (see metadata.note and each test case's own note for details). Still open: whether any topics now have new zh/es/pt cross-lingual counterparts -- not attempted this pass.",
   "test_cases": [
     {
       "id": "q1_land_value_capture",
@@ -15,10 +15,10 @@
         "2017_rail-plus-property-development-in-china-the-pilot_7681"
       ],
       "expected_document_ids": [
-        "",
-        "",
-        "",
-        ""
+        "1c87b4ec-9f0f-4843-a5b4-9b627b558853",
+        "152515b2-1b2b-4ed5-8e56-401291beb8e3",
+        "a2a1b99c-7d98-4723-be7f-e6015410bb12",
+        "c761e4c8-f3ff-487c-b2bd-c5fb777d9339"
       ],
       "source_document_id": "",
       "source_language": "",
@@ -39,12 +39,12 @@
         "2024_climate-resilient-cities-assessing-differential_1543"
       ],
       "expected_document_ids": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "937a7053-5118-4a80-a53b-0343a3dbf593",
+        "059d1c3b-da8f-414f-9e80-22126cb056a9",
+        "1c87b4ec-9f0f-4843-a5b4-9b627b558853",
+        "fa8ec890-0e48-4c52-8cc1-fe3480815e16",
+        "e68aa065-624b-4631-9778-e471a12d1aa4",
+        "b5c503bc-31ce-4f79-b80d-4598be2411a3"
       ],
       "source_document_id": "",
       "source_language": "",
@@ -61,20 +61,22 @@
         "2025_technical-note-for-a-dataset-modeling-the_1957",
         "2024_electrifying-us-school-bus-fleets-equitably-to_7005",
         "2022_impactar-tool-valuing-air-quality-health-impacts_4741",
-        "2019_climate-emergency-urban-opportunity_4461"
+        "2019_climate-emergency-urban-opportunity_4461",
+        "2025_improving-school-infrastructure-for-healthier_3532"
       ],
       "expected_document_ids": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "c722bf92-0d45-4ca8-9851-036e2b3d2a56",
+        "a91e21e0-d7ee-4f2e-9953-b644d2a048d3",
+        "e762872f-f8e9-4dc6-b3e1-b8a271734028",
+        "01829576-ced9-45a7-83d4-4cf2deb3e9e2",
+        "dfcb9c66-209a-448a-ae0a-d05bbe8b9650",
+        "f6c66bd5-02f0-47b3-9ef0-0dc504a1fae5"
       ],
       "source_document_id": "",
       "source_language": "",
       "difficulty": "hard",
       "query_type": "thematic_intersection",
-      "note": "query_type migrated 2026-08-12 from original 'thematic_intersection' (cite-golden-dataset.json taxonomy) to 'thematic_intersection' (evalset_cite_02.json taxonomy)."
+      "note": "query_type migrated 2026-08-12 from original 'thematic_intersection' (cite-golden-dataset.json taxonomy) to 'thematic_intersection' (evalset_cite_02.json taxonomy). 2026-08-18: re-added Improving School Infrastructure for Healthier Students and Communities -- one of the original golden-dataset's expected docs, previously pruned as 'not in catalog' (a URL-typo/missing-doc issue at the time), now confirmed present and on-topic (explicitly discusses electric school buses reducing pollution to improve student health)."
     },
     {
       "id": "q4_climate_brazil",
@@ -89,10 +91,10 @@
         "wri_brasil-root_causes_2024_disaster_rs"
       ],
       "expected_document_ids": [
-        "",
-        "",
-        "",
-        "",
+        "b297df7f-e6fa-4761-be0c-8186b5c2df23",
+        "f03b6e53-0a08-4b05-9c99-a9c5c3a7f8b2",
+        "a048729d-02bb-4a04-8fa2-a9e2782a662d",
+        "b3becd32-259f-4fda-8f0c-1dc895773176",
         "2151c919-9c07-4e75-9ada-20cadbf1935b",
         "67e8f418-46a5-4991-a0eb-a083c55b658b"
       ],
@@ -100,14 +102,13 @@
       "source_language": "",
       "difficulty": "hard",
       "query_type": "geography_constrained",
-      "note": "query_type migrated 2026-08-12 from original 'thematic_geographic_intersection' (cite-golden-dataset.json taxonomy) to 'geography_constrained' (evalset_cite_02.json taxonomy). 2026-08-18: added 2 documents from the 2026-08-17 corpus refresh (Bridging National and Local Climate Adaptation in Brazil/India/Indonesia -- top qmd vsearch hit, 0.75; Root Causes of the 2024 Rio Grande do Sul climate disaster -- 0.69), both confirmed substantively about Brazil-specific climate adaptation/vulnerability, not tangential mentions. These 2 entries have resolved expected_document_ids; the other 4 (pre-existing) are still empty-string placeholders pending the broader Cite-01 UUID-reconciliation pass."
+      "note": "query_type migrated 2026-08-12 from original 'thematic_geographic_intersection' (cite-golden-dataset.json taxonomy) to 'geography_constrained' (evalset_cite_02.json taxonomy). 2026-08-18: added 2 documents from the 2026-08-17 corpus refresh (Bridging National and Local Climate Adaptation in Brazil/India/Indonesia -- top qmd vsearch hit, 0.75; Root Causes of the 2024 Rio Grande do Sul climate disaster -- 0.69), both confirmed substantively about Brazil-specific climate adaptation/vulnerability, not tangential mentions. All expected_document_ids now resolved (full Cite-01 UUID-reconciliation pass, 2026-08-18)."
     },
     {
       "id": "q5_micromobility",
       "question": "How can cities implement micromobility solutions?",
       "task_description": "Retrieve papers that are about a not well-defined topic area (micromobility encompasses a range of technologies). Do not retrieve papers that clearly are about non 'micro', such as public transit, freight, and other non-mobility solutions.",
       "expected_external_ids": [
-        "2021_mexico-frontrunners-creating-safe-affordable-and_6429",
         "2021_mexico-frontrunners-creating-safe-affordable-and_5127",
         "2021_mexico-frontrunners-sustainable-mobility-for_2332",
         "2021_mexico-frontrunners-adapting-to-climate-change-in_8904",
@@ -119,22 +120,21 @@
         "2019_guadalajara-revisiting-public-space-interventions_9381"
       ],
       "expected_document_ids": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "6bf845bb-fe9b-4fb8-aa5b-194ac57e483a",
+        "cfb24eb0-a4c6-481e-88c7-71fc140bfd93",
+        "7c980340-3d1e-42f4-a092-f45e06e4908b",
+        "950b35ab-743f-41de-8212-0a1f75250453",
+        "175f383e-349d-44fc-a06a-e4b7fb5d22cf",
+        "4457e736-a988-43bb-8f36-96d953d3d88a",
+        "aa3afd35-3fbd-40c8-af80-b1f7cd8c11ef",
+        "5bed6c1f-674c-4d54-a9cf-0b7ca09007e0",
+        "eb47ca8f-62c3-4b96-9499-3033b21b5bf0"
       ],
       "source_document_id": "",
       "source_language": "",
       "difficulty": "hard",
       "query_type": "topic_discovery",
-      "note": "Removed enabling-shift-electric-auto-rickshaws (not in catalog). query_type migrated 2026-08-12 from original 'fuzzy_topic' (cite-golden-dataset.json taxonomy) to 'topic_discovery' (evalset_cite_02.json taxonomy)."
+      "note": "Removed enabling-shift-electric-auto-rickshaws (not in catalog). query_type migrated 2026-08-12 from original 'fuzzy_topic' (cite-golden-dataset.json taxonomy) to 'topic_discovery' (evalset_cite_02.json taxonomy). 2026-08-18: dropped 2021_mexico-frontrunners-creating-safe-affordable-and_6429 -- confirmed permanently gone from the corpus (a duplicate ingest of _5127, which remains and still covers this doc), per the 2026-08-17 corpus refresh's own accounting. 10 -> 9 expected docs; no coverage lost."
     },
     {
       "id": "q6_school_bus_health",
@@ -146,21 +146,23 @@
         "2022_impactar-tool-valuing-air-quality-health-impacts_4741",
         "2024_electrifying-us-school-bus-fleets-equitably-to_7005",
         "2025_roadmap-to-100-electrifying-the-full-us-school_7216",
-        "2025_needs-assessment-for-equitable-school-bus_6149"
+        "2025_needs-assessment-for-equitable-school-bus_6149",
+        "2025_improving-school-infrastructure-for-healthier_3532"
       ],
       "expected_document_ids": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "c722bf92-0d45-4ca8-9851-036e2b3d2a56",
+        "a91e21e0-d7ee-4f2e-9953-b644d2a048d3",
+        "01829576-ced9-45a7-83d4-4cf2deb3e9e2",
+        "e762872f-f8e9-4dc6-b3e1-b8a271734028",
+        "e57ff7ee-dcab-44e5-a2ac-0f25549f3802",
+        "cde4b93f-22e4-4309-8e05-e68d713d46c0",
+        "f6c66bd5-02f0-47b3-9ef0-0dc504a1fae5"
       ],
       "source_document_id": "",
       "source_language": "",
       "difficulty": "medium",
       "query_type": "thematic_intersection",
-      "note": "ImpactAr tool covers health impacts of bus fleet electrification, though not school buses specifically. query_type migrated 2026-08-12 from original 'intervention_impact' (cite-golden-dataset.json taxonomy) to 'thematic_intersection' (evalset_cite_02.json taxonomy)."
+      "note": "ImpactAr tool covers health impacts of bus fleet electrification, though not school buses specifically. query_type migrated 2026-08-12 from original 'intervention_impact' (cite-golden-dataset.json taxonomy) to 'thematic_intersection' (evalset_cite_02.json taxonomy). 2026-08-18: re-added Improving School Infrastructure for Healthier Students and Communities (see q3's note -- same restoration, same document, applies to both queries)."
     },
     {
       "id": "q7_jakarta_housing",
@@ -173,10 +175,10 @@
         "2017_integrating-national-policies-to-deliver-compact_5239"
       ],
       "expected_document_ids": [
-        "",
-        "",
-        "",
-        ""
+        "f7dcf395-4c17-49bd-a4f2-a3bbde4695b5",
+        "55d958e2-d9fb-46e8-b712-4a01de3965d4",
+        "78bceec7-ee2c-401f-a700-95fac0b6fbe4",
+        "1b555d62-ff50-4b7d-8576-bee7f6cc78fa"
       ],
       "source_document_id": "",
       "source_language": "",
@@ -194,9 +196,9 @@
         "2024_pathways-to-decarbonize-indias-transport-sector_2978"
       ],
       "expected_document_ids": [
-        "",
-        "",
-        ""
+        "920fa327-eb75-4a10-a895-761eabbeba50",
+        "a05fe526-9948-4023-9667-8add7988f841",
+        "9827ee2b-6c20-4c5f-a9fc-47c7b69493a2"
       ],
       "source_document_id": "",
       "source_language": "",
@@ -227,22 +229,22 @@
         "2018_johannesburg-confronting-spatial-inequality_3796"
       ],
       "expected_document_ids": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "f3070726-3da7-4e50-a846-895cd2188117",
+        "7bc21d25-4562-4795-a6b0-257d304095d3",
+        "49a8959d-ee69-403d-8bab-14a55fc0888a",
+        "55d958e2-d9fb-46e8-b712-4a01de3965d4",
+        "6198358a-38eb-4ebb-b272-210a69d1a96e",
+        "ab5ce87d-344f-4e46-9cdc-88de18228595",
+        "bf52c36f-cd63-4d01-aeb2-afd924e471f3",
+        "0d5ae93b-23bc-4abe-8507-f84b8cea3533",
+        "72532f2b-ba7f-47e2-82ee-51dc15767fd5",
+        "152515b2-1b2b-4ed5-8e56-401291beb8e3",
+        "65da2d1f-7f28-43d1-92d0-2ae928d1bb8d",
+        "402acc57-faac-48a7-9212-f585f3dbe775",
+        "f7dcf395-4c17-49bd-a4f2-a3bbde4695b5",
+        "eb47ca8f-62c3-4b96-9499-3033b21b5bf0",
+        "d72662b9-75b8-4dcb-91b4-827864cefe4a",
+        "1bdd032e-a70b-4a5c-916f-9da5ddfc7458"
       ],
       "source_document_id": "",
       "source_language": "",
@@ -256,17 +258,27 @@
       "task_description": "Retrieve all papers that were published after a specific date on an amorphous intersection. 'Urban finance' is a concatenation of two amorphous terms and not thing as such, so expecting to return all things in our corpus to do with finance, which is mostly electric buses and transportation.",
       "expected_external_ids": [
         "2024_a-fare-look-funding-urban-public-transport_7541",
-        "2021_synergizing-land-value-capture-and-transit_4839"
+        "2021_synergizing-land-value-capture-and-transit_4839",
+        "2022_rolling-out-electric-buses-a-guidebook-on-route_8515",
+        "2024_access-to-climate-finance-in-low-and-middle_4708",
+        "2024_assessing-financing-challenges-for-implementing_4732",
+        "2023_changing-the-demand-preference-for-electric_8865",
+        "2023_financial-analysis-of-charging-station-fact_2082"
       ],
       "expected_document_ids": [
-        "",
-        ""
+        "f08f0762-7ba0-4f87-b5f2-bb5c63455a91",
+        "1c87b4ec-9f0f-4843-a5b4-9b627b558853",
+        "20e4cc09-add5-4535-91d4-79a548649b0f",
+        "aa613e3b-9c05-4a65-ab10-8837dd2ed8ee",
+        "0ae23d7a-5801-4bf2-95c4-a6e45311fae6",
+        "7a020064-7d7a-4d9c-886e-858fbe23803e",
+        "ce884819-c3c3-489a-b0e3-b7ccf1a47386"
       ],
       "source_document_id": "",
       "source_language": "",
       "difficulty": "hard",
       "query_type": "date_constrained",
-      "note": "Date filter: 2020 onwards. Removed 5 docs not in catalog: rolling-out-electric-buses, access-climate-finance, assessing-financing-challenges, changing-demand-preference, financial-analysis-charging-station-fact. query_type migrated 2026-08-12 from original 'amorphous_temporal' (cite-golden-dataset.json taxonomy) to 'date_constrained' (evalset_cite_02.json taxonomy). FIXED 2026-08-13: removed 3 docs that predate the query's 'since 2020' cutoff (verified via date_published frontmatter, not just filename year): 2017_global-review-of-finance-for-sustainable-urban_8997/_8290 (12/1/2017) and 2019_climate-emergency-urban-opportunity_4461 (9/19/2019). This was a genuine date-filter bug inherited from cite-golden-dataset.json (v3.0), not a slug-vs-real-date mismatch -- flagged by Paul Lam. source_evalsets/cite-golden-dataset.json left untouched (frozen reference)."
+      "note": "Date filter: 2020 onwards. Removed 5 docs not in catalog (as of the 169-doc-corpus era): rolling-out-electric-buses, access-climate-finance, assessing-financing-challenges, changing-demand-preference, financial-analysis-charging-station-fact. query_type migrated 2026-08-12 from original 'amorphous_temporal' (cite-golden-dataset.json taxonomy) to 'date_constrained' (evalset_cite_02.json taxonomy). FIXED 2026-08-13: removed 3 docs that predate the query's 'since 2020' cutoff (verified via date_published frontmatter, not just filename year): 2017_global-review-of-finance-for-sustainable-urban_8997/_8290 (12/1/2017) and 2019_climate-emergency-urban-opportunity_4461 (9/19/2019). This was a genuine date-filter bug inherited from cite-golden-dataset.json (v3.0), not a slug-vs-real-date mismatch -- flagged by Paul Lam. source_evalsets/cite-golden-dataset.json left untouched (frozen reference). 2026-08-18: all 5 previously-pruned docs above confirmed back in the current (206-doc) corpus, all post-2020-published, and all fit this query's own stated scope ('mostly electric buses and transportation') -- re-added. 2 -> 7 expected docs."
     },
     {
       "id": "q11_urban_finance_exclude_ebuses",
@@ -279,26 +291,28 @@
         "2016_financing-the-urban-transition-for-sustainable_3374",
         "2017_rail-plus-property-development-in-china-the-pilot_7681",
         "2020_urban-land-value-capture-in-sao-paulo-addis-ababa_4308",
-        "2021_synergizing-land-value-capture-and-transit_4839"
+        "2021_synergizing-land-value-capture-and-transit_4839",
+        "2021_seizing-the-urban-opportunity_8690"
       ],
       "expected_document_ids": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "0e47113a-790b-49fc-b851-787d99b59807",
+        "059d1c3b-da8f-414f-9e80-22126cb056a9",
+        "b297df7f-e6fa-4761-be0c-8186b5c2df23",
+        "d7636f3a-c93d-41f2-a5d3-bef807698902",
+        "c761e4c8-f3ff-487c-b2bd-c5fb777d9339",
+        "a2a1b99c-7d98-4723-be7f-e6015410bb12",
+        "1c87b4ec-9f0f-4843-a5b4-9b627b558853",
+        "3d2d04e6-b0a9-4c78-b8b7-0045a051a9f0"
       ],
       "source_document_id": "",
       "source_language": "",
       "difficulty": "hard",
       "query_type": "topic_exclusion",
-      "note": "Urban finance minus electric buses. Removed seizing-the-urban-opportunity (not in catalog). 2026-07-22: removed 4 electric-bus expected_urls that contradicted the query's own exclusion clause (financing-electric-and-hybrid-electric-buses, assessing-financing-challenges-implementing-large-scale-electric-bus-program-india, rolling-out-electric-buses, the-future-of-urban-mobility-electric-bus-deployment-in-bogota-colombia). query_type migrated 2026-08-12 from original 'amorphous_exclusion' (cite-golden-dataset.json taxonomy) to 'topic_exclusion' (evalset_cite_02.json taxonomy)."
+      "note": "Urban finance minus electric buses. Removed seizing-the-urban-opportunity (not in catalog, as of the 169-doc-corpus era). 2026-07-22: removed 4 electric-bus expected_urls that contradicted the query's own exclusion clause (financing-electric-and-hybrid-electric-buses, assessing-financing-challenges-implementing-large-scale-electric-bus-program-india, rolling-out-electric-buses, the-future-of-urban-mobility-electric-bus-deployment-in-bogota-colombia). query_type migrated 2026-08-12 from original 'amorphous_exclusion' (cite-golden-dataset.json taxonomy) to 'topic_exclusion' (evalset_cite_02.json taxonomy). 2026-08-18: seizing-the-urban-opportunity confirmed back in the current corpus and re-added -- it's not about electric buses, so doesn't conflict with this query's exclusion clause (unlike the 4 removed 2026-07-22, which remain correctly excluded). 7 -> 8 expected docs."
     }
   ],
   "metadata": {
-    "note": "Some expected docs removed from the original cite-golden-dataset.json (not in catalog). URL typo fixed: healthier-students-and-communities → healthier-communities. Pruned URLs missing from current corpus: improving-school-infrastructure-healthier-communities (q3, q6), Pathways-to-Decarbonize-the-Road-Transport-Sector-in-Guangdong (q8). 2026-08-13: removed 3 more from q10 that predated its 'since 2020' filter (date-filter bug inherited from cite-golden-dataset.json, flagged by Paul Lam) -- see q10's note.",
+    "note": "Some expected docs removed from the original cite-golden-dataset.json (not in catalog, as of the 169-doc-corpus era). URL typo fixed: healthier-students-and-communities → healthier-communities. Pruned URLs missing from that era's corpus: improving-school-infrastructure-healthier-communities (q3, q6), Pathways-to-Decarbonize-the-Road-Transport-Sector-in-Guangdong (q8). 2026-08-13: removed 3 more from q10 that predated its 'since 2020' filter (date-filter bug inherited from cite-golden-dataset.json, flagged by Paul Lam) -- see q10's note. 2026-08-18: full reconciliation against the 206-doc corpus (documents-list_20260817.txt) -- all expected_document_ids resolved; 1 dead reference dropped (q5); 7 previously-pruned docs confirmed back in catalog and re-added (improving-school-infrastructure-healthier-communities to q3+q6, 5 finance/e-bus docs to q10, seizing-the-urban-opportunity to q11). The Guangdong doc (q8) and enabling-shift-electric-auto-rickshaws (q5) remain confirmed absent. Still open: considering new zh/es/pt cross-lingual counterparts for these topics (not attempted this pass).",
     "query_types": [
       "date_constrained",
       "geography_constrained",

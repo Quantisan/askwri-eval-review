@@ -100,12 +100,10 @@ gets ahead of the human and is harder to steer. Concretely:
   focus our inspection on those new documents
   (evalset_repair_and_expansion_citemode_20260817.md)~~ **Done 2026-08-18** — see
   "2026-08-18: survey of new-refresh documents against existing queries" below.
-- review cite_01 (Anne's queries) to reflect the new corpus (new IDs, etc) —
-  **partially done**: q4 (`climate_brazil`) got 2 new documents with resolved
-  `expected_document_ids` (2026-08-18, see below), but the file's other 10
-  test cases still have empty-string `expected_document_ids` placeholders —
-  the full UUID-reconciliation pass (per `evalset_cite_01.json`'s own
-  `description` field) is still open.
+- ~~review cite_01 (Anne's queries) to reflect the new corpus (new IDs,
+  etc)~~ **Done 2026-08-18** — see "2026-08-18: full Cite-01
+  reconciliation" below. Still open within this: whether any topics now
+  have new zh/es/pt cross-lingual counterparts (not attempted).
 - Add new queries to the eval set to
    - ~~for coverage on the new id-lang doc.~~ **Done 2026-08-18** — see
      "2026-08-18: new query for the id-lang doc" below.
@@ -200,6 +198,64 @@ future net-new-`topic_discovery`-queries round, not actioned this pass):
 `climate-readiness-urban-transformation-wri-ross-center-prize-for-cities-cycle-2023-2024`.
 
 Version bumps: `evalset_cite_02.json` 4.2 → 4.3, `evalset_cite_01.json` 3.1 → 3.2.
+
+### 2026-08-18: full Cite-01 reconciliation
+
+Triggered by a human-spotted bug: `q5_micromobility` referenced
+`2021_mexico-frontrunners-creating-safe-affordable-and_6429`, which doesn't
+exist anywhere in the current corpus (the same confirmed-removed duplicate
+already documented in `evalset_repair_and_expansion_citemode_20260817.md` —
+a duplicate ingest of `..._5127`, which remains). That prompted the full
+reconciliation pass this file's own `description` field had been asking for
+since 2026-08-12.
+
+Checked all 54 unique `expected_external_ids` referenced across all 11
+Cite-01 test cases against `documents-list_20260817.txt`:
+
+- **53 of 54 resolve cleanly** to `searchable` documents with real UUIDs —
+  filled in throughout (no more empty-string `expected_document_ids`
+  placeholders anywhere in the file).
+- **1 dead reference** (`q5`'s `_6429`, above) dropped. 10 → 9 expected docs
+  for `q5`; no coverage lost since `_5127` (the confirmed-remaining twin)
+  stays.
+- **7 "previously-pruned" documents, confirmed back in catalog and
+  re-added** — these were removed from the original `cite-golden-dataset.json`
+  as "not in catalog" back in the 169-doc-corpus era, and the file's own
+  `description` already flagged (as of 2026-08-12) that at least 7 were
+  confirmed back, but the actual re-adding to `expected_external_ids` had
+  never been done until now:
+  - `q3_children_pollution` + `q6_school_bus_health`: both gained
+    `2025_improving-school-infrastructure-for-healthier_3532` — content
+    confirmed on read (explicitly recommends "promoting electric school
+    buses to reduce pollution" for improved student health), fits both
+    queries' thematic intersections.
+  - `q10_urban_finance_since_2020`: gained 5 docs (`2022_rolling-out-electric-buses-a-guidebook-on-route_8515`,
+    `2024_access-to-climate-finance-in-low-and-middle_4708`,
+    `2024_assessing-financing-challenges-for-implementing_4732`,
+    `2023_changing-the-demand-preference-for-electric_8865`,
+    `2023_financial-analysis-of-charging-station-fact_2082`) — all
+    post-2020-published (consistent with the query's date filter) and all
+    fit the query's own stated scope ("mostly electric buses and
+    transportation"). 2 → 7 expected docs.
+  - `q11_urban_finance_exclude_ebuses`: gained `2021_seizing-the-urban-opportunity_8690`
+    — not about electric buses, so doesn't conflict with the query's own
+    exclusion clause (unlike the 4 e-bus docs removed 2026-07-22 for
+    exactly that reason, which remain correctly excluded). 7 → 8 expected
+    docs.
+- **Confirmed still absent, no action**: `enabling-shift-electric-auto-rickshaws`
+  (q5) and the Guangdong-specific road-transport-decarbonization doc (q8) —
+  neither exists under any recognizable id in the current corpus.
+
+Per human instruction, **no version bump** for this pass — `evalset_cite_01.json`
+stays at 3.2 (same version as the q4 new-refresh-doc addition earlier this
+session). `description` and `metadata.note` updated to reflect the
+reconciliation is complete.
+
+**Still open**: whether any of Cite-01's 11 topics now have new zh/es/pt
+cross-lingual counterparts among the current corpus's non-English documents
+— explicitly deferred as a separate, larger future task (would need a
+`qmd vsearch` pass per topic, similar in scope to the new-refresh-document
+survey above), not attempted this round.
 
 The evalset currently has 15 questions across 7 query_types:
  4  topic_discovery
