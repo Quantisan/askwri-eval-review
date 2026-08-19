@@ -102,8 +102,10 @@ gets ahead of the human and is harder to steer. Concretely:
   "2026-08-18: survey of new-refresh documents against existing queries" below.
 - ~~review cite_01 (Anne's queries) to reflect the new corpus (new IDs,
   etc)~~ **Done 2026-08-18** — see "2026-08-18: full Cite-01
-  reconciliation" below. Still open within this: whether any topics now
-  have new zh/es/pt cross-lingual counterparts (not attempted).
+  reconciliation" below. ~~Still open within this: whether any topics now
+  have new zh/es/pt cross-lingual counterparts (not attempted).~~ **Done
+  2026-08-19** — see "2026-08-19: zh/es/pt cross-lingual counterpart
+  review" below.
 - Add new queries to the eval set to
    - ~~for coverage on the new id-lang doc.~~ **Done 2026-08-18** — see
      "2026-08-18: new query for the id-lang doc" below.
@@ -251,11 +253,88 @@ stays at 3.2 (same version as the q4 new-refresh-doc addition earlier this
 session). `description` and `metadata.note` updated to reflect the
 reconciliation is complete.
 
-**Still open**: whether any of Cite-01's 11 topics now have new zh/es/pt
+~~**Still open**: whether any of Cite-01's 11 topics now have new zh/es/pt
 cross-lingual counterparts among the current corpus's non-English documents
 — explicitly deferred as a separate, larger future task (would need a
 `qmd vsearch` pass per topic, similar in scope to the new-refresh-document
-survey above), not attempted this round.
+survey above), not attempted this round.~~ **Done 2026-08-19** — see below.
+
+### 2026-08-19: zh/es/pt cross-lingual counterpart review
+
+Checked all 11 Cite-01 topics against the corpus's 52 non-English documents
+(34 zh, 15 es, 3 pt) for new cross-lingual counterparts, completing the item
+deferred above. `qmd vsearch` on its own under-ranked non-English docs
+against the (English) topic questions — e.g. two documents later confirmed
+as exact translation-twins of already-included docs didn't appear even in
+the top 15 results for their own topic's query. Relied instead on
+`documents-list_20260817.txt`'s `has_translations`/`translation_of` fields
+(cross-checked programmatically against every topic's existing
+`expected_external_ids`), supplemented by manual title triage across all 52
+non-English titles and full-text content verification.
+
+**Added** (6 zh/es documents + 1 confirmed en translation-twin, across 4
+topics):
+- `q1_land_value_capture`: `2015_rail-plus-property-shenzhen_00032` (zh) —
+  confirmed translation-twin (per catalog `has_translations`, independently
+  verified by reading both) of the already-included
+  `2017_rail-plus-property-development-in-china-the-pilot_7681`; same
+  authors (Xue, Lulu; Fang, Wanli), matching executive summary. This also
+  resolves `issuelog_20260811.md`'s open question about the 2015-vs-2017
+  year mismatch — 2015 is the original Chinese working-paper date, 2017 is
+  the English translation's publish date, same report. Also added
+  `2020_acciones-federales-planeacion-urbana_0152` (es) — not a translation
+  of an existing doc, but land value capture (`recuperación de plusvalías`)
+  is a substantial recurring theme (multiple sections + a dedicated São
+  Paulo CEPAC case study) in this broader Mexican federal urban-planning
+  report.
+- `q5_micromobility`: `2020_dockless-bike-sharing_00124` (zh) — confirmed
+  translation-twin of the already-included
+  `2020_how-dockless-bike-sharing-changes-lives-an_2277` (same authors, same
+  DOI). Also added the confirmed es/en translation pair
+  `2025_seguridad-de-motociclistas-infraestructura-vias-urbanas_0030` /
+  `2025_motorcycle-safety-and-urban-road-infrastructure_8478` (motorcyclist
+  safety and urban road infrastructure) — **flagged for SME review**: not a
+  counterpart of an already-included doc, and motorcycles are a debatable
+  fit for "micromobility" (usually excluded by vehicle class in most
+  definitions, though this eval set already includes motorized
+  autorickshaws as a precedent).
+- `q10_urban_finance_since_2020` and `q11_urban_finance_exclude_ebuses`
+  (same 3 additions to both, none e-bus-specific so none conflict with
+  q11's exclusion clause):
+  `2023_analisis-de-los-mecanismos-financieros-para-la_3765` (es, public-
+  transport financing mechanisms in Mexican cities, `date_published`
+  5/30/2023) and `2022_impactos-economicos-pandemia-covid19-transporte-publico_0070`
+  (es, COVID-19's financial impact on Mexican public transport,
+  `year_published` 2022) — both clearly post-2020, no date ambiguity. Also
+  added `2020_acciones-federales-planeacion-urbana_0152` (es, shared with
+  q1 above, discusses municipal financing mechanisms incl. land value
+  capture) — **flagged for SME review**: `year_published` is 2020 with no
+  exact month in the frontmatter, so it could not be confirmed against the
+  "since 2020" cutoff the way the 2026-08-13 date-filter fix required for
+  other q10 docs.
+
+**Checked and excluded**:
+- `q3_children_pollution`: two es air-quality docs
+  (`2023_ciencia-participativa-accion-para-un-aire-limpio_6722`,
+  `2025_aire-limpio-en-barrios-vitales_9425`) surfaced but were excluded
+  after reading the full text — children appear only as a single passing
+  mention in each (a vulnerable-groups list; "jardines infantiles" as a
+  building type), not as a primary focus.
+- `q5_micromobility`: `2022_introduction-and-case-studies-of-mobility-as-a_9845`
+  (zh, MaaS practice guide) scored highest in `qmd vsearch` (0.64) but,
+  across the full ~6,000-line document, bike-sharing gets exactly one
+  passing background mention plus 2 unrelated bibliography URLs — the
+  actual content and all 10 case studies are about bus/metro/ride-hailing
+  platform integration, not micromobility.
+
+**No candidates found** (title triage across all 52 non-English titles
+found nothing plausible, no further action taken): `q2_bangalore_geography`,
+`q4_climate_brazil`, `q6_school_bus_health`, `q7_jakarta_housing`,
+`q8_hydrogen`, `q9_world_resources_report`.
+
+Applied to `evalset_cite_01.json` (see each test case's own `note` for full
+detail); **no version bump** (per human instruction), `updated` bumped to
+2026-08-19.
 
 The evalset currently has 15 questions across 7 query_types:
  4  topic_discovery
